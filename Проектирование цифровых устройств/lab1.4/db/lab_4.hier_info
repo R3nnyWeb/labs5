@@ -1,0 +1,39 @@
+|lab_4
+x[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => inst11.IN0
+a[0] => inst15.IN0
+a[0] => inst23.IN0
+a[1] => inst9.IN0
+a[1] => inst14.IN0
+a[1] => inst21.IN0
+a[2] => inst7.IN0
+a[2] => inst13.IN0
+a[2] => inst19.IN0
+a[3] => inst5.IN0
+a[3] => inst12.IN0
+a[3] => inst17.IN0
+b[0] => inst10.IN0
+b[0] => inst15.IN1
+b[0] => inst22.IN1
+b[1] => inst8.IN0
+b[1] => inst14.IN1
+b[1] => inst20.IN1
+b[2] => inst6.IN0
+b[2] => inst13.IN1
+b[2] => inst18.IN1
+b[3] => inst.IN0
+b[3] => inst12.IN1
+b[3] => inst16.IN1
+y[0] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+z[0] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+z[1] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+z[2] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+z[3] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+

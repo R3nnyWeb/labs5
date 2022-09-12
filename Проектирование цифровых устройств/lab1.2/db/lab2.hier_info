@@ -1,0 +1,18 @@
+|lab2
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst11.IN0
+A => inst10.IN0
+A => inst13.IN2
+A => inst.IN0
+B => inst7.IN1
+B => inst1.IN0
+B => inst13.IN0
+C => inst7.IN2
+C => inst2.IN0
+C => inst13.IN1
+C => inst14.IN1
+V <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+W <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
