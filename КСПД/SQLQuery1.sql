@@ -2,13 +2,13 @@ USE master
 CREATE DATABASE Ателье
 ON 
    (NAME = 'Ателье',
-   FILENAME = 'D:\DB\Ателье.mdf',
+   FILENAME = 'B:\DB\Ателье.mdf',
    SIZE = 1,
    MAXSIZE = 10,
    FILEGROWTH = 1)
    LOG ON
    (NAME = 'Ателье_log',
-  FILENAME = 'D:\DB\Ателье_log.mdf',
+  FILENAME = 'B:\DB\Ателье_log.mdf',
    SIZE = 1,
    MAXSIZE = 5,
    FILEGROWTH = 1)
