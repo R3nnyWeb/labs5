@@ -64,18 +64,34 @@
 			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.услугиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.услугиTableAdapter = new labs.АтельеDataSetTableAdapters.УслугиTableAdapter();
+			this.услугиDataGridView = new System.Windows.Forms.DataGridView();
+			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.стоимостьBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+			this.стоимостьDataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			номерLabel = new System.Windows.Forms.Label();
 			названиеLabel = new System.Windows.Forms.Label();
 			адресLabel = new System.Windows.Forms.Label();
 			телефонLabel = new System.Windows.Forms.Label();
 			this.TabControl.SuspendLayout();
 			this.tabPage1.SuspendLayout();
+			this.tabPage2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.ательеDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ательеBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ательеBindingNavigator)).BeginInit();
 			this.ательеBindingNavigator.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.стоимостьBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.стоимостьDataGridView)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.услугиBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.услугиDataGridView)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.стоимостьBindingSource1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.стоимостьDataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// TabControl
@@ -110,6 +126,9 @@
 			// 
 			// tabPage2
 			// 
+			this.tabPage2.AutoScroll = true;
+			this.tabPage2.Controls.Add(this.стоимостьDataGridView1);
+			this.tabPage2.Controls.Add(this.услугиDataGridView);
 			this.tabPage2.Location = new System.Drawing.Point(4, 25);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -382,6 +401,101 @@
 			this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
 			this.dataGridViewTextBoxColumn3.Width = 125;
 			// 
+			// услугиBindingSource
+			// 
+			this.услугиBindingSource.DataMember = "Услуги";
+			this.услугиBindingSource.DataSource = this.ательеDataSet;
+			// 
+			// услугиTableAdapter
+			// 
+			this.услугиTableAdapter.ClearBeforeFill = true;
+			// 
+			// услугиDataGridView
+			// 
+			this.услугиDataGridView.AutoGenerateColumns = false;
+			this.услугиDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.услугиDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+			this.услугиDataGridView.DataSource = this.услугиBindingSource;
+			this.услугиDataGridView.Location = new System.Drawing.Point(8, 16);
+			this.услугиDataGridView.Name = "услугиDataGridView";
+			this.услугиDataGridView.RowHeadersWidth = 51;
+			this.услугиDataGridView.RowTemplate.Height = 24;
+			this.услугиDataGridView.Size = new System.Drawing.Size(714, 231);
+			this.услугиDataGridView.TabIndex = 0;
+			// 
+			// dataGridViewTextBoxColumn4
+			// 
+			this.dataGridViewTextBoxColumn4.DataPropertyName = "Код";
+			this.dataGridViewTextBoxColumn4.HeaderText = "Код";
+			this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+			this.dataGridViewTextBoxColumn4.ReadOnly = true;
+			this.dataGridViewTextBoxColumn4.Width = 125;
+			// 
+			// dataGridViewTextBoxColumn5
+			// 
+			this.dataGridViewTextBoxColumn5.DataPropertyName = "Название";
+			this.dataGridViewTextBoxColumn5.HeaderText = "Название";
+			this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+			this.dataGridViewTextBoxColumn5.Width = 125;
+			// 
+			// dataGridViewTextBoxColumn6
+			// 
+			this.dataGridViewTextBoxColumn6.DataPropertyName = "Длительность выполнения";
+			this.dataGridViewTextBoxColumn6.HeaderText = "Длительность выполнения";
+			this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+			this.dataGridViewTextBoxColumn6.Width = 125;
+			// 
+			// стоимостьBindingSource1
+			// 
+			this.стоимостьBindingSource1.DataMember = "FK_Стоимость_Услуги";
+			this.стоимостьBindingSource1.DataSource = this.услугиBindingSource;
+			// 
+			// стоимостьDataGridView1
+			// 
+			this.стоимостьDataGridView1.AutoGenerateColumns = false;
+			this.стоимостьDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.стоимостьDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+			this.стоимостьDataGridView1.DataSource = this.стоимостьBindingSource1;
+			this.стоимостьDataGridView1.Location = new System.Drawing.Point(8, 258);
+			this.стоимостьDataGridView1.Name = "стоимостьDataGridView1";
+			this.стоимостьDataGridView1.RowHeadersWidth = 51;
+			this.стоимостьDataGridView1.RowTemplate.Height = 24;
+			this.стоимостьDataGridView1.Size = new System.Drawing.Size(556, 138);
+			this.стоимостьDataGridView1.TabIndex = 1;
+			// 
+			// dataGridViewTextBoxColumn7
+			// 
+			this.dataGridViewTextBoxColumn7.DataPropertyName = "Ателье";
+			this.dataGridViewTextBoxColumn7.HeaderText = "Ателье";
+			this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+			this.dataGridViewTextBoxColumn7.Width = 125;
+			// 
+			// dataGridViewTextBoxColumn8
+			// 
+			this.dataGridViewTextBoxColumn8.DataPropertyName = "Услуга";
+			this.dataGridViewTextBoxColumn8.HeaderText = "Услуга";
+			this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+			this.dataGridViewTextBoxColumn8.Width = 125;
+			// 
+			// dataGridViewTextBoxColumn9
+			// 
+			this.dataGridViewTextBoxColumn9.DataPropertyName = "Стоимость";
+			this.dataGridViewTextBoxColumn9.HeaderText = "Стоимость";
+			this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+			this.dataGridViewTextBoxColumn9.Width = 125;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -395,6 +509,7 @@
 			this.TabControl.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage1.PerformLayout();
+			this.tabPage2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.ательеDataSet)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.ательеBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.ательеBindingNavigator)).EndInit();
@@ -402,6 +517,10 @@
 			this.ательеBindingNavigator.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.стоимостьBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.стоимостьDataGridView)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.услугиBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.услугиDataGridView)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.стоимостьBindingSource1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.стоимостьDataGridView1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -439,6 +558,17 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+		private System.Windows.Forms.BindingSource услугиBindingSource;
+		private АтельеDataSetTableAdapters.УслугиTableAdapter услугиTableAdapter;
+		private System.Windows.Forms.DataGridView стоимостьDataGridView1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+		private System.Windows.Forms.BindingSource стоимостьBindingSource1;
+		private System.Windows.Forms.DataGridView услугиDataGridView;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
 	}
 }
 
