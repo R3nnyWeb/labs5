@@ -1,5 +1,5 @@
 Assembler report for lab2
-Wed Sep 07 17:25:13 2022
+Sun Sep 18 21:29:49 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/USERS/045/lab2/lab2.pof
+  5. Assembler Device Options: D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab1.2/lab2.pof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Sep 07 17:25:13 2022 ;
+; Assembler Status      ; Successful - Sun Sep 18 21:29:49 2022 ;
 ; Revision Name         ; lab2                                  ;
 ; Top-level Entity Name ; lab2                                  ;
 ; Family                ; MAX II                                ;
@@ -73,24 +73,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+-----------+---------------+
 
 
-+----------------------------+
-; Assembler Generated Files  ;
-+----------------------------+
-; File Name                  ;
-+----------------------------+
-; D:/USERS/045/lab2/lab2.pof ;
-+----------------------------+
++---------------------------------------------------------------------------+
+; Assembler Generated Files                                                 ;
++---------------------------------------------------------------------------+
+; File Name                                                                 ;
++---------------------------------------------------------------------------+
+; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab1.2/lab2.pof ;
++---------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Assembler Device Options: D:/USERS/045/lab2/lab2.pof ;
-+----------------+-------------------------------------+
-; Option         ; Setting                             ;
-+----------------+-------------------------------------+
-; Device         ; EPM240T100C5                        ;
-; JTAG usercode  ; 0xFFFFFFFF                          ;
-; Checksum       ; 0x0019238A                          ;
-+----------------+-------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab1.2/lab2.pof ;
++----------------+------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                            ;
++----------------+------------------------------------------------------------------------------------+
+; Device         ; EPM240T100C5                                                                       ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                         ;
+; Checksum       ; 0x0019238A                                                                         ;
++----------------+------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -99,14 +99,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Sep 07 17:25:13 2022
+    Info: Processing started: Sun Sep 18 21:29:48 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab2 -c lab2
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 181 megabytes
-    Info: Processing ended: Wed Sep 07 17:25:13 2022
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 194 megabytes
+    Info: Processing ended: Sun Sep 18 21:29:49 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

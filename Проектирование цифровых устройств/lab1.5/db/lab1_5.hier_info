@@ -1,0 +1,34 @@
+|sv15_ks5
+sq <= s15_ks5:inst.q
+a => s15_ks5:inst.a
+a => v15_k5:inst1.a
+b => s15_ks5:inst.b
+b => v15_k5:inst1.b
+c => s15_ks5:inst.c
+c => v15_k5:inst1.c
+vq <= v15_k5:inst1.q
+
+
+|sv15_ks5|s15_ks5:inst
+q <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst7.IN0
+b => inst6.IN1
+b => inst3.IN0
+c => inst6.IN2
+c => inst7.IN2
+c => inst4.IN0
+
+
+|sv15_ks5|v15_k5:inst1
+a => q~4.IN0
+a => q~0.IN1
+a => q~1.IN0
+b => q~1.IN1
+b => q~4.IN1
+c => q~5.IN0
+c => q~2.IN0
+c => q~0.IN0
+q <= q~6.DB_MAX_OUTPUT_PORT_TYPE
+
+
