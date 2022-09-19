@@ -20,13 +20,13 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/db/2_1.sim.cvwf")
+VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_2/db/lab2_2.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 398951;
-		ZEND = 806359;
+		ZBEGIN = 0;
+		ZEND = 814816;
 		NUMERATOR = 1010;
-		DENOMINATOR = 407408;
+		DENOMINATOR = 814816;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -54,7 +54,7 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/db/2_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "sp";
+		SIGNAL = "c";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -62,7 +62,7 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/db/2_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ss";
+		SIGNAL = "p";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -70,16 +70,8 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/db/2_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "vp";
+		SIGNAL = "s";
 		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "vs";
-		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -87,13 +79,13 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/db/2_
 	}
 }
 
-VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/2_1.vwf")
+VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_2/v22_sum.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 1000000;
+		ZEND = 598000;
 		NUMERATOR = 1495;
-		DENOMINATOR = 1000000;
+		DENOMINATOR = 598000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -121,7 +113,7 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/2_1.v
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "sp";
+		SIGNAL = "c";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -129,7 +121,7 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/2_1.v
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ss";
+		SIGNAL = "p";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -137,16 +129,8 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/2_1.v
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "vp";
+		SIGNAL = "s";
 		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "vs";
-		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
