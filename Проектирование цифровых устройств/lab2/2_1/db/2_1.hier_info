@@ -1,0 +1,31 @@
+|sv21_hs
+sp <= s21_hs:inst.p
+a => s21_hs:inst.a
+a => v21_hs:inst6.a
+b => s21_hs:inst.b
+b => v21_hs:inst6.b
+ss <= s21_hs:inst.s
+vs <= v21_hs:inst6.s
+vp <= v21_hs:inst6.p
+
+
+|sv21_hs|s21_hs:inst
+p <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst2.IN1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sv21_hs|v21_hs:inst6
+a => s~1.IN0
+a => p~0.IN0
+a => s~0.IN0
+b => s~0.IN1
+b => p~0.IN1
+b => s~1.IN1
+p <= p~0.DB_MAX_OUTPUT_PORT_TYPE
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
