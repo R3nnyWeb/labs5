@@ -35,11 +35,6 @@ s22_sum.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-s24_4sum:inst1|s22_sum:inst3
-s24_4sum:inst1|s22_sum:inst2
-s24_4sum:inst1|s22_sum:inst1
-}
 # macro_sequence
 
 # end
@@ -107,9 +102,6 @@ ab5a284dcef8459aa15f3aa5c45838f
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-s24_4sum:inst1|s21_hs:inst
-}
 # macro_sequence
 
 # end
@@ -127,9 +119,6 @@ cd2f91f658d5af34c6a0ffc1589ea9ff
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-s24_4sum:inst1
-}
 # macro_sequence
 
 # end
@@ -146,9 +135,6 @@ ebaa67925837933532f22a820ecd6
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -183,8 +169,79 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# macro_sequence
+
+# end
+# entity
+s25_inc
+# storage
+db|lab2_2.(7).cnf
+db|lab2_2.(7).cnf
+# case_insensitive
+# source_file
+s25_inc.bdf
+9c2cad714bb1cba7be6cd8a84863cad
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+sv25_inc
+# storage
+db|lab2_2.(8).cnf
+db|lab2_2.(8).cnf
+# case_insensitive
+# source_file
+sv25_inc.bdf
+e468bf4cd3d2a88d38c4c61644836
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-v24_sum:inst
+|
+}
+# macro_sequence
+
+# end
+# entity
+v25_inc
+# storage
+db|lab2_2.(9).cnf
+db|lab2_2.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v25_inc.v
+d24169e8c440dd6b61f1165f3c05ce9
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v25_inc:inst1
+v25_inc:inst
 }
 # macro_sequence
 
