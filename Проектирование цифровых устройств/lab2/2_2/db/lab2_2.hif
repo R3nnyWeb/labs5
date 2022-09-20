@@ -36,7 +36,155 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+s24_4sum:inst1|s22_sum:inst3
+s24_4sum:inst1|s22_sum:inst2
+s24_4sum:inst1|s22_sum:inst1
+}
+# macro_sequence
+
+# end
+# entity
+v23_sum
+# storage
+db|lab2_2.(1).cnf
+db|lab2_2.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v23_sum.v
+bbf01878afa59973fde315c0eabb2a
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+sv23_sum
+# storage
+db|lab2_2.(2).cnf
+db|lab2_2.(2).cnf
+# case_insensitive
+# source_file
+sv23_sum.bdf
+b30ab6c98d69fb279e7bc37ffd24835
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+s21_hs
+# storage
+db|lab2_2.(3).cnf
+db|lab2_2.(3).cnf
+# case_insensitive
+# source_file
+s21_hs.bdf
+ab5a284dcef8459aa15f3aa5c45838f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s24_4sum:inst1|s21_hs:inst
+}
+# macro_sequence
+
+# end
+# entity
+s24_4sum
+# storage
+db|lab2_2.(4).cnf
+db|lab2_2.(4).cnf
+# case_insensitive
+# source_file
+s24_4sum.bdf
+cd2f91f658d5af34c6a0ffc1589ea9ff
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s24_4sum:inst1
+}
+# macro_sequence
+
+# end
+# entity
+sv24_sum
+# storage
+db|lab2_2.(5).cnf
+db|lab2_2.(5).cnf
+# case_insensitive
+# source_file
+sv24_sum.bdf
+ebaa67925837933532f22a820ecd6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+v24_sum
+# storage
+db|lab2_2.(6).cnf
+db|lab2_2.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v24_sum.v
+2f8d464170bc1be7bac044e625d8f565
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v24_sum:inst
 }
 # macro_sequence
 

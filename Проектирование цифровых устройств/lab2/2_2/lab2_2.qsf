@@ -25,7 +25,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY s22_sum
+set_global_assignment -name TOP_LEVEL_ENTITY sv24_sum
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:40:58  SEPTEMBER 19, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 8.1
@@ -34,7 +34,16 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
 set_global_assignment -name BDF_FILE s22_sum.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE v22_sum.vwf
+set_global_assignment -name VERILOG_FILE v23_sum.v
+set_global_assignment -name BDF_FILE sv23_sum.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sv23_sum.vwf
+set_global_assignment -name BDF_FILE s21_hs.bdf
+set_global_assignment -name BDF_FILE s24_4sum.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE s24_4sum.vwf
+set_global_assignment -name VERILOG_FILE v24_sum.v
+set_global_assignment -name BDF_FILE sv24_sum.bdf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name VECTOR_WAVEFORM_FILE v22_sum.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE v22_sum.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sv24_sum.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE sv24_sum.vwf
