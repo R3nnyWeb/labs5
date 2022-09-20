@@ -54,3 +54,7 @@ set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name VECTOR_WAVEFORM_FILE s26_lsr.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE s26_lsr.vwf
+set_global_assignment -name VERILOG_FILE v26_lsr.v
+set_global_assignment -name BDF_FILE sv26_lsr.bdf
+set_global_assignment -name BDF_FILE s27_4cmp.bdf
+set_global_assignment -name VERILOG_FILE v27_4cmp.v
