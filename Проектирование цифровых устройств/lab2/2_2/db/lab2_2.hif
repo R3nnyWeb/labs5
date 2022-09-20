@@ -203,9 +203,6 @@ e468bf4cd3d2a88d38c4c61644836
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -239,9 +236,25 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# macro_sequence
+
+# end
+# entity
+s26_lsr
+# storage
+db|lab2_2.(10).cnf
+db|lab2_2.(10).cnf
+# case_insensitive
+# source_file
+s26_lsr.bdf
+63039dfd0d0676eca36381d30724768
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-v25_inc:inst1
-v25_inc:inst
+|
 }
 # macro_sequence
 
