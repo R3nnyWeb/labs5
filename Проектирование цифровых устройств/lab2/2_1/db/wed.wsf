@@ -23,8 +23,8 @@ applicable agreement for further details.
 VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab2/2_1/db/2_1.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 586930;
-		ZEND = 997968;
+		ZBEGIN = 398951;
+		ZEND = 806359;
 		NUMERATOR = 1010;
 		DENOMINATOR = 407408;
 		TOP_INDEX = 0;
