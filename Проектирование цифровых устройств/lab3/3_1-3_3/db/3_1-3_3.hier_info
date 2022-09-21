@@ -1,0 +1,48 @@
+|s32_indic
+a <= v32_indicator:inst.a
+k4 => v32_indicator:inst.k4
+k3 => v32_indicator:inst.k3
+k2 => v32_indicator:inst.k2
+k1 => v32_indicator:inst.k1
+b <= v32_indicator:inst.b
+c <= v32_indicator:inst.c
+d <= v32_indicator:inst.d
+e <= v32_indicator:inst.e
+f <= v32_indicator:inst.f
+g <= v32_indicator:inst.g
+h <= v32_indicator:inst.h
+z <= v32_indicator:inst.z
+
+
+|s32_indic|v32_indicator:inst
+k4 => a~3.IN0
+k4 => a~0.IN0
+k4 => e~5.IN0
+k3 => e~5.IN1
+k3 => a~0.IN1
+k3 => a~3.IN1
+k2 => e~6.IN0
+k2 => a~4.IN0
+k2 => a~1.IN1
+k2 => c~0.IN1
+k2 => b~1.IN0
+k1 => g~0.IN1
+k1 => c~1.IN0
+k1 => b~2.IN0
+k1 => a~5.IN0
+k1 => e~0.IN0
+k1 => e~7.IN0
+k1 => d~0.IN0
+k1 => b~0.IN0
+k1 => a~2.IN1
+a <= a~6.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~3.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~1.DB_MAX_OUTPUT_PORT_TYPE
+d <= d~1.DB_MAX_OUTPUT_PORT_TYPE
+e <= e~8.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~2.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~2.DB_MAX_OUTPUT_PORT_TYPE
+h <= <GND>
+z <= <GND>
+
+

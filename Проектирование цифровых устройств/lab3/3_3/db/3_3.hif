@@ -1,0 +1,101 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+41
+2669
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+s33_cd
+# storage
+db|3_3.(0).cnf
+db|3_3.(0).cnf
+# case_insensitive
+# source_file
+s33_cd.bdf
+6c41aa649d7c4e4f4b3fdd5c72ea814
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s33_cd:inst
+}
+# macro_sequence
+
+# end
+# entity
+sv33_cd
+# storage
+db|3_3.(1).cnf
+db|3_3.(1).cnf
+# case_insensitive
+# source_file
+sv33_cd.bdf
+99684ec4d768ad9ffb9d3d7a372c6a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+v33_cd
+# storage
+db|3_3.(2).cnf
+db|3_3.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v33_cd.v
+dad264c6f76b35f91c3964b239fddc83
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v33_cd:inst1
+}
+# macro_sequence
+
+# end
+# complete
+
