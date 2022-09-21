@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab2_2
-Tue Sep 20 10:48:08 2022
+Wed Sep 21 10:18:28 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,13 +39,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Sep 20 10:48:08 2022   ;
+; Analysis & Synthesis Status ; Successful - Wed Sep 21 10:18:28 2022   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; lab2_2                                  ;
-; Top-level Entity Name       ; s26_lsr                                 ;
+; Top-level Entity Name       ; sv26_lsr                                ;
 ; Family                      ; MAX II                                  ;
 ; Total logic elements        ; 0                                       ;
-; Total pins                  ; 9                                       ;
+; Total pins                  ; 14                                      ;
 ; Total virtual pins          ; 0                                       ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                           ;
 +-----------------------------+-----------------------------------------+
@@ -57,7 +57,7 @@ applicable agreement for further details.
 ; Option                                                         ; Setting            ; Default Value      ;
 +----------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                         ; EPM240T100C5       ;                    ;
-; Top-level entity name                                          ; s26_lsr            ; lab2_2             ;
+; Top-level entity name                                          ; sv26_lsr           ; lab2_2             ;
 ; Family name                                                    ; MAX II             ; Stratix II         ;
 ; Use Generated Physical Constraints File                        ; Off                ;                    ;
 ; Use smart compilation                                          ; Off                ; Off                ;
@@ -117,13 +117,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
-; s26_lsr.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Nikita/labs5/Проектирование цифровых устройств/lab2/2_2/s26_lsr.bdf ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                            ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+
+; s26_lsr.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/s26_lsr.bdf  ;
+; v26_lsr.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/v26_lsr.v    ;
+; sv26_lsr.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/sv26_lsr.bdf ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -152,11 +154,11 @@ applicable agreement for further details.
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
-; I/O pins                                    ; 9     ;
+; I/O pins                                    ; 14    ;
 ; Maximum fan-out node                        ; d[0]  ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 4     ;
-; Average fan-out                             ; 0.44  ;
+; Maximum fan-out                             ; 2     ;
+; Total fan-out                               ; 8     ;
+; Average fan-out                             ; 0.57  ;
 +---------------------------------------------+-------+
 
 
@@ -165,7 +167,7 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |s26_lsr                   ; 0 (0)       ; 0            ; 0          ; 9    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |s26_lsr            ; work         ;
+; |sv26_lsr                  ; 0 (0)       ; 0            ; 0          ; 14   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sv26_lsr           ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -191,7 +193,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Tue Sep 20 10:48:08 2022
+    Info: Processing started: Wed Sep 21 10:18:27 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2_2 -c lab2_2
 Info: Found 1 design units, including 1 entities, in source file s22_sum.bdf
     Info: Found entity 1: s22_sum
@@ -215,16 +217,40 @@ Info: Found 1 design units, including 1 entities, in source file sv25_inc.bdf
     Info: Found entity 1: sv25_inc
 Info: Found 1 design units, including 1 entities, in source file s26_lsr.bdf
     Info: Found entity 1: s26_lsr
-Info: Elaborating entity "s26_lsr" for the top level hierarchy
+Info: Found 1 design units, including 1 entities, in source file v26_lsr.v
+    Info: Found entity 1: v26_lsr
+Info: Found 1 design units, including 1 entities, in source file sv26_lsr.bdf
+    Info: Found entity 1: sv26_lsr
+Info: Found 1 design units, including 1 entities, in source file s27_4cmp.bdf
+    Info: Found entity 1: s27_4cmp
+Info: Found 1 design units, including 1 entities, in source file v27_4cmp.v
+    Info: Found entity 1: v27_4cmp
+Info: Found 1 design units, including 1 entities, in source file sv27_4cmp.bdf
+    Info: Found entity 1: sv27_4cmp
+Info: Found 1 design units, including 1 entities, in source file v28_sum.v
+    Info: Found entity 1: sum
+Info: Found 1 design units, including 1 entities, in source file v28_hs.v
+    Info: Found entity 1: hs
+Warning: Can't analyze file -- file C:/Users/Вчеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/v_29_mul.v is missing
+Info: Found 1 design units, including 1 entities, in source file v29_mul.v
+    Info: Found entity 1: v29_mul
+Info: Found 1 design units, including 1 entities, in source file s29_mul.bdf
+    Info: Found entity 1: s29_mul
+Info: Found 1 design units, including 1 entities, in source file v210_mul.v
+    Info: Found entity 1: v210_mul
+Info: Elaborating entity "sv26_lsr" for the top level hierarchy
+Info: Elaborating entity "s26_lsr" for hierarchy "s26_lsr:inst"
+Info: Elaborating entity "v26_lsr" for hierarchy "v26_lsr:inst2"
 Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "q[3]" is stuck at GND
-Info: Implemented 9 device resources after synthesis - the final resource count might be different
+    Warning (13410): Pin "sq[3]" is stuck at GND
+    Warning (13410): Pin "vq[3]" is stuck at GND
+Info: Implemented 14 device resources after synthesis - the final resource count might be different
     Info: Implemented 4 input pins
-    Info: Implemented 5 output pins
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 219 megabytes
-    Info: Processing ended: Tue Sep 20 10:48:08 2022
-    Info: Elapsed time: 00:00:00
+    Info: Implemented 10 output pins
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 218 megabytes
+    Info: Processing ended: Wed Sep 21 10:18:28 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

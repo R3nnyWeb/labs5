@@ -247,7 +247,27 @@ db|lab2_2.(10).cnf
 # case_insensitive
 # source_file
 s26_lsr.bdf
-63039dfd0d0676eca36381d30724768
+858111b11617994590d95a613fd4cbeb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s26_lsr:inst
+}
+# macro_sequence
+
+# end
+# entity
+sv26_lsr
+# storage
+db|lab2_2.(11).cnf
+db|lab2_2.(11).cnf
+# case_insensitive
+# source_file
+sv26_lsr.bdf
+a9b6cb9cb3676241845f37794783ac4
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -255,6 +275,42 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+v26_lsr
+# storage
+db|lab2_2.(12).cnf
+db|lab2_2.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v26_lsr.v
+1883279ca7c0a133226d38392344d3c0
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v26_lsr:inst2
 }
 # macro_sequence
 
