@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab2_2
-Wed Sep 21 00:55:35 2022
+Wed Sep 21 09:52:24 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Sep 21 00:55:35 2022   ;
+; Analysis & Synthesis Status ; Successful - Wed Sep 21 09:52:24 2022   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; lab2_2                                  ;
 ; Top-level Entity Name       ; s26_lsr                                 ;
@@ -191,7 +191,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Sep 21 00:55:34 2022
+    Info: Processing started: Wed Sep 21 09:52:23 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2_2 -c lab2_2
 Info: Found 1 design units, including 1 entities, in source file s22_sum.bdf
     Info: Found entity 1: s22_sum
@@ -223,15 +223,28 @@ Info: Found 1 design units, including 1 entities, in source file s27_4cmp.bdf
     Info: Found entity 1: s27_4cmp
 Info: Found 1 design units, including 1 entities, in source file v27_4cmp.v
     Info: Found entity 1: v27_4cmp
+Info: Found 1 design units, including 1 entities, in source file sv27_4cmp.bdf
+    Info: Found entity 1: sv27_4cmp
+Info: Found 1 design units, including 1 entities, in source file v28_sum.v
+    Info: Found entity 1: sum
+Info: Found 1 design units, including 1 entities, in source file v28_hs.v
+    Info: Found entity 1: hs
+Warning: Can't analyze file -- file C:/Users/Вчеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/v_29_mul.v is missing
+Info: Found 1 design units, including 1 entities, in source file v29_mul.v
+    Info: Found entity 1: v29_mul
+Info: Found 1 design units, including 1 entities, in source file s29_mul.bdf
+    Info: Found entity 1: s29_mul
+Info: Found 1 design units, including 1 entities, in source file v210_mul.v
+    Info: Found entity 1: v210_mul
 Info: Elaborating entity "s26_lsr" for the top level hierarchy
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "q[3]" is stuck at GND
 Info: Implemented 9 device resources after synthesis - the final resource count might be different
     Info: Implemented 4 input pins
     Info: Implemented 5 output pins
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 219 megabytes
-    Info: Processing ended: Wed Sep 21 00:55:35 2022
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 218 megabytes
+    Info: Processing ended: Wed Sep 21 09:52:24 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 

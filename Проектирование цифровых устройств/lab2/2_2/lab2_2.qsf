@@ -58,3 +58,10 @@ set_global_assignment -name VERILOG_FILE v26_lsr.v
 set_global_assignment -name BDF_FILE sv26_lsr.bdf
 set_global_assignment -name BDF_FILE s27_4cmp.bdf
 set_global_assignment -name VERILOG_FILE v27_4cmp.v
+set_global_assignment -name BDF_FILE sv27_4cmp.bdf
+set_global_assignment -name VERILOG_FILE v28_sum.v
+set_global_assignment -name VERILOG_FILE v28_hs.v
+set_global_assignment -name VERILOG_FILE v_29_mul.v
+set_global_assignment -name VERILOG_FILE v29_mul.v
+set_global_assignment -name BDF_FILE s29_mul.bdf
+set_global_assignment -name VERILOG_FILE v210_mul.v
