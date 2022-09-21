@@ -1,0 +1,215 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+41
+2996
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+v34_gray_to_bin
+# storage
+db|lab3_4.(1).cnf
+db|lab3_4.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v34_gray_to_bin.v
+306f4b547d6eee8f2d36e4ae3c8e28
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+s34_gray_to_bin
+# storage
+db|lab3_4.(2).cnf
+db|lab3_4.(2).cnf
+# case_insensitive
+# source_file
+s34_gray_to_bin.bdf
+b1bd75b186c8bd77e4c691e46e46f6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+sv34_gray_to_bin
+# storage
+db|lab3_4.(0).cnf
+db|lab3_4.(0).cnf
+# case_insensitive
+# source_file
+sv34_gray_to_bin.bdf
+7e21c3f9c1f84d9a6c316e1e17a38
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+sv35_bin_to_gray
+# storage
+db|lab3_4.(3).cnf
+db|lab3_4.(3).cnf
+# case_insensitive
+# source_file
+sv35_bin_to_gray.bdf
+d8c25886913fe7d6b4cad7d8814c6cfe
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+s35_bin_to_gray
+# storage
+db|lab3_4.(4).cnf
+db|lab3_4.(4).cnf
+# case_insensitive
+# source_file
+s35_bin_to_gray.bdf
+9db4f4e706fe228e991e26559d7ff8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+v35_bin_to_gray
+# storage
+db|lab3_4.(5).cnf
+db|lab3_4.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v35_bin_to_gray.v
+58f67b883191feec1f3014cbe32eaccd
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+sv36_cd
+# storage
+db|lab3_4.(6).cnf
+db|lab3_4.(6).cnf
+# case_insensitive
+# source_file
+sv36_cd.bdf
+257210ad5cd3e4aa844e87c4591b3b9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+v36_cd
+# storage
+db|lab3_4.(7).cnf
+db|lab3_4.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v36_cd.v
+69e848cbf1d44355f3812fe885aab7be
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v36_cd:inst
+}
+# macro_sequence
+
+# end
+# complete
+

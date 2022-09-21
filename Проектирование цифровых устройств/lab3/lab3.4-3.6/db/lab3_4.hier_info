@@ -1,0 +1,32 @@
+|sv36_cd
+g <= v36_cd:inst.g
+d[0] => v36_cd:inst.d[0]
+d[1] => v36_cd:inst.d[1]
+d[2] => v36_cd:inst.d[2]
+d[3] => v36_cd:inst.d[3]
+q[0] <= v36_cd:inst.q[0]
+q[1] <= v36_cd:inst.q[1]
+
+
+|sv36_cd|v36_cd:inst
+d[0] => Mux2.IN19
+d[0] => Mux1.IN19
+d[0] => Mux0.IN19
+d[0] => Equal0.IN28
+d[1] => Mux2.IN18
+d[1] => Mux1.IN18
+d[1] => Mux0.IN18
+d[1] => Equal0.IN29
+d[2] => Mux2.IN17
+d[2] => Mux1.IN17
+d[2] => Mux0.IN17
+d[2] => Equal0.IN30
+d[3] => Mux2.IN16
+d[3] => Mux1.IN16
+d[3] => Mux0.IN16
+d[3] => Equal0.IN31
+q[0] <= q[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+g <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
