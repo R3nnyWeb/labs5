@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for lab2_2
-Wed Sep 21 09:52:28 2022
+Wed Sep 21 10:18:32 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -33,14 +33,14 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                 ;
-+------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From ; To   ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 6.503 ns    ; d[3] ; q[2] ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;      ;      ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                  ;
++------------------------------+-------+---------------+-------------+------+-------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From ; To    ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------+-------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 6.474 ns    ; d[1] ; sq[0] ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;      ;       ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+------+-------+------------+----------+--------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -75,16 +75,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------+--------------------+------+----+-------------+
 
 
-+-----------------------------------------------------------+
-; tpd                                                       ;
-+-------+-------------------+-----------------+------+------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From ; To   ;
-+-------+-------------------+-----------------+------+------+
-; N/A   ; None              ; 6.503 ns        ; d[3] ; q[2] ;
-; N/A   ; None              ; 6.433 ns        ; d[1] ; q[0] ;
-; N/A   ; None              ; 5.874 ns        ; d[2] ; q[1] ;
-; N/A   ; None              ; 4.788 ns        ; d[0] ; c    ;
-+-------+-------------------+-----------------+------+------+
++------------------------------------------------------------+
+; tpd                                                        ;
++-------+-------------------+-----------------+------+-------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To    ;
++-------+-------------------+-----------------+------+-------+
+; N/A   ; None              ; 6.474 ns        ; d[1] ; sq[0] ;
+; N/A   ; None              ; 6.261 ns        ; d[1] ; vq[0] ;
+; N/A   ; None              ; 6.259 ns        ; d[3] ; sq[2] ;
+; N/A   ; None              ; 5.927 ns        ; d[3] ; vq[2] ;
+; N/A   ; None              ; 5.804 ns        ; d[2] ; sq[1] ;
+; N/A   ; None              ; 5.765 ns        ; d[2] ; vq[1] ;
+; N/A   ; None              ; 5.574 ns        ; d[0] ; sc    ;
+; N/A   ; None              ; 5.559 ns        ; d[0] ; vc    ;
++-------+-------------------+-----------------+------+-------+
 
 
 +--------------------------+
@@ -93,18 +97,18 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Sep 21 09:52:28 2022
+    Info: Processing started: Wed Sep 21 10:18:32 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off lab2_2 -c lab2_2
 Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
-Info: Longest tpd from source pin "d[3]" to destination pin "q[2]" is 6.503 ns
-    Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_17; Fanout = 1; PIN Node = 'd[3]'
-    Info: 2: + IC(3.049 ns) + CELL(2.322 ns) = 6.503 ns; Loc. = PIN_20; Fanout = 0; PIN Node = 'q[2]'
-    Info: Total cell delay = 3.454 ns ( 53.11 % )
-    Info: Total interconnect delay = 3.049 ns ( 46.89 % )
+Info: Longest tpd from source pin "d[1]" to destination pin "sq[0]" is 6.474 ns
+    Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_89; Fanout = 2; PIN Node = 'd[1]'
+    Info: 2: + IC(3.020 ns) + CELL(2.322 ns) = 6.474 ns; Loc. = PIN_92; Fanout = 0; PIN Node = 'sq[0]'
+    Info: Total cell delay = 3.454 ns ( 53.35 % )
+    Info: Total interconnect delay = 3.020 ns ( 46.65 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 179 megabytes
-    Info: Processing ended: Wed Sep 21 09:52:28 2022
+    Info: Processing ended: Wed Sep 21 10:18:32 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Sep 21 09:52:25 2022
+Fitter Status : Successful - Wed Sep 21 10:18:30 2022
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : lab2_2
-Top-level Entity Name : s26_lsr
+Top-level Entity Name : sv26_lsr
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
 Total logic elements : 0 / 240 ( 0 % )
-Total pins : 9 / 80 ( 11 % )
+Total pins : 14 / 80 ( 18 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

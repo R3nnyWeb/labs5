@@ -25,7 +25,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY s26_lsr
+set_global_assignment -name TOP_LEVEL_ENTITY sv26_lsr
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:40:58  SEPTEMBER 19, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 8.1
@@ -50,8 +50,6 @@ set_global_assignment -name VERILOG_FILE v25_inc.v
 set_global_assignment -name BDF_FILE sv25_inc.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE sv25_inc.vwf
 set_global_assignment -name BDF_FILE s26_lsr.bdf
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name VECTOR_WAVEFORM_FILE s26_lsr.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE s26_lsr.vwf
 set_global_assignment -name VERILOG_FILE v26_lsr.v
@@ -65,3 +63,6 @@ set_global_assignment -name VERILOG_FILE v_29_mul.v
 set_global_assignment -name VERILOG_FILE v29_mul.v
 set_global_assignment -name BDF_FILE s29_mul.bdf
 set_global_assignment -name VERILOG_FILE v210_mul.v
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name VECTOR_WAVEFORM_FILE sv26_lsr.vwf
