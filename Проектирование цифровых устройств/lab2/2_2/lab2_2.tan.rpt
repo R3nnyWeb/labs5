@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for lab2_2
-Wed Sep 21 10:18:32 2022
+Wed Sep 21 18:22:10 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -33,14 +33,14 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                  ;
-+------------------------------+-------+---------------+-------------+------+-------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From ; To    ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+------+-------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 6.474 ns    ; d[1] ; sq[0] ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;      ;       ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+------+-------+------------+----------+--------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                               ;
++------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From ; To ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 9.835 ns    ; b[2] ; vl ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;      ;    ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -75,20 +75,52 @@ applicable agreement for further details.
 +---------------------------------------------------------------------+--------------------+------+----+-------------+
 
 
-+------------------------------------------------------------+
-; tpd                                                        ;
-+-------+-------------------+-----------------+------+-------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From ; To    ;
-+-------+-------------------+-----------------+------+-------+
-; N/A   ; None              ; 6.474 ns        ; d[1] ; sq[0] ;
-; N/A   ; None              ; 6.261 ns        ; d[1] ; vq[0] ;
-; N/A   ; None              ; 6.259 ns        ; d[3] ; sq[2] ;
-; N/A   ; None              ; 5.927 ns        ; d[3] ; vq[2] ;
-; N/A   ; None              ; 5.804 ns        ; d[2] ; sq[1] ;
-; N/A   ; None              ; 5.765 ns        ; d[2] ; vq[1] ;
-; N/A   ; None              ; 5.574 ns        ; d[0] ; sc    ;
-; N/A   ; None              ; 5.559 ns        ; d[0] ; vc    ;
-+-------+-------------------+-----------------+------+-------+
++---------------------------------------------------------+
+; tpd                                                     ;
++-------+-------------------+-----------------+------+----+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To ;
++-------+-------------------+-----------------+------+----+
+; N/A   ; None              ; 9.835 ns        ; b[2] ; vl ;
+; N/A   ; None              ; 9.797 ns        ; b[2] ; vg ;
+; N/A   ; None              ; 9.682 ns        ; a[2] ; vl ;
+; N/A   ; None              ; 9.662 ns        ; b[1] ; vl ;
+; N/A   ; None              ; 9.644 ns        ; a[2] ; vg ;
+; N/A   ; None              ; 9.643 ns        ; a[3] ; vl ;
+; N/A   ; None              ; 9.628 ns        ; b[1] ; vg ;
+; N/A   ; None              ; 9.618 ns        ; b[2] ; se ;
+; N/A   ; None              ; 9.605 ns        ; a[3] ; vg ;
+; N/A   ; None              ; 9.592 ns        ; a[0] ; se ;
+; N/A   ; None              ; 9.558 ns        ; b[3] ; vl ;
+; N/A   ; None              ; 9.553 ns        ; b[0] ; vl ;
+; N/A   ; None              ; 9.543 ns        ; a[0] ; vl ;
+; N/A   ; None              ; 9.520 ns        ; b[3] ; vg ;
+; N/A   ; None              ; 9.502 ns        ; a[0] ; vg ;
+; N/A   ; None              ; 9.501 ns        ; b[0] ; se ;
+; N/A   ; None              ; 9.498 ns        ; b[0] ; vg ;
+; N/A   ; None              ; 9.488 ns        ; a[1] ; vl ;
+; N/A   ; None              ; 9.465 ns        ; a[2] ; se ;
+; N/A   ; None              ; 9.439 ns        ; a[1] ; vg ;
+; N/A   ; None              ; 9.426 ns        ; a[3] ; se ;
+; N/A   ; None              ; 9.341 ns        ; b[3] ; se ;
+; N/A   ; None              ; 9.091 ns        ; b[1] ; se ;
+; N/A   ; None              ; 9.028 ns        ; b[2] ; ve ;
+; N/A   ; None              ; 9.028 ns        ; b[2] ; sl ;
+; N/A   ; None              ; 9.002 ns        ; a[0] ; ve ;
+; N/A   ; None              ; 9.002 ns        ; a[0] ; sl ;
+; N/A   ; None              ; 8.911 ns        ; b[0] ; ve ;
+; N/A   ; None              ; 8.911 ns        ; b[0] ; sl ;
+; N/A   ; None              ; 8.875 ns        ; a[2] ; ve ;
+; N/A   ; None              ; 8.875 ns        ; a[2] ; sl ;
+; N/A   ; None              ; 8.836 ns        ; a[3] ; ve ;
+; N/A   ; None              ; 8.836 ns        ; a[3] ; sl ;
+; N/A   ; None              ; 8.751 ns        ; b[3] ; ve ;
+; N/A   ; None              ; 8.751 ns        ; b[3] ; sl ;
+; N/A   ; None              ; 8.678 ns        ; a[1] ; se ;
+; N/A   ; None              ; 8.501 ns        ; b[1] ; ve ;
+; N/A   ; None              ; 8.501 ns        ; b[1] ; sl ;
+; N/A   ; None              ; 8.088 ns        ; a[1] ; ve ;
+; N/A   ; None              ; 8.088 ns        ; a[1] ; sl ;
++-------+-------------------+-----------------+------+----+
 
 
 +--------------------------+
@@ -97,18 +129,20 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Sep 21 10:18:32 2022
+    Info: Processing started: Wed Sep 21 18:22:10 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off lab2_2 -c lab2_2
 Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
-Info: Longest tpd from source pin "d[1]" to destination pin "sq[0]" is 6.474 ns
-    Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_89; Fanout = 2; PIN Node = 'd[1]'
-    Info: 2: + IC(3.020 ns) + CELL(2.322 ns) = 6.474 ns; Loc. = PIN_92; Fanout = 0; PIN Node = 'sq[0]'
-    Info: Total cell delay = 3.454 ns ( 53.35 % )
-    Info: Total interconnect delay = 3.020 ns ( 46.65 % )
+Info: Longest tpd from source pin "b[2]" to destination pin "vl" is 9.835 ns
+    Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_15; Fanout = 3; PIN Node = 'b[2]'
+    Info: 2: + IC(2.518 ns) + CELL(0.740 ns) = 4.390 ns; Loc. = LC_X4_Y3_N5; Fanout = 3; COMB Node = 's27_4cmp:inst|inst14~52'
+    Info: 3: + IC(0.788 ns) + CELL(0.511 ns) = 5.689 ns; Loc. = LC_X4_Y3_N9; Fanout = 1; COMB Node = 'v27_4cmp:inst1|LessThan1~250'
+    Info: 4: + IC(1.824 ns) + CELL(2.322 ns) = 9.835 ns; Loc. = PIN_68; Fanout = 0; PIN Node = 'vl'
+    Info: Total cell delay = 4.705 ns ( 47.84 % )
+    Info: Total interconnect delay = 5.130 ns ( 52.16 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 179 megabytes
-    Info: Processing ended: Wed Sep 21 10:18:32 2022
+    Info: Processing ended: Wed Sep 21 18:22:10 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

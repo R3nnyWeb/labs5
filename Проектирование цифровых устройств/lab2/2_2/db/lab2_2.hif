@@ -253,9 +253,6 @@ s26_lsr.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-s26_lsr:inst
-}
 # macro_sequence
 
 # end
@@ -272,9 +269,6 @@ a9b6cb9cb3676241845f37794783ac4
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -309,8 +303,81 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# macro_sequence
+
+# end
+# entity
+v27_4cmp
+# storage
+db|lab2_2.(15).cnf
+db|lab2_2.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v27_4cmp.v
+5ffd453a65cc82e5e3f8a71b836915
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
 # hierarchies {
-v26_lsr:inst2
+v27_4cmp:inst1
+}
+# macro_sequence
+
+# end
+# entity
+s27_4cmp
+# storage
+db|lab2_2.(14).cnf
+db|lab2_2.(14).cnf
+# case_insensitive
+# source_file
+s27_4cmp.bdf
+fb7e893beb2348159869b62ccda20c1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s27_4cmp:inst
+}
+# macro_sequence
+
+# end
+# entity
+sv27_4cmp
+# storage
+db|lab2_2.(13).cnf
+db|lab2_2.(13).cnf
+# case_insensitive
+# source_file
+sv27_4cmp.bdf
+ccdf3967bcec9f7036be75d0a87a4a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
