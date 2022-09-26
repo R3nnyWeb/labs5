@@ -287,6 +287,42 @@ TRANSITION_LIST("a[3]")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("a[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("a[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("a[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("b[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
 		NODE
 		{
 			REPEAT = 6;
@@ -297,7 +333,7 @@ TRANSITION_LIST("a[3]")
 	}
 }
 
-TRANSITION_LIST("a[2]")
+TRANSITION_LIST("b[2]")
 {
 	NODE
 	{
@@ -312,7 +348,7 @@ TRANSITION_LIST("a[2]")
 	}
 }
 
-TRANSITION_LIST("a[1]")
+TRANSITION_LIST("b[1]")
 {
 	NODE
 	{
@@ -326,7 +362,7 @@ TRANSITION_LIST("a[1]")
 	}
 }
 
-TRANSITION_LIST("a[0]")
+TRANSITION_LIST("b[0]")
 {
 	NODE
 	{
@@ -337,42 +373,6 @@ TRANSITION_LIST("a[0]")
 			LEVEL 0 FOR 10.0;
 			LEVEL 1 FOR 10.0;
 		}
-	}
-}
-
-TRANSITION_LIST("b[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("b[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("b[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("b[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
 	}
 }
 

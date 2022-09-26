@@ -1,0 +1,26 @@
+|sv41_mux
+sq <= s41_mux:inst.q
+x => s41_mux:inst.x
+x => v41_mux:inst1.x
+a => s41_mux:inst.a
+a => v41_mux:inst1.a
+y => s41_mux:inst.y
+y => v41_mux:inst1.y
+vq <= v41_mux:inst1.q
+
+
+|sv41_mux|s41_mux:inst
+q <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+y => inst2.IN0
+a => inst.IN0
+a => inst3.IN1
+x => inst3.IN0
+
+
+|sv41_mux|v41_mux:inst1
+x => q~0.DATAA
+y => q~0.DATAB
+a => q~0.OUTPUTSELECT
+q <= q~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

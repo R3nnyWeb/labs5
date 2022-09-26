@@ -1,5 +1,5 @@
 Flow report for lab_4
-Sun Sep 18 21:35:20 2022
+Mon Sep 26 10:40:26 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Sun Sep 18 21:35:20 2022   ;
+; Flow Status             ; Successful - Mon Sep 26 10:40:26 2022   ;
 ; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name           ; lab_4                                   ;
 ; Top-level Entity Name   ; lab_4                                   ;
@@ -58,23 +58,23 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/18/2022 21:35:17 ;
+; Start date & time ; 09/26/2022 10:40:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab_4               ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                      ;
-+---------------------------------------+--------------------------------+---------------+-------------+----------------+
-; Assignment Name                       ; Value                          ; Default Value ; Entity Name ; Section Id     ;
-+---------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 39908803013047.166352611711336 ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP                ; 85                             ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP                ; 0                              ; --            ; --          ; --             ;
-; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                           ; --            ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS    ; Off                            ; --            ; --          ; eda_blast_fpga ;
-+---------------------------------------+--------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++---------------------------------------+-------------------------------+---------------+-------------+----------------+
+; Assignment Name                       ; Value                         ; Default Value ; Entity Name ; Section Id     ;
++---------------------------------------+-------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                 ; 9447194415088.166417802011748 ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                            ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                             ; --            ; --          ; --             ;
+; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                          ; --            ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS    ; Off                           ; --            ; --          ; eda_blast_fpga ;
++---------------------------------------+-------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -82,11 +82,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 217 MB              ; 00:00:00                           ;
-; Fitter                  ; 00:00:00     ; 1.0                     ; 215 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 192 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 164 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:00     ; --                      ; --                  ; 00:00:00                           ;
+; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 218 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:01     ; 1.0                     ; 216 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 194 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 165 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -95,10 +95,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

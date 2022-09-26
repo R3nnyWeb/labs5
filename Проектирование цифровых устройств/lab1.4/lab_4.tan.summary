@@ -6,7 +6,7 @@ Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
 Actual Time    : 8.511 ns
-From           : a[2]
+From           : b[2]
 To             : y[2]
 From Clock     : --
 To Clock       : --

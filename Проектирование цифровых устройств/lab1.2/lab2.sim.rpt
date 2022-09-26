@@ -1,5 +1,5 @@
 Simulator report for lab2
-Wed Sep 07 17:27:17 2022
+Mon Sep 26 09:39:01 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -151,17 +151,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Sep 07 17:27:17 2022
+    Info: Processing started: Mon Sep 26 09:39:01 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab2 -c lab2
-Info: Using vector source file "D:/USERS/045/lab2/lab2.vwf"
+Info: Using vector source file "C:/Users/Вчеслав/Desktop/labs5/Проектирование цифровых устройств/lab1.2/lab2.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
 Info: Number of transitions in simulation is 74
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 149 megabytes
-    Info: Processing ended: Wed Sep 07 17:27:17 2022
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Mon Sep 26 09:39:01 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

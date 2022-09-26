@@ -53,3 +53,4 @@ set_location_assignment PIN_56 -to cxor
 set_global_assignment -name MISC_FILE "D:/USERS/045/quartus/s11_sksl.dpf"
 set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

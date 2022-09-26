@@ -1,5 +1,5 @@
 Simulator report for lab_4
-Sun Sep 18 21:51:01 2022
+Mon Sep 26 10:42:34 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -110,22 +110,22 @@ The following table displays output ports that toggle between 1 and 0 during sim
 +---------------+--------------------+------------------+
 ; Node Name     ; Output Port Name   ; Output Port Type ;
 +---------------+--------------------+------------------+
-; |lab_4|inst9  ; |lab_4|inst9       ; combout          ;
+; |lab_4|inst1  ; |lab_4|inst1       ; combout          ;
+; |lab_4|inst   ; |lab_4|inst        ; combout          ;
+; |lab_4|inst10 ; |lab_4|inst10      ; combout          ;
 ; |lab_4|inst11 ; |lab_4|inst11      ; combout          ;
-; |lab_4|inst12 ; |lab_4|inst12      ; combout          ;
-; |lab_4|inst13 ; |lab_4|inst13      ; combout          ;
 ; |lab_4|inst16 ; |lab_4|inst16      ; combout          ;
 ; |lab_4|inst18 ; |lab_4|inst18      ; combout          ;
-; |lab_4|inst20 ; |lab_4|inst20      ; combout          ;
-; |lab_4|inst22 ; |lab_4|inst22      ; combout          ;
-; |lab_4|a[3]   ; |lab_4|a[3]~corein ; combout          ;
-; |lab_4|a[2]   ; |lab_4|a[2]~corein ; combout          ;
-; |lab_4|a[1]   ; |lab_4|a[1]~corein ; combout          ;
-; |lab_4|a[0]   ; |lab_4|a[0]~corein ; combout          ;
-; |lab_4|x[1]   ; |lab_4|x[1]        ; padio            ;
-; |lab_4|x[0]   ; |lab_4|x[0]        ; padio            ;
-; |lab_4|y[3]   ; |lab_4|y[3]        ; padio            ;
-; |lab_4|y[2]   ; |lab_4|y[2]        ; padio            ;
+; |lab_4|inst17 ; |lab_4|inst17      ; combout          ;
+; |lab_4|inst19 ; |lab_4|inst19      ; combout          ;
+; |lab_4|b[3]   ; |lab_4|b[3]~corein ; combout          ;
+; |lab_4|b[2]   ; |lab_4|b[2]~corein ; combout          ;
+; |lab_4|b[1]   ; |lab_4|b[1]~corein ; combout          ;
+; |lab_4|b[0]   ; |lab_4|b[0]~corein ; combout          ;
+; |lab_4|x[3]   ; |lab_4|x[3]        ; padio            ;
+; |lab_4|x[2]   ; |lab_4|x[2]        ; padio            ;
+; |lab_4|y[1]   ; |lab_4|y[1]        ; padio            ;
+; |lab_4|y[0]   ; |lab_4|y[0]        ; padio            ;
 ; |lab_4|z[3]   ; |lab_4|z[3]        ; padio            ;
 ; |lab_4|z[2]   ; |lab_4|z[2]        ; padio            ;
 ; |lab_4|z[1]   ; |lab_4|z[1]        ; padio            ;
@@ -134,45 +134,45 @@ The following table displays output ports that toggle between 1 and 0 during sim
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-------------------------------------------------------+
-; Missing 1-Value Coverage                              ;
-+---------------+--------------------+------------------+
-; Node Name     ; Output Port Name   ; Output Port Type ;
-+---------------+--------------------+------------------+
-; |lab_4|inst5  ; |lab_4|inst5       ; combout          ;
-; |lab_4|inst7  ; |lab_4|inst7       ; combout          ;
-; |lab_4|inst14 ; |lab_4|inst14      ; combout          ;
-; |lab_4|inst15 ; |lab_4|inst15      ; combout          ;
-; |lab_4|b[3]   ; |lab_4|b[3]~corein ; combout          ;
-; |lab_4|b[2]   ; |lab_4|b[2]~corein ; combout          ;
-; |lab_4|b[1]   ; |lab_4|b[1]~corein ; combout          ;
-; |lab_4|b[0]   ; |lab_4|b[0]~corein ; combout          ;
-; |lab_4|x[3]   ; |lab_4|x[3]        ; padio            ;
-; |lab_4|x[2]   ; |lab_4|x[2]        ; padio            ;
-; |lab_4|y[1]   ; |lab_4|y[1]        ; padio            ;
-; |lab_4|y[0]   ; |lab_4|y[0]        ; padio            ;
-+---------------+--------------------+------------------+
++------------------------------------------------------+
+; Missing 1-Value Coverage                             ;
++--------------+--------------------+------------------+
+; Node Name    ; Output Port Name   ; Output Port Type ;
++--------------+--------------------+------------------+
+; |lab_4|inst4 ; |lab_4|inst4       ; combout          ;
+; |lab_4|inst5 ; |lab_4|inst5       ; combout          ;
+; |lab_4|inst8 ; |lab_4|inst8       ; combout          ;
+; |lab_4|inst9 ; |lab_4|inst9       ; combout          ;
+; |lab_4|a[3]  ; |lab_4|a[3]~corein ; combout          ;
+; |lab_4|a[2]  ; |lab_4|a[2]~corein ; combout          ;
+; |lab_4|a[1]  ; |lab_4|a[1]~corein ; combout          ;
+; |lab_4|a[0]  ; |lab_4|a[0]~corein ; combout          ;
+; |lab_4|x[1]  ; |lab_4|x[1]        ; padio            ;
+; |lab_4|x[0]  ; |lab_4|x[0]        ; padio            ;
+; |lab_4|y[3]  ; |lab_4|y[3]        ; padio            ;
+; |lab_4|y[2]  ; |lab_4|y[2]        ; padio            ;
++--------------+--------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+-------------------------------------------------------+
-; Missing 0-Value Coverage                              ;
-+---------------+--------------------+------------------+
-; Node Name     ; Output Port Name   ; Output Port Type ;
-+---------------+--------------------+------------------+
-; |lab_4|inst5  ; |lab_4|inst5       ; combout          ;
-; |lab_4|inst7  ; |lab_4|inst7       ; combout          ;
-; |lab_4|inst14 ; |lab_4|inst14      ; combout          ;
-; |lab_4|inst15 ; |lab_4|inst15      ; combout          ;
-; |lab_4|b[3]   ; |lab_4|b[3]~corein ; combout          ;
-; |lab_4|b[2]   ; |lab_4|b[2]~corein ; combout          ;
-; |lab_4|b[1]   ; |lab_4|b[1]~corein ; combout          ;
-; |lab_4|b[0]   ; |lab_4|b[0]~corein ; combout          ;
-; |lab_4|x[3]   ; |lab_4|x[3]        ; padio            ;
-; |lab_4|x[2]   ; |lab_4|x[2]        ; padio            ;
-; |lab_4|y[1]   ; |lab_4|y[1]        ; padio            ;
-; |lab_4|y[0]   ; |lab_4|y[0]        ; padio            ;
-+---------------+--------------------+------------------+
++------------------------------------------------------+
+; Missing 0-Value Coverage                             ;
++--------------+--------------------+------------------+
+; Node Name    ; Output Port Name   ; Output Port Type ;
++--------------+--------------------+------------------+
+; |lab_4|inst4 ; |lab_4|inst4       ; combout          ;
+; |lab_4|inst5 ; |lab_4|inst5       ; combout          ;
+; |lab_4|inst8 ; |lab_4|inst8       ; combout          ;
+; |lab_4|inst9 ; |lab_4|inst9       ; combout          ;
+; |lab_4|a[3]  ; |lab_4|a[3]~corein ; combout          ;
+; |lab_4|a[2]  ; |lab_4|a[2]~corein ; combout          ;
+; |lab_4|a[1]  ; |lab_4|a[1]~corein ; combout          ;
+; |lab_4|a[0]  ; |lab_4|a[0]~corein ; combout          ;
+; |lab_4|x[1]  ; |lab_4|x[1]        ; padio            ;
+; |lab_4|x[0]  ; |lab_4|x[0]        ; padio            ;
+; |lab_4|y[3]  ; |lab_4|y[3]        ; padio            ;
+; |lab_4|y[2]  ; |lab_4|y[2]        ; padio            ;
++--------------+--------------------+------------------+
 
 
 +---------------------+
@@ -188,18 +188,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sun Sep 18 21:51:01 2022
+    Info: Processing started: Mon Sep 26 10:42:33 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab_4 -c lab_4
-Info: Using vector source file "D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab1.4/lab_4.vwf"
+Info: Using vector source file "C:/Users/Вчеслав/Desktop/labs5/Проектирование цифровых устройств/lab1.4/lab_4.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is      62.50 %
 Info: Number of transitions in simulation is 920
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 156 megabytes
-    Info: Processing ended: Sun Sep 18 21:51:01 2022
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Mon Sep 26 10:42:34 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
