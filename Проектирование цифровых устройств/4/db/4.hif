@@ -1,0 +1,101 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+7
+2996
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+s41_mux
+# storage
+db|4.(0).cnf
+db|4.(0).cnf
+# case_insensitive
+# source_file
+s41_mux.bdf
+ffac8760e52c6f59ec6db455af6ea14f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s41_mux:inst
+}
+# macro_sequence
+
+# end
+# entity
+v41_mux
+# storage
+db|4.(2).cnf
+db|4.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v41_mux.v
+bd2c9ad2872f7f462abf199a9887d6d
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v41_mux:inst1
+}
+# macro_sequence
+
+# end
+# entity
+sv41_mux
+# storage
+db|4.(1).cnf
+db|4.(1).cnf
+# case_insensitive
+# source_file
+sv41_mux.bdf
+9191802a4f5dca39eb2def61eb3c8c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
