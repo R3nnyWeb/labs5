@@ -92,7 +92,7 @@ INSERT INTO Услуги VALUES
 GO
 
 
-INsert into Стоимость values
+INSERT INTO Стоимость VALUES
 (1,1,400),
 (1,2,850),
 (1,3,700),
@@ -116,6 +116,7 @@ INsert into Стоимость values
 
 go
 
+--USE Ателье
 SELECT * 
 FROM dbo.Ателье
 GO
