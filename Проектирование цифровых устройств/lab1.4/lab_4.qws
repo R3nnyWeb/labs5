@@ -7,6 +7,7 @@ ptn_Child1=Document-0
 ptn_Child2=Document-1
 ptn_Child3=Document-2
 ptn_Child4=Document-3
+<<<<<<< HEAD
 [ProjectWorkspace.Frames.ChildFrames.Document-0]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0]
@@ -19,3 +20,15 @@ ptn_Child1=StateMap
 AFC_SIM_AP_NAME=lab_4
 AFC_PROJ_DB_PATH=C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab1.4/db/lab_4.quartus_db
 AFC_IN_REPORT=False
+=======
+ptn_Child5=Document-4
+ptn_Child6=Document-5
+[ProjectWorkspace.Frames.ChildFrames.Document-0]
+ptn_Child1=ViewFrame-0
+[ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0]
+DocPathName=lab_4.bdf
+DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
+IsChildFrameDetached=False
+IsActiveChildFrame=False
+ptn_Child1=StateMap
+>>>>>>> 7156440a5f7f2a7f1698a13260b87216b61f0bd5
