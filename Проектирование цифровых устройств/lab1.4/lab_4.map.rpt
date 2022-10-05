@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab_4
-Mon Sep 26 10:40:20 2022
+Wed Oct 05 10:06:44 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Sep 26 10:40:20 2022   ;
+; Analysis & Synthesis Status ; Successful - Wed Oct 05 10:06:44 2022   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; lab_4                                   ;
 ; Top-level Entity Name       ; lab_4                                   ;
@@ -117,13 +117,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                       ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+
-; lab_4.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab1.4/lab_4.bdf ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                               ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+
+; lab_4.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab1.4/lab_4.bdf ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -153,7 +153,7 @@ applicable agreement for further details.
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ; I/O pins                                    ; 20    ;
-; Maximum fan-out node                        ; b[3]  ;
+; Maximum fan-out node                        ; a[3]  ;
 ; Maximum fan-out                             ; 3     ;
 ; Total fan-out                               ; 36    ;
 ; Average fan-out                             ; 1.13  ;
@@ -191,7 +191,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Mon Sep 26 10:40:20 2022
+    Info: Processing started: Wed Oct 05 10:06:44 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab_4 -c lab_4
 Info: Found 1 design units, including 1 entities, in source file lab_4.bdf
     Info: Found entity 1: lab_4
@@ -201,8 +201,8 @@ Info: Implemented 32 device resources after synthesis - the final resource count
     Info: Implemented 12 output pins
     Info: Implemented 12 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 218 megabytes
-    Info: Processing ended: Mon Sep 26 10:40:20 2022
+    Info: Peak virtual memory: 217 megabytes
+    Info: Processing ended: Wed Oct 05 10:06:44 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
