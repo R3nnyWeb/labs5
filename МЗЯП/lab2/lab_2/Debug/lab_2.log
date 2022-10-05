@@ -1,3 +1,4 @@
 ﻿  Assembling prog1.asm...
-prog1.asm(22): error A2022: instruction operands must be the same size
+prog1.asm(23): error A2022: instruction operands must be the same size
+prog1.asm(24): error A2022: instruction operands must be the same size
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: выход из команды "ml.exe /c /nologo /Zi /Fo"Debug\prog1.obj" /W3 /errorReport:prompt  /Taprog1.asm" с кодом "1".

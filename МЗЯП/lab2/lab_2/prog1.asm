@@ -8,7 +8,8 @@ myWord   Word  25
 myWord2  Word  ?
 myDWord  dword 123
 myDWord2 dword ?
-myString byte  "01", 0
+myString DB "abc", 0
+myString2 DB ?
 myFloat  real4 3.14
 myFloat2 real4 ?
 .CODE
@@ -20,5 +21,6 @@ mov myWord2, ax
 mov eax, myDWord
 mov myDWord2, eax
 mov ebx, myString
+mov myString2, ebx
 RET
 END START

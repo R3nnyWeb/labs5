@@ -17,13 +17,17 @@ ON
 USE Ателье
 CREATE TABLE Ателье
 (Номер int IDENTITY(1,1) not null,
+CONSTRAINT PK_Ателье primary key (Номер),
 Название varchar(30) not null,
 Адрес varchar(30) not null,
 Телефон int null check( Телефон like '[1-9][0-9][0-9][0-9][0-9][0-9]') 
 )
 GO 
+--ALTER TABLE Ателье
+--ADD CONSTRAINT PK_Ателье primary key (Номер)
+--GO
 ALTER TABLE Ателье
-ADD CONSTRAINT PK_Ателье primary key (Номер)
+ADD CONSTRAINT UK_Ателье unique(Название)
 GO
 
 USE Ателье
