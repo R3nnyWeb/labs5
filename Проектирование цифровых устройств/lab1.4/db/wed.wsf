@@ -461,10 +461,10 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab1.4/lab_4.v
 VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab1.4/lab_4.vwf")
 {
 	ZOOM{
-		ZBEGIN = 83109;
-		ZEND = 182304;
-		NUMERATOR = 1119;
-		DENOMINATOR = 250000;
+		ZBEGIN = 0;
+		ZEND = 204240;
+		NUMERATOR = 1152;
+		DENOMINATOR = 204240;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -681,9 +681,9 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab1.4
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 131080;
-		NUMERATOR = 437;
-		DENOMINATOR = 131080;
+		ZEND = 238726;
+		NUMERATOR = 1131;
+		DENOMINATOR = 250000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
