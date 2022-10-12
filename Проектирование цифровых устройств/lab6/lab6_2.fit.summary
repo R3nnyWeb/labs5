@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed Oct 05 16:36:10 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : lab6_2
+Top-level Entity Name : s62_shift_reg
+Family : MAX II
+Device : EPM570ZM256C7
+Timing Models : Preliminary
+Total logic elements : 5 / 570 ( < 1 % )
+Total pins : 7 / 160 ( 4 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

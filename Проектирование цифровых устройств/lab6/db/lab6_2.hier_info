@@ -1,0 +1,14 @@
+|s62_shift_reg
+so <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+c => inst7.CLK
+c => inst6.CLK
+c => inst5.CLK
+c => inst4.CLK
+c => inst.CLK
+si => inst.DATAIN
+q[0] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

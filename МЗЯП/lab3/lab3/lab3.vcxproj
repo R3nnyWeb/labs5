@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <MASM Include="prog.asm">
-      <FileType>Document</FileType>
+      <FileType>MASM</FileType>
     </MASM>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
