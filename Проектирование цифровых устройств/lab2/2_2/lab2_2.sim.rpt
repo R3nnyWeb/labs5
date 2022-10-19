@@ -1,5 +1,5 @@
 Simulator report for lab2_2
-Wed Oct 19 03:08:11 2022
+Wed Oct 19 11:26:35 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -45,42 +45,42 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 24 nodes     ;
-; Simulation Coverage         ;      83.33 % ;
-; Total Number of Transitions ; 103          ;
+; Simulation Netlist Size     ; 49 nodes     ;
+; Simulation Coverage         ;      76.62 % ;
+; Total Number of Transitions ; 1177         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; MAX II       ;
 ; Device                      ; EPM240T100C5 ;
 +-----------------------------+--------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                        ;
-+--------------------------------------------------------------------------------------------+--------------+---------------+
-; Option                                                                                     ; Setting      ; Default Value ;
-+--------------------------------------------------------------------------------------------+--------------+---------------+
-; Simulation mode                                                                            ; Timing       ; Timing        ;
-; Start time                                                                                 ; 0 ns         ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF         ;               ;
-; Vector input source                                                                        ; w27_4cmp.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
-; Check outputs                                                                              ; Off          ; Off           ;
-; Report simulation coverage                                                                 ; On           ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
-; Display missing 1-value coverage report                                                    ; On           ; On            ;
-; Display missing 0-value coverage report                                                    ; On           ; On            ;
-; Detect setup and hold time violations                                                      ; Off          ; Off           ;
-; Detect glitches                                                                            ; Off          ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
-; Generate Signal Activity File                                                              ; Off          ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
-; Group bus channels in simulation results                                                   ; Off          ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
-+--------------------------------------------------------------------------------------------+--------------+---------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Option                                                                                     ; Setting     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Simulation mode                                                                            ; Timing      ; Timing        ;
+; Start time                                                                                 ; 0 ns        ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF        ;               ;
+; Vector input source                                                                        ; w29_mul.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
+; Check outputs                                                                              ; Off         ; Off           ;
+; Report simulation coverage                                                                 ; On          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
+; Display missing 1-value coverage report                                                    ; On          ; On            ;
+; Display missing 0-value coverage report                                                    ; On          ; On            ;
+; Detect setup and hold time violations                                                      ; Off         ; Off           ;
+; Detect glitches                                                                            ; Off         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
+; Generate Signal Activity File                                                              ; Off         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
 
 
 +----------------------+
@@ -95,69 +95,134 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      83.33 % ;
-; Total nodes checked                                 ; 24           ;
-; Total output ports checked                          ; 24           ;
-; Total output ports with complete 1/0-value coverage ; 20           ;
-; Total output ports with no 1/0-value coverage       ; 4            ;
-; Total output ports with no 1-value coverage         ; 4            ;
-; Total output ports with no 0-value coverage         ; 4            ;
+; Total coverage as a percentage                      ;      76.62 % ;
+; Total nodes checked                                 ; 49           ;
+; Total output ports checked                          ; 77           ;
+; Total output ports with complete 1/0-value coverage ; 59           ;
+; Total output ports with no 1/0-value coverage       ; 16           ;
+; Total output ports with no 1-value coverage         ; 16           ;
+; Total output ports with no 0-value coverage         ; 18           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                          ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; Node Name                               ; Output Port Name                        ; Output Port Type ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; |sv27_4cmp|s27_4cmp:inst|inst14~52      ; |sv27_4cmp|s27_4cmp:inst|inst14~52      ; combout          ;
-; |sv27_4cmp|s27_4cmp:inst|inst10         ; |sv27_4cmp|s27_4cmp:inst|inst10         ; combout          ;
-; |sv27_4cmp|s27_4cmp:inst|inst14         ; |sv27_4cmp|s27_4cmp:inst|inst14         ; combout          ;
-; |sv27_4cmp|s27_4cmp:inst|inst16~197     ; |sv27_4cmp|s27_4cmp:inst|inst16~197     ; combout          ;
-; |sv27_4cmp|v27_4cmp:inst1|LessThan0~222 ; |sv27_4cmp|v27_4cmp:inst1|LessThan0~222 ; combout          ;
-; |sv27_4cmp|s27_4cmp:inst|inst16~198     ; |sv27_4cmp|s27_4cmp:inst|inst16~198     ; combout          ;
-; |sv27_4cmp|s27_4cmp:inst|inst17         ; |sv27_4cmp|s27_4cmp:inst|inst17         ; combout          ;
-; |sv27_4cmp|v27_4cmp:inst1|LessThan1~248 ; |sv27_4cmp|v27_4cmp:inst1|LessThan1~248 ; combout          ;
-; |sv27_4cmp|v27_4cmp:inst1|LessThan1~249 ; |sv27_4cmp|v27_4cmp:inst1|LessThan1~249 ; combout          ;
-; |sv27_4cmp|v27_4cmp:inst1|LessThan1~250 ; |sv27_4cmp|v27_4cmp:inst1|LessThan1~250 ; combout          ;
-; |sv27_4cmp|a[3]                         ; |sv27_4cmp|a[3]~corein                  ; combout          ;
-; |sv27_4cmp|a[2]                         ; |sv27_4cmp|a[2]~corein                  ; combout          ;
-; |sv27_4cmp|a[1]                         ; |sv27_4cmp|a[1]~corein                  ; combout          ;
-; |sv27_4cmp|a[0]                         ; |sv27_4cmp|a[0]~corein                  ; combout          ;
-; |sv27_4cmp|se                           ; |sv27_4cmp|se                           ; padio            ;
-; |sv27_4cmp|sg                           ; |sv27_4cmp|sg                           ; padio            ;
-; |sv27_4cmp|sl                           ; |sv27_4cmp|sl                           ; padio            ;
-; |sv27_4cmp|ve                           ; |sv27_4cmp|ve                           ; padio            ;
-; |sv27_4cmp|vg                           ; |sv27_4cmp|vg                           ; padio            ;
-; |sv27_4cmp|vl                           ; |sv27_4cmp|vl                           ; padio            ;
-+-----------------------------------------+-----------------------------------------+------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                ;
++------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+; Node Name                                                              ; Output Port Name                                                               ; Output Port Type ;
++------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~45 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~45         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~47 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~47         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~47 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~48         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~49 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~49         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~49 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~50         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~51 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~51         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~51 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~52         ; cout             ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~53 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~53         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~53 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~54         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~53 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~54COUT1_75 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~55 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~55         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~55 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~56         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~55 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~56COUT1_73 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~57 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~57         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~57 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~58         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~57 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~58COUT1_71 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~59 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~59         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~59 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~60         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~59 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~60COUT1_69 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~33 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~33         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~35 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~35         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~35 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~36         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~35 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~36COUT1_57 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~37 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~37         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~37 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~38         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~37 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~38COUT1_55 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~39 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~39         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~39 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~40         ; cout             ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~41 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~41         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~41 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~42         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~41 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~42COUT1_53 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~43 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~43         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~43 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~44         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~43 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_1~44COUT1_51 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le5a[0] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le5a[0]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[1] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[1]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[0] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[0]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[1] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[1]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[0] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[0]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le5a[3] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le5a[3]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le5a[2] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le5a[2]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[3] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[3]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le5a[1] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le5a[1]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[4] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[4]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[2] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[2]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[3] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[3]         ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[2] ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le3a[2]         ; combout          ;
+; |vs29_mul|a[0]                                                         ; |vs29_mul|a[0]~corein                                                          ; combout          ;
+; |vs29_mul|a[1]                                                         ; |vs29_mul|a[1]~corein                                                          ; combout          ;
+; |vs29_mul|a[3]                                                         ; |vs29_mul|a[3]~corein                                                          ; combout          ;
+; |vs29_mul|a[2]                                                         ; |vs29_mul|a[2]~corein                                                          ; combout          ;
+; |vs29_mul|p[7]                                                         ; |vs29_mul|p[7]                                                                 ; padio            ;
+; |vs29_mul|p[6]                                                         ; |vs29_mul|p[6]                                                                 ; padio            ;
+; |vs29_mul|p[5]                                                         ; |vs29_mul|p[5]                                                                 ; padio            ;
+; |vs29_mul|p[4]                                                         ; |vs29_mul|p[4]                                                                 ; padio            ;
+; |vs29_mul|p[3]                                                         ; |vs29_mul|p[3]                                                                 ; padio            ;
+; |vs29_mul|p[2]                                                         ; |vs29_mul|p[2]                                                                 ; padio            ;
+; |vs29_mul|p[1]                                                         ; |vs29_mul|p[1]                                                                 ; padio            ;
+; |vs29_mul|p[0]                                                         ; |vs29_mul|p[0]                                                                 ; padio            ;
++------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-------------------------------------------------------------+
-; Missing 1-Value Coverage                                    ;
-+-----------------+------------------------+------------------+
-; Node Name       ; Output Port Name       ; Output Port Type ;
-+-----------------+------------------------+------------------+
-; |sv27_4cmp|b[2] ; |sv27_4cmp|b[2]~corein ; combout          ;
-; |sv27_4cmp|b[3] ; |sv27_4cmp|b[3]~corein ; combout          ;
-; |sv27_4cmp|b[1] ; |sv27_4cmp|b[1]~corein ; combout          ;
-; |sv27_4cmp|b[0] ; |sv27_4cmp|b[0]~corein ; combout          ;
-+-----------------+------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                           ;
++---------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                 ; Output Port Name                                                                    ; Output Port Type ;
++---------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~47    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~48COUT1_79      ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~49    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~50COUT1_77      ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]              ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]~COUT         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]~COUTCOUT1_34 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]              ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]~COUT         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]~COUTCOUT1_41 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[1]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[1]              ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]~COUT         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]~COUTCOUT1_39 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[4]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[4]              ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]~29 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]~30           ; combout          ;
+; |vs29_mul|b[1]                                                            ; |vs29_mul|b[1]~corein                                                               ; combout          ;
+; |vs29_mul|b[2]                                                            ; |vs29_mul|b[2]~corein                                                               ; combout          ;
+; |vs29_mul|b[3]                                                            ; |vs29_mul|b[3]~corein                                                               ; combout          ;
++---------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+-------------------------------------------------------------+
-; Missing 0-Value Coverage                                    ;
-+-----------------+------------------------+------------------+
-; Node Name       ; Output Port Name       ; Output Port Type ;
-+-----------------+------------------------+------------------+
-; |sv27_4cmp|b[2] ; |sv27_4cmp|b[2]~corein ; combout          ;
-; |sv27_4cmp|b[3] ; |sv27_4cmp|b[3]~corein ; combout          ;
-; |sv27_4cmp|b[1] ; |sv27_4cmp|b[1]~corein ; combout          ;
-; |sv27_4cmp|b[0] ; |sv27_4cmp|b[0]~corein ; combout          ;
-+-----------------+------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                           ;
++---------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                 ; Output Port Name                                                                    ; Output Port Type ;
++---------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~47    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~48COUT1_79      ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~49    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|op_3~50COUT1_77      ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]              ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]~COUT         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0]~COUTCOUT1_34 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]              ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]~COUT         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]~COUTCOUT1_41 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[1]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[1]              ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]              ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]~COUT         ; cout0            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[0]~COUTCOUT1_39 ; cout1            ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[4]    ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le4a[4]              ; combout          ;
+; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]~29 ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs2a[1]~30           ; combout          ;
+; |vs29_mul|b[1]                                                            ; |vs29_mul|b[1]~corein                                                               ; combout          ;
+; |vs29_mul|b[2]                                                            ; |vs29_mul|b[2]~corein                                                               ; combout          ;
+; |vs29_mul|b[3]                                                            ; |vs29_mul|b[3]~corein                                                               ; combout          ;
+; |vs29_mul|b[0]                                                            ; |vs29_mul|b[0]~corein                                                               ; combout          ;
++---------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -173,17 +238,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Oct 19 03:08:11 2022
+    Info: Processing started: Wed Oct 19 11:26:35 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab2_2 -c lab2_2
-Info: Using vector source file "C:/Users/Вчеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/w27_4cmp.vwf"
+Info: Using vector source file "C:/Users/Вчеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/w29_mul.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      83.33 %
-Info: Number of transitions in simulation is 103
+Info: Simulation coverage is      76.62 %
+Info: Number of transitions in simulation is 1177
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 157 megabytes
-    Info: Processing ended: Wed Oct 19 03:08:11 2022
+    Info: Processing ended: Wed Oct 19 11:26:35 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

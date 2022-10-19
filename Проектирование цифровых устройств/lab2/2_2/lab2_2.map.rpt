@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab2_2
-Wed Oct 19 03:05:41 2022
+Wed Oct 19 11:23:39 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -13,7 +13,9 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Analysis & Synthesis Messages
+  8. Parameter Settings for Inferred Entity Instance: v29_mul:inst|lpm_mult:Mult0
+  9. lpm_mult Parameter Settings by Entity Instance
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -39,13 +41,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Oct 19 03:05:41 2022   ;
+; Analysis & Synthesis Status ; Successful - Wed Oct 19 11:23:39 2022   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; lab2_2                                  ;
-; Top-level Entity Name       ; sv27_4cmp                               ;
+; Top-level Entity Name       ; vs29_mul                                ;
 ; Family                      ; MAX II                                  ;
-; Total logic elements        ; 10                                      ;
-; Total pins                  ; 14                                      ;
+; Total logic elements        ; 33                                      ;
+; Total pins                  ; 16                                      ;
 ; Total virtual pins          ; 0                                       ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                           ;
 +-----------------------------+-----------------------------------------+
@@ -57,7 +59,7 @@ applicable agreement for further details.
 ; Option                                                         ; Setting            ; Default Value      ;
 +----------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                         ; EPM240T100C5       ;                    ;
-; Top-level entity name                                          ; sv27_4cmp          ; lab2_2             ;
+; Top-level entity name                                          ; vs29_mul           ; lab2_2             ;
 ; Family name                                                    ; MAX II             ; Stratix II         ;
 ; Use Generated Physical Constraints File                        ; Off                ;                    ;
 ; Use smart compilation                                          ; Off                ; Off                ;
@@ -117,60 +119,68 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                             ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+
-; s27_4cmp.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/s27_4cmp.bdf  ;
-; v27_4cmp.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/v27_4cmp.v    ;
-; sv27_4cmp.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/sv27_4cmp.bdf ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+
+; v29_mul.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/v29_mul.v        ;
+; vs29_mul.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/vs29_mul.bdf     ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/megafunctions/lpm_mult.tdf                                   ;
+; aglobal81.inc                    ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/megafunctions/aglobal81.inc                                  ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/megafunctions/lpm_add_sub.inc                                ;
+; multcore.inc                     ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/megafunctions/multcore.inc                                   ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/megafunctions/bypassff.inc                                   ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/megafunctions/altshift.inc                                   ;
+; db/mult_ed01.tdf                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab2/2_2/db/mult_ed01.tdf ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Total logic elements                        ; 10                      ;
-;     -- Combinational with no register       ; 10                      ;
-;     -- Register only                        ; 0                       ;
-;     -- Combinational with a register        ; 0                       ;
-;                                             ;                         ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 7                       ;
-;     -- 3 input functions                    ; 2                       ;
-;     -- 2 input functions                    ; 1                       ;
-;     -- 1 input functions                    ; 0                       ;
-;     -- 0 input functions                    ; 0                       ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 10                      ;
-;     -- arithmetic mode                      ; 0                       ;
-;     -- qfbk mode                            ; 0                       ;
-;     -- register cascade mode                ; 0                       ;
-;     -- synchronous clear/load mode          ; 0                       ;
-;     -- asynchronous clear/load mode         ; 0                       ;
-;                                             ;                         ;
-; Total registers                             ; 0                       ;
-; I/O pins                                    ; 14                      ;
-; Maximum fan-out node                        ; s27_4cmp:inst|inst14~52 ;
-; Maximum fan-out                             ; 4                       ;
-; Total fan-out                               ; 42                      ;
-; Average fan-out                             ; 1.75                    ;
-+---------------------------------------------+-------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                ;
++---------------------------------------------+--------------------------------------------------------------+
+; Resource                                    ; Usage                                                        ;
++---------------------------------------------+--------------------------------------------------------------+
+; Total logic elements                        ; 33                                                           ;
+;     -- Combinational with no register       ; 33                                                           ;
+;     -- Register only                        ; 0                                                            ;
+;     -- Combinational with a register        ; 0                                                            ;
+;                                             ;                                                              ;
+; Logic element usage by number of LUT inputs ;                                                              ;
+;     -- 4 input functions                    ; 6                                                            ;
+;     -- 3 input functions                    ; 16                                                           ;
+;     -- 2 input functions                    ; 9                                                            ;
+;     -- 1 input functions                    ; 2                                                            ;
+;     -- 0 input functions                    ; 0                                                            ;
+;                                             ;                                                              ;
+; Logic elements by mode                      ;                                                              ;
+;     -- normal mode                          ; 18                                                           ;
+;     -- arithmetic mode                      ; 15                                                           ;
+;     -- qfbk mode                            ; 0                                                            ;
+;     -- register cascade mode                ; 0                                                            ;
+;     -- synchronous clear/load mode          ; 0                                                            ;
+;     -- asynchronous clear/load mode         ; 0                                                            ;
+;                                             ;                                                              ;
+; Total registers                             ; 0                                                            ;
+; Total logic cells in carry chains           ; 19                                                           ;
+; I/O pins                                    ; 16                                                           ;
+; Maximum fan-out node                        ; v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|cs1a[0] ;
+; Maximum fan-out                             ; 10                                                           ;
+; Total fan-out                               ; 100                                                          ;
+; Average fan-out                             ; 2.04                                                         ;
++---------------------------------------------+--------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name       ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------+--------------+
-; |sv27_4cmp                 ; 10 (0)      ; 0            ; 0          ; 14   ; 0            ; 10 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sv27_4cmp                ; work         ;
-;    |s27_4cmp:inst|         ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sv27_4cmp|s27_4cmp:inst  ; work         ;
-;    |v27_4cmp:inst1|        ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sv27_4cmp|v27_4cmp:inst1 ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                      ;
++-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node          ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                            ; Library Name ;
++-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------+--------------+
+; |vs29_mul                           ; 33 (0)      ; 0            ; 0          ; 16   ; 0            ; 33 (0)       ; 0 (0)             ; 0 (0)            ; 19 (0)          ; 0 (0)      ; |vs29_mul                                                      ; work         ;
+;    |v29_mul:inst|                   ; 33 (0)      ; 0            ; 0          ; 0    ; 0            ; 33 (0)       ; 0 (0)             ; 0 (0)            ; 19 (0)          ; 0 (0)      ; |vs29_mul|v29_mul:inst                                         ; work         ;
+;       |lpm_mult:Mult0|              ; 33 (0)      ; 0            ; 0          ; 0    ; 0            ; 33 (0)       ; 0 (0)             ; 0 (0)            ; 19 (0)          ; 0 (0)      ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0                          ; work         ;
+;          |mult_ed01:auto_generated| ; 33 (33)     ; 0            ; 0          ; 0    ; 0            ; 33 (33)      ; 0 (0)             ; 0 (0)            ; 19 (19)         ; 0 (0)      ; |vs29_mul|v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated ; work         ;
++-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -189,13 +199,68 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: v29_mul:inst|lpm_mult:Mult0     ;
++------------------------------------------------+-----------+---------------------+
+; Parameter Name                                 ; Value     ; Type                ;
++------------------------------------------------+-----------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 4         ; Untyped             ;
+; LPM_WIDTHB                                     ; 4         ; Untyped             ;
+; LPM_WIDTHP                                     ; 8         ; Untyped             ;
+; LPM_WIDTHR                                     ; 8         ; Untyped             ;
+; LPM_WIDTHS                                     ; 1         ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED  ; Untyped             ;
+; LPM_PIPELINE                                   ; 0         ; Untyped             ;
+; LATENCY                                        ; 0         ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped             ;
+; USE_EAB                                        ; OFF       ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped             ;
+; DEVICE_FAMILY                                  ; MAX II    ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_ed01 ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped             ;
++------------------------------------------------+-----------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                      ;
++---------------------------------------+-----------------------------+
+; Name                                  ; Value                       ;
++---------------------------------------+-----------------------------+
+; Number of entity instances            ; 1                           ;
+; Entity Instance                       ; v29_mul:inst|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 4                           ;
+;     -- LPM_WIDTHB                     ; 4                           ;
+;     -- LPM_WIDTHP                     ; 8                           ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                    ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                          ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                          ;
+;     -- USE_EAB                        ; OFF                         ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                        ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                          ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                          ;
++---------------------------------------+-----------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Oct 19 03:05:39 2022
+    Info: Processing started: Wed Oct 19 11:23:37 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2_2 -c lab2_2
 Info: Found 1 design units, including 1 entities, in source file s22_sum.bdf
     Info: Found entity 1: s22_sum
@@ -240,16 +305,38 @@ Info: Found 1 design units, including 1 entities, in source file s29_mul.bdf
     Info: Found entity 1: s29_mul
 Info: Found 1 design units, including 1 entities, in source file v210_mul.v
     Info: Found entity 1: v210_mul
-Info: Elaborating entity "sv27_4cmp" for the top level hierarchy
-Info: Elaborating entity "s27_4cmp" for hierarchy "s27_4cmp:inst"
-Info: Elaborating entity "v27_4cmp" for hierarchy "v27_4cmp:inst1"
-Info: Implemented 24 device resources after synthesis - the final resource count might be different
+Info: Found 1 design units, including 1 entities, in source file vs29_mul.bdf
+    Info: Found entity 1: vs29_mul
+Info: Elaborating entity "vs29_mul" for the top level hierarchy
+Info: Elaborating entity "v29_mul" for hierarchy "v29_mul:inst"
+Info: Inferred 1 megafunctions from design logic
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "v29_mul:inst|Mult0"
+Info: Elaborated megafunction instantiation "v29_mul:inst|lpm_mult:Mult0"
+Info: Instantiated megafunction "v29_mul:inst|lpm_mult:Mult0" with the following parameter:
+    Info: Parameter "LPM_WIDTHA" = "4"
+    Info: Parameter "LPM_WIDTHB" = "4"
+    Info: Parameter "LPM_WIDTHP" = "8"
+    Info: Parameter "LPM_WIDTHR" = "8"
+    Info: Parameter "LPM_WIDTHS" = "1"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info: Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info: Parameter "MAXIMIZE_SPEED" = "5"
+    Info: Parameter "DEDICATED_MULTIPLIER_CIRCUITRY" = "AUTO"
+Info: Found 1 design units, including 1 entities, in source file db/mult_ed01.tdf
+    Info: Found entity 1: mult_ed01
+Warning: Synthesized away the following node(s):
+    Warning: Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "v29_mul:inst|lpm_mult:Mult0|mult_ed01:auto_generated|le5a[4]"
+Info: Ignored 44 buffer(s)
+    Info: Ignored 44 SOFT buffer(s)
+Info: Implemented 49 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
-    Info: Implemented 6 output pins
-    Info: Implemented 10 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 218 megabytes
-    Info: Processing ended: Wed Oct 19 03:05:41 2022
+    Info: Implemented 8 output pins
+    Info: Implemented 33 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 221 megabytes
+    Info: Processing ended: Wed Oct 19 11:23:39 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
