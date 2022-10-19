@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Wed Oct 19 11:23:39 2022
+Analysis & Synthesis Status : Successful - Wed Oct 19 11:40:06 2022
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : lab2_2
-Top-level Entity Name : vs29_mul
+Top-level Entity Name : vs210_mul
 Family : MAX II
-Total logic elements : 33
-Total pins : 16
+Total logic elements : 101
+Total pins : 32
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

@@ -1,31 +1,55 @@
-|vs29_mul
-p[0] <= v29_mul:inst.p[0]
-p[1] <= v29_mul:inst.p[1]
-p[2] <= v29_mul:inst.p[2]
-p[3] <= v29_mul:inst.p[3]
-p[4] <= v29_mul:inst.p[4]
-p[5] <= v29_mul:inst.p[5]
-p[6] <= v29_mul:inst.p[6]
-p[7] <= v29_mul:inst.p[7]
-a[0] => v29_mul:inst.a[0]
-a[1] => v29_mul:inst.a[1]
-a[2] => v29_mul:inst.a[2]
-a[3] => v29_mul:inst.a[3]
-b[0] => v29_mul:inst.b[0]
-b[1] => v29_mul:inst.b[1]
-b[2] => v29_mul:inst.b[2]
-b[3] => v29_mul:inst.b[3]
+|vs210_mul
+p[0] <= v210_mul:inst.p[0]
+p[1] <= v210_mul:inst.p[1]
+p[2] <= v210_mul:inst.p[2]
+p[3] <= v210_mul:inst.p[3]
+p[4] <= v210_mul:inst.p[4]
+p[5] <= v210_mul:inst.p[5]
+p[6] <= v210_mul:inst.p[6]
+p[7] <= v210_mul:inst.p[7]
+p[8] <= v210_mul:inst.p[8]
+p[9] <= v210_mul:inst.p[9]
+p[10] <= v210_mul:inst.p[10]
+p[11] <= v210_mul:inst.p[11]
+p[12] <= v210_mul:inst.p[12]
+p[13] <= v210_mul:inst.p[13]
+p[14] <= v210_mul:inst.p[14]
+p[15] <= v210_mul:inst.p[15]
+a[0] => v210_mul:inst.a[0]
+a[1] => v210_mul:inst.a[1]
+a[2] => v210_mul:inst.a[2]
+a[3] => v210_mul:inst.a[3]
+a[4] => v210_mul:inst.a[4]
+a[5] => v210_mul:inst.a[5]
+a[6] => v210_mul:inst.a[6]
+a[7] => v210_mul:inst.a[7]
+b[0] => v210_mul:inst.b[0]
+b[1] => v210_mul:inst.b[1]
+b[2] => v210_mul:inst.b[2]
+b[3] => v210_mul:inst.b[3]
+b[4] => v210_mul:inst.b[4]
+b[5] => v210_mul:inst.b[5]
+b[6] => v210_mul:inst.b[6]
+b[7] => v210_mul:inst.b[7]
 
 
-|vs29_mul|v29_mul:inst
-a[0] => Mult0.IN3
-a[1] => Mult0.IN2
-a[2] => Mult0.IN1
-a[3] => Mult0.IN0
-b[0] => Mult0.IN7
-b[1] => Mult0.IN6
-b[2] => Mult0.IN5
-b[3] => Mult0.IN4
+|vs210_mul|v210_mul:inst
+a[0] => Mult0.IN7
+a[1] => Mult0.IN6
+a[2] => Mult0.IN5
+a[3] => Mult0.IN4
+a[4] => Mult0.IN3
+a[5] => Mult0.IN2
+a[6] => Mult0.IN1
+a[7] => Mult0.IN0
+b[0] => Mult0.IN15
+b[1] => Mult0.IN14
+b[2] => Mult0.IN13
+b[3] => Mult0.IN12
+b[4] => Mult0.IN11
+b[5] => Mult0.IN10
+b[6] => Mult0.IN9
+b[7] => Mult0.IN8
 p[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
 p[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
 p[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
@@ -34,5 +58,13 @@ p[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
 p[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
 p[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
 p[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[8] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[9] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[10] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[11] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[12] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[13] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[14] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[15] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
 
 

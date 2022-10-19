@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="lab2_2">
-		<CBX_INST_ENTRY INSTANCE_NAME="|vs29_mul|v29_mul:inst|lpm_mult:Mult0" CBX_FILE_NAME="mult_ed01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vs210_mul|v210_mul:inst|lpm_mult:Mult0" CBX_FILE_NAME="mult_5f01.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
