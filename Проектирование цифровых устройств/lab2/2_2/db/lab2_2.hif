@@ -343,26 +343,6 @@ v27_4cmp:inst1
 
 # end
 # entity
-s27_4cmp
-# storage
-db|lab2_2.(14).cnf
-db|lab2_2.(14).cnf
-# case_insensitive
-# source_file
-s27_4cmp.bdf
-fb7e893beb2348159869b62ccda20c1
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-s27_4cmp:inst
-}
-# macro_sequence
-
-# end
-# entity
 sv27_4cmp
 # storage
 db|lab2_2.(13).cnf
@@ -378,6 +358,26 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+s27_4cmp
+# storage
+db|lab2_2.(14).cnf
+db|lab2_2.(14).cnf
+# case_insensitive
+# source_file
+s27_4cmp.bdf
+38235ceb464fa89161043bacc66d8f3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s27_4cmp:inst
 }
 # macro_sequence
 

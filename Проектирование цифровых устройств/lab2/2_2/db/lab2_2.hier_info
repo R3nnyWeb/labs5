@@ -26,14 +26,22 @@ vl <= v27_4cmp:inst1.l
 |sv27_4cmp|s27_4cmp:inst
 e <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 a[0] => inst10.IN0
+a[0] => inst15.IN3
 a[1] => inst9.IN0
+a[1] => inst13.IN2
 a[2] => inst8.IN0
+a[2] => inst12.IN1
 a[3] => inst7.IN0
+a[3] => inst11.IN0
 b[0] => inst10.IN1
+b[0] => inst6.IN0
 b[1] => inst9.IN1
+b[1] => inst5.IN0
 b[2] => inst8.IN1
+b[2] => inst4.IN0
 b[3] => inst7.IN1
-g <= <GND>
+b[3] => inst.IN0
+g <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 l <= inst17.DB_MAX_OUTPUT_PORT_TYPE
 
 

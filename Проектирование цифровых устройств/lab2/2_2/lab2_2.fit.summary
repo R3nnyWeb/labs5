@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Sep 21 18:22:08 2022
+Fitter Status : Successful - Wed Oct 19 03:05:42 2022
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : lab2_2
 Top-level Entity Name : sv27_4cmp
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 9 / 240 ( 4 % )
+Total logic elements : 10 / 240 ( 4 % )
 Total pins : 14 / 80 ( 18 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
