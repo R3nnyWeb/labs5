@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for 3_1-3_3
-Wed Sep 21 16:30:17 2022
+Thu Oct 20 21:13:57 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
 ; Type                         ; Slack ; Required Time ; Actual Time ; From ; To ; From Clock ; To Clock ; Failed Paths ;
 +------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 9.415 ns    ; k3   ; e  ; --         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 9.373 ns    ; k3   ; e  ; --         ; --       ; 0            ;
 ; Total number of failed paths ;       ;               ;             ;      ;    ;            ;          ; 0            ;
 +------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
 
@@ -80,34 +80,34 @@ applicable agreement for further details.
 +-------+-------------------+-----------------+------+----+
 ; Slack ; Required P2P Time ; Actual P2P Time ; From ; To ;
 +-------+-------------------+-----------------+------+----+
-; N/A   ; None              ; 9.415 ns        ; k3   ; e  ;
-; N/A   ; None              ; 9.355 ns        ; k3   ; g  ;
-; N/A   ; None              ; 9.328 ns        ; k3   ; d  ;
-; N/A   ; None              ; 9.307 ns        ; k3   ; f  ;
-; N/A   ; None              ; 9.289 ns        ; k3   ; c  ;
-; N/A   ; None              ; 9.281 ns        ; k1   ; a  ;
-; N/A   ; None              ; 9.279 ns        ; k1   ; b  ;
-; N/A   ; None              ; 9.228 ns        ; k4   ; e  ;
-; N/A   ; None              ; 9.151 ns        ; k1   ; e  ;
-; N/A   ; None              ; 9.108 ns        ; k4   ; f  ;
-; N/A   ; None              ; 9.092 ns        ; k4   ; c  ;
-; N/A   ; None              ; 9.089 ns        ; k4   ; d  ;
-; N/A   ; None              ; 9.050 ns        ; k1   ; g  ;
-; N/A   ; None              ; 9.025 ns        ; k1   ; f  ;
-; N/A   ; None              ; 9.013 ns        ; k1   ; c  ;
-; N/A   ; None              ; 9.002 ns        ; k1   ; d  ;
-; N/A   ; None              ; 8.974 ns        ; k4   ; g  ;
-; N/A   ; None              ; 8.946 ns        ; k4   ; b  ;
-; N/A   ; None              ; 8.937 ns        ; k4   ; a  ;
-; N/A   ; None              ; 8.904 ns        ; k3   ; b  ;
-; N/A   ; None              ; 8.883 ns        ; k3   ; a  ;
-; N/A   ; None              ; 8.864 ns        ; k2   ; e  ;
-; N/A   ; None              ; 8.861 ns        ; k2   ; g  ;
-; N/A   ; None              ; 8.825 ns        ; k2   ; a  ;
-; N/A   ; None              ; 8.822 ns        ; k2   ; b  ;
-; N/A   ; None              ; 8.741 ns        ; k2   ; f  ;
-; N/A   ; None              ; 8.728 ns        ; k2   ; c  ;
-; N/A   ; None              ; 8.718 ns        ; k2   ; d  ;
+; N/A   ; None              ; 9.373 ns        ; k3   ; e  ;
+; N/A   ; None              ; 9.339 ns        ; k4   ; e  ;
+; N/A   ; None              ; 8.983 ns        ; k1   ; e  ;
+; N/A   ; None              ; 8.835 ns        ; k2   ; e  ;
+; N/A   ; None              ; 8.665 ns        ; k1   ; c  ;
+; N/A   ; None              ; 8.543 ns        ; k1   ; a  ;
+; N/A   ; None              ; 8.516 ns        ; k1   ; b  ;
+; N/A   ; None              ; 8.509 ns        ; k3   ; c  ;
+; N/A   ; None              ; 8.505 ns        ; k1   ; d  ;
+; N/A   ; None              ; 8.369 ns        ; k3   ; b  ;
+; N/A   ; None              ; 8.364 ns        ; k3   ; a  ;
+; N/A   ; None              ; 8.361 ns        ; k3   ; d  ;
+; N/A   ; None              ; 8.040 ns        ; k4   ; c  ;
+; N/A   ; None              ; 7.971 ns        ; k2   ; c  ;
+; N/A   ; None              ; 7.919 ns        ; k4   ; a  ;
+; N/A   ; None              ; 7.895 ns        ; k4   ; b  ;
+; N/A   ; None              ; 7.887 ns        ; k4   ; d  ;
+; N/A   ; None              ; 7.831 ns        ; k2   ; b  ;
+; N/A   ; None              ; 7.825 ns        ; k2   ; a  ;
+; N/A   ; None              ; 7.824 ns        ; k2   ; d  ;
+; N/A   ; None              ; 7.188 ns        ; k1   ; f  ;
+; N/A   ; None              ; 7.179 ns        ; k1   ; g  ;
+; N/A   ; None              ; 7.019 ns        ; k3   ; g  ;
+; N/A   ; None              ; 7.013 ns        ; k3   ; f  ;
+; N/A   ; None              ; 6.563 ns        ; k4   ; f  ;
+; N/A   ; None              ; 6.554 ns        ; k4   ; g  ;
+; N/A   ; None              ; 6.481 ns        ; k2   ; g  ;
+; N/A   ; None              ; 6.473 ns        ; k2   ; f  ;
 +-------+-------------------+-----------------+------+----+
 
 
@@ -117,20 +117,20 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Sep 21 16:30:16 2022
+    Info: Processing started: Thu Oct 20 21:13:57 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off 3_1-3_3 -c 3_1-3_3
 Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
-Info: Longest tpd from source pin "k3" to destination pin "e" is 9.415 ns
-    Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_27; Fanout = 7; PIN Node = 'k3'
-    Info: 2: + IC(3.362 ns) + CELL(0.511 ns) = 5.005 ns; Loc. = LC_X6_Y1_N7; Fanout = 1; COMB Node = 'v32_indicator:inst|e~116'
-    Info: 3: + IC(2.088 ns) + CELL(2.322 ns) = 9.415 ns; Loc. = PIN_81; Fanout = 0; PIN Node = 'e'
-    Info: Total cell delay = 3.965 ns ( 42.11 % )
-    Info: Total interconnect delay = 5.450 ns ( 57.89 % )
+Info: Longest tpd from source pin "k3" to destination pin "e" is 9.373 ns
+    Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_3; Fanout = 7; PIN Node = 'k3'
+    Info: 2: + IC(2.418 ns) + CELL(0.511 ns) = 4.061 ns; Loc. = LC_X2_Y3_N7; Fanout = 1; COMB Node = 'v32_indicator:inst|e~116'
+    Info: 3: + IC(2.990 ns) + CELL(2.322 ns) = 9.373 ns; Loc. = PIN_52; Fanout = 0; PIN Node = 'e'
+    Info: Total cell delay = 3.965 ns ( 42.30 % )
+    Info: Total interconnect delay = 5.408 ns ( 57.70 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 167 megabytes
-    Info: Processing ended: Wed Sep 21 16:30:17 2022
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 177 megabytes
+    Info: Processing ended: Thu Oct 20 21:13:57 2022
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

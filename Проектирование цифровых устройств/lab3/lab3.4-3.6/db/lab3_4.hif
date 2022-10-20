@@ -22,39 +22,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-v34_gray_to_bin
-# storage
-db|lab3_4.(1).cnf
-db|lab3_4.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-v34_gray_to_bin.v
-306f4b547d6eee8f2d36e4ae3c8e28
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
 s34_gray_to_bin
 # storage
 db|lab3_4.(2).cnf
@@ -102,6 +69,9 @@ d8c25886913fe7d6b4cad7d8814c6cfe
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+|
+}
 # macro_sequence
 
 # end
@@ -118,6 +88,9 @@ s35_bin_to_gray.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+s35_bin_to_gray:inst
 }
 # macro_sequence
 
@@ -152,6 +125,9 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# hierarchies {
+v35_bin_to_gray:inst2
+}
 # macro_sequence
 
 # end
@@ -168,9 +144,6 @@ sv36_cd.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -205,8 +178,38 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-v36_cd:inst
+# macro_sequence
+
+# end
+# entity
+v34_gray_to_bin
+# storage
+db|lab3_4.(1).cnf
+db|lab3_4.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v34_gray_to_bin.v
+adfb1e21ec6ae89bb8a4474c7f279df
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # macro_sequence
 
