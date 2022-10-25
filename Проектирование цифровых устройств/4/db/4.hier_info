@@ -1,15 +1,47 @@
-|sv41_mux
-sq <= s41_mux:inst.q
-x => s41_mux:inst.x
-x => v41_mux:inst1.x
+|s44_alu
+q[0] <= s42_mux:inst.q[0]
+q[1] <= s42_mux:inst.q[1]
+q[2] <= s42_mux:inst.q[2]
+q[3] <= s42_mux:inst.q[3]
+k => s42_mux:inst.a
+a[0] => s_xor4:inst3.a[0]
+a[0] => s_nor4:inst2.a[0]
+a[1] => s_xor4:inst3.a[1]
+a[1] => s_nor4:inst2.a[1]
+a[2] => s_xor4:inst3.a[2]
+a[2] => s_nor4:inst2.a[2]
+a[3] => s_xor4:inst3.a[3]
+a[3] => s_nor4:inst2.a[3]
+b[0] => s_xor4:inst3.b[0]
+b[0] => s_nor4:inst2.b[0]
+b[1] => s_xor4:inst3.b[1]
+b[1] => s_nor4:inst2.b[1]
+b[2] => s_xor4:inst3.b[2]
+b[2] => s_nor4:inst2.b[2]
+b[3] => s_xor4:inst3.b[3]
+b[3] => s_nor4:inst2.b[3]
+
+
+|s44_alu|s42_mux:inst
+q[0] <= q0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q1.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q2.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q3.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => s41_mux:inst4.x
+x[1] => s41_mux:inst3.x
+x[2] => s41_mux:inst2.x
+x[3] => s41_mux:inst.x
 a => s41_mux:inst.a
-a => v41_mux:inst1.a
-y => s41_mux:inst.y
-y => v41_mux:inst1.y
-vq <= v41_mux:inst1.q
+a => s41_mux:inst2.a
+a => s41_mux:inst3.a
+a => s41_mux:inst4.a
+y[0] => s41_mux:inst4.y
+y[1] => s41_mux:inst3.y
+y[2] => s41_mux:inst2.y
+y[3] => s41_mux:inst.y
 
 
-|sv41_mux|s41_mux:inst
+|s44_alu|s42_mux:inst|s41_mux:inst
 q <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 y => inst2.IN0
 a => inst.IN0
@@ -17,10 +49,57 @@ a => inst3.IN1
 x => inst3.IN0
 
 
-|sv41_mux|v41_mux:inst1
-x => q~0.DATAA
-y => q~0.DATAB
-a => q~0.OUTPUTSELECT
-q <= q~0.DB_MAX_OUTPUT_PORT_TYPE
+|s44_alu|s42_mux:inst|s41_mux:inst2
+q <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+y => inst2.IN0
+a => inst.IN0
+a => inst3.IN1
+x => inst3.IN0
+
+
+|s44_alu|s42_mux:inst|s41_mux:inst3
+q <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+y => inst2.IN0
+a => inst.IN0
+a => inst3.IN1
+x => inst3.IN0
+
+
+|s44_alu|s42_mux:inst|s41_mux:inst4
+q <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+y => inst2.IN0
+a => inst.IN0
+a => inst3.IN1
+x => inst3.IN0
+
+
+|s44_alu|s_xor4:inst3
+q[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => inst4.IN0
+a[1] => inst3.IN0
+a[2] => inst2.IN0
+a[3] => inst.IN0
+b[0] => inst4.IN1
+b[1] => inst3.IN1
+b[2] => inst2.IN1
+b[3] => inst.IN1
+
+
+|s44_alu|s_nor4:inst2
+q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+b[0] => inst3.IN0
+b[1] => inst2.IN0
+b[2] => inst1.IN0
+b[3] => inst.IN0
+a[0] => inst3.IN1
+a[1] => inst2.IN1
+a[2] => inst1.IN1
+a[3] => inst.IN1
 
 

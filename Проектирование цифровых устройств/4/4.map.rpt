@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 4
-Wed Sep 21 18:29:23 2022
+Mon Sep 26 14:25:00 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,16 +39,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Wed Sep 21 18:29:23 2022   ;
+; Analysis & Synthesis Status   ; Successful - Mon Sep 26 14:25:00 2022   ;
 ; Quartus II Version            ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                 ; 4                                       ;
-; Top-level Entity Name         ; sv41_mux                                ;
+; Top-level Entity Name         ; s44_alu                                 ;
 ; Family                        ; Stratix II                              ;
 ; Logic utilization             ; N/A                                     ;
-;     Combinational ALUTs       ; 1                                       ;
+;     Combinational ALUTs       ; 4                                       ;
 ;     Dedicated logic registers ; 0                                       ;
 ; Total registers               ; 0                                       ;
-; Total pins                    ; 5                                       ;
+; Total pins                    ; 13                                      ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 0                                       ;
 ; DSP block 9-bit elements      ; 0                                       ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                         ; Setting            ; Default Value      ;
 +----------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                          ; sv41_mux           ; 4                  ;
+; Top-level entity name                                          ; s44_alu            ; 4                  ;
 ; Family name                                                    ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                        ; Off                ;                    ;
 ; Use smart compilation                                          ; Off                ; Off                ;
@@ -135,65 +135,71 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path        ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------+
-; s41_mux.bdf                      ; yes             ; User Block Diagram/Schematic File  ; c:/altera/81/quartus/4/s41_mux.bdf  ;
-; v41_mux.v                        ; yes             ; User Verilog HDL File              ; c:/altera/81/quartus/4/v41_mux.v    ;
-; sv41_mux.bdf                     ; yes             ; User Block Diagram/Schematic File  ; c:/altera/81/quartus/4/sv41_mux.bdf ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                 ;
++----------------------------------+-----------------+------------------------------------+------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path ;
++----------------------------------+-----------------+------------------------------------+------------------------------+
+; s41_mux.bdf                      ; yes             ; User Block Diagram/Schematic File  ; F:/4/s41_mux.bdf             ;
+; s42_mux.bdf                      ; yes             ; User Block Diagram/Schematic File  ; F:/4/s42_mux.bdf             ;
+; s44_alu.bdf                      ; yes             ; User Block Diagram/Schematic File  ; F:/4/s44_alu.bdf             ;
+; s_nor4.bdf                       ; yes             ; User Block Diagram/Schematic File  ; F:/4/s_nor4.bdf              ;
+; s_xor4.bdf                       ; yes             ; User Block Diagram/Schematic File  ; F:/4/s_xor4.bdf              ;
++----------------------------------+-----------------+------------------------------------+------------------------------+
 
 
-+----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                          ;
-+-----------------------------------------------+----------------------+
-; Resource                                      ; Usage                ;
-+-----------------------------------------------+----------------------+
-; Estimated ALUTs Used                          ; 1                    ;
-; Dedicated logic registers                     ; 0                    ;
-;                                               ;                      ;
-; Estimated ALUTs Unavailable                   ; 0                    ;
-;                                               ;                      ;
-; Total combinational functions                 ; 1                    ;
-; Combinational ALUT usage by number of inputs  ;                      ;
-;     -- 7 input functions                      ; 0                    ;
-;     -- 6 input functions                      ; 0                    ;
-;     -- 5 input functions                      ; 0                    ;
-;     -- 4 input functions                      ; 0                    ;
-;     -- <=3 input functions                    ; 1                    ;
-;                                               ;                      ;
-; Combinational ALUTs by mode                   ;                      ;
-;     -- normal mode                            ; 1                    ;
-;     -- extended LUT mode                      ; 0                    ;
-;     -- arithmetic mode                        ; 0                    ;
-;     -- shared arithmetic mode                 ; 0                    ;
-;                                               ;                      ;
-; Estimated ALUT/register pairs used            ; 1                    ;
-;                                               ;                      ;
-; Total registers                               ; 0                    ;
-;     -- Dedicated logic registers              ; 0                    ;
-;     -- I/O registers                          ; 0                    ;
-;                                               ;                      ;
-; Estimated ALMs:  partially or completely used ; 1                    ;
-;                                               ;                      ;
-; I/O pins                                      ; 5                    ;
-; Maximum fan-out node                          ; s41_mux:inst|inst4~9 ;
-; Maximum fan-out                               ; 2                    ;
-; Total fan-out                                 ; 5                    ;
-; Average fan-out                               ; 0.83                 ;
-+-----------------------------------------------+----------------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++-----------------------------------------------+-------+
+; Resource                                      ; Usage ;
++-----------------------------------------------+-------+
+; Estimated ALUTs Used                          ; 4     ;
+; Dedicated logic registers                     ; 0     ;
+;                                               ;       ;
+; Estimated ALUTs Unavailable                   ; 0     ;
+;                                               ;       ;
+; Total combinational functions                 ; 4     ;
+; Combinational ALUT usage by number of inputs  ;       ;
+;     -- 7 input functions                      ; 0     ;
+;     -- 6 input functions                      ; 0     ;
+;     -- 5 input functions                      ; 0     ;
+;     -- 4 input functions                      ; 0     ;
+;     -- <=3 input functions                    ; 4     ;
+;                                               ;       ;
+; Combinational ALUTs by mode                   ;       ;
+;     -- normal mode                            ; 4     ;
+;     -- extended LUT mode                      ; 0     ;
+;     -- arithmetic mode                        ; 0     ;
+;     -- shared arithmetic mode                 ; 0     ;
+;                                               ;       ;
+; Estimated ALUT/register pairs used            ; 4     ;
+;                                               ;       ;
+; Total registers                               ; 0     ;
+;     -- Dedicated logic registers              ; 0     ;
+;     -- I/O registers                          ; 0     ;
+;                                               ;       ;
+; Estimated ALMs:  partially or completely used ; 2     ;
+;                                               ;       ;
+; I/O pins                                      ; 13    ;
+; Maximum fan-out node                          ; k     ;
+; Maximum fan-out                               ; 4     ;
+; Total fan-out                                 ; 16    ;
+; Average fan-out                               ; 0.94  ;
++-----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------+--------------+
-; |sv41_mux                  ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 5    ; 0            ; |sv41_mux              ; work         ;
-;    |s41_mux:inst|          ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sv41_mux|s41_mux:inst ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
+; |s44_alu                   ; 4 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 13   ; 0            ; |s44_alu                            ; work         ;
+;    |s42_mux:inst|          ; 4 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |s44_alu|s42_mux:inst               ; work         ;
+;       |s41_mux:inst2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |s44_alu|s42_mux:inst|s41_mux:inst2 ; work         ;
+;       |s41_mux:inst3|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |s44_alu|s42_mux:inst|s41_mux:inst3 ; work         ;
+;       |s41_mux:inst4|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |s44_alu|s42_mux:inst|s41_mux:inst4 ; work         ;
+;       |s41_mux:inst|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |s44_alu|s42_mux:inst|s41_mux:inst  ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -218,7 +224,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Sep 21 18:29:23 2022
+    Info: Processing started: Mon Sep 26 14:24:45 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 4 -c 4
 Info: Found 1 design units, including 1 entities, in source file s41_mux.bdf
     Info: Found entity 1: s41_mux
@@ -226,17 +232,31 @@ Info: Found 1 design units, including 1 entities, in source file v41_mux.v
     Info: Found entity 1: v41_mux
 Info: Found 1 design units, including 1 entities, in source file sv41_mux.bdf
     Info: Found entity 1: sv41_mux
-Info: Elaborating entity "sv41_mux" for the top level hierarchy
-Info: Elaborating entity "s41_mux" for hierarchy "s41_mux:inst"
-Info: Elaborating entity "v41_mux" for hierarchy "v41_mux:inst1"
-Info: Implemented 6 device resources after synthesis - the final resource count might be different
-    Info: Implemented 3 input pins
-    Info: Implemented 2 output pins
-    Info: Implemented 1 logic cells
+Info: Found 1 design units, including 1 entities, in source file s42_mux.bdf
+    Info: Found entity 1: s42_mux
+Info: Found 1 design units, including 1 entities, in source file v42_mux.v
+    Info: Found entity 1: v42_mux
+Info: Found 1 design units, including 1 entities, in source file v43_alu.v
+    Info: Found entity 1: v43_alu
+Info: Found 1 design units, including 1 entities, in source file s44_alu.bdf
+    Info: Found entity 1: s44_alu
+Info: Found 1 design units, including 1 entities, in source file s_nor4.bdf
+    Info: Found entity 1: s_nor4
+Info: Found 1 design units, including 1 entities, in source file s_xor4.bdf
+    Info: Found entity 1: s_xor4
+Info: Elaborating entity "s44_alu" for the top level hierarchy
+Info: Elaborating entity "s42_mux" for hierarchy "s42_mux:inst"
+Info: Elaborating entity "s41_mux" for hierarchy "s42_mux:inst|s41_mux:inst"
+Info: Elaborating entity "s_xor4" for hierarchy "s_xor4:inst3"
+Info: Elaborating entity "s_nor4" for hierarchy "s_nor4:inst2"
+Info: Implemented 17 device resources after synthesis - the final resource count might be different
+    Info: Implemented 9 input pins
+    Info: Implemented 4 output pins
+    Info: Implemented 4 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 204 megabytes
-    Info: Processing ended: Wed Sep 21 18:29:23 2022
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Mon Sep 26 14:25:00 2022
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:01
 
 

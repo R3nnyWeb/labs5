@@ -1,0 +1,9 @@
+|v57
+c => q_stat$latch.LATCH_ENABLE
+c => q_din~reg0.CLK
+d => q_stat$latch.DATAIN
+d => q_din~reg0.DATAIN
+q_stat <= q_stat$latch.DB_MAX_OUTPUT_PORT_TYPE
+q_din <= q_din~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

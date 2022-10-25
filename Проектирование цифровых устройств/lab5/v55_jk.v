@@ -1,0 +1,9 @@
+module v55_jk(c, j, k, q);
+input c, j, k;
+output q;
+reg q;
+always @ (posedge c)
+if (~j & k) q = 0;
+else if (j & ~k) q = 1;
+else if (j & k) q = ~q;
+endmodule

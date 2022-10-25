@@ -36,7 +36,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-s41_mux:inst
+s42_mux:inst|s41_mux:inst
+s42_mux:inst|s41_mux:inst2
+s42_mux:inst|s41_mux:inst3
+s42_mux:inst|s41_mux:inst4
 }
 # macro_sequence
 
@@ -71,9 +74,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-v41_mux:inst1
-}
 # macro_sequence
 
 # end
@@ -91,8 +91,118 @@ sv41_mux.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+s42_mux
+# storage
+db|4.(3).cnf
+db|4.(3).cnf
+# case_insensitive
+# source_file
+s42_mux.bdf
+2a497e842a4e2d1160f0374fcf13144
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s42_mux:inst
+}
+# macro_sequence
+
+# end
+# entity
+v43_alu
+# storage
+db|4.(4).cnf
+db|4.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v43_alu.v
+eebbac66aec4871950cb108827457eff
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+s44_alu
+# storage
+db|4.(5).cnf
+db|4.(5).cnf
+# case_insensitive
+# source_file
+s44_alu.bdf
+753a5ca93d1ffd840368e58c34844eb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+s_xor4
+# storage
+db|4.(6).cnf
+db|4.(6).cnf
+# case_insensitive
+# source_file
+s_xor4.bdf
+1077de30bde63425af2549ac7ca734d6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s_xor4:inst3
+}
+# macro_sequence
+
+# end
+# entity
+s_nor4
+# storage
+db|4.(7).cnf
+db|4.(7).cnf
+# case_insensitive
+# source_file
+s_nor4.bdf
+53199c4299c9268088e7825554c7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s_nor4:inst2
 }
 # macro_sequence
 
