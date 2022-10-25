@@ -1,47 +1,54 @@
-|sv35_bin_to_gray
-sg[0] <= s35_bin_to_gray:inst.g[0]
-sg[1] <= s35_bin_to_gray:inst.g[1]
-sg[2] <= s35_bin_to_gray:inst.g[2]
-sg[3] <= s35_bin_to_gray:inst.g[3]
-b[0] => s35_bin_to_gray:inst.b[0]
-b[0] => v35_bin_to_gray:inst2.b[0]
-b[1] => s35_bin_to_gray:inst.b[1]
-b[1] => v35_bin_to_gray:inst2.b[1]
-b[2] => s35_bin_to_gray:inst.b[2]
-b[2] => v35_bin_to_gray:inst2.b[2]
-b[3] => s35_bin_to_gray:inst.b[3]
-b[3] => v35_bin_to_gray:inst2.b[3]
-vg[0] <= v35_bin_to_gray:inst2.g[0]
-vg[1] <= v35_bin_to_gray:inst2.g[1]
-vg[2] <= v35_bin_to_gray:inst2.g[2]
-vg[3] <= v35_bin_to_gray:inst2.g[3]
+|sv36_cd
+g <= v36_cd:inst.g
+d[0] => v36_cd:inst.d[0]
+d[0] => s36_cd:inst4.d[0]
+d[1] => v36_cd:inst.d[1]
+d[1] => s36_cd:inst4.d[1]
+d[2] => v36_cd:inst.d[2]
+d[2] => s36_cd:inst4.d[2]
+d[3] => v36_cd:inst.d[3]
+d[3] => s36_cd:inst4.d[3]
+vg <= s36_cd:inst4.g
+q[0] <= v36_cd:inst.q[0]
+q[1] <= v36_cd:inst.q[1]
+vq[0] <= s36_cd:inst4.q[0]
+vq[1] <= s36_cd:inst4.q[1]
 
 
-|sv35_bin_to_gray|s35_bin_to_gray:inst
-g[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-g[1] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-g[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-g[3] <= b[3].DB_MAX_OUTPUT_PORT_TYPE
-b[0] => inst5.IN1
-b[1] => inst4.IN1
-b[1] => inst5.IN0
-b[2] => inst3.IN1
-b[2] => inst4.IN0
-b[3] => inst3.IN0
-b[3] => g[3].DATAIN
+|sv36_cd|v36_cd:inst
+d[0] => Mux2.IN19
+d[0] => Mux1.IN19
+d[0] => Mux0.IN19
+d[0] => Equal0.IN28
+d[1] => Mux2.IN18
+d[1] => Mux1.IN18
+d[1] => Mux0.IN18
+d[1] => Equal0.IN29
+d[2] => Mux2.IN17
+d[2] => Mux1.IN17
+d[2] => Mux0.IN17
+d[2] => Equal0.IN30
+d[3] => Mux2.IN16
+d[3] => Mux1.IN16
+d[3] => Mux0.IN16
+d[3] => Equal0.IN31
+q[0] <= q[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+g <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sv35_bin_to_gray|v35_bin_to_gray:inst2
-b[0] => g~2.IN1
-b[1] => g~2.IN0
-b[1] => g~1.IN0
-b[2] => g~1.IN1
-b[2] => g~0.IN0
-b[3] => g~0.IN1
-b[3] => g[3].DATAIN
-g[0] <= g~2.DB_MAX_OUTPUT_PORT_TYPE
-g[1] <= g~1.DB_MAX_OUTPUT_PORT_TYPE
-g[2] <= g~0.DB_MAX_OUTPUT_PORT_TYPE
-g[3] <= b[3].DB_MAX_OUTPUT_PORT_TYPE
+|sv36_cd|s36_cd:inst4
+g <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+d[0] => inst4.IN2
+d[1] => inst4.IN1
+d[1] => inst2.IN0
+d[2] => inst4.IN3
+d[2] => inst.IN0
+d[2] => inst3.IN0
+d[3] => inst4.IN0
+d[3] => inst.IN1
+d[3] => inst1.IN1
+q[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 

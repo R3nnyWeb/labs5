@@ -69,29 +69,6 @@ d8c25886913fe7d6b4cad7d8814c6cfe
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-s35_bin_to_gray
-# storage
-db|lab3_4.(4).cnf
-db|lab3_4.(4).cnf
-# case_insensitive
-# source_file
-s35_bin_to_gray.bdf
-9db4f4e706fe228e991e26559d7ff8
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-s35_bin_to_gray:inst
-}
 # macro_sequence
 
 # end
@@ -108,59 +85,6 @@ ON
 # source_file
 v35_bin_to_gray.v
 58f67b883191feec1f3014cbe32eaccd
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-v35_bin_to_gray:inst2
-}
-# macro_sequence
-
-# end
-# entity
-sv36_cd
-# storage
-db|lab3_4.(6).cnf
-db|lab3_4.(6).cnf
-# case_insensitive
-# source_file
-sv36_cd.bdf
-257210ad5cd3e4aa844e87c4591b3b9
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-v36_cd
-# storage
-db|lab3_4.(7).cnf
-db|lab3_4.(7).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-v36_cd.v
-69e848cbf1d44355f3812fe885aab7be
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -210,6 +134,82 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
+}
+# macro_sequence
+
+# end
+# entity
+v36_cd
+# storage
+db|lab3_4.(6).cnf
+db|lab3_4.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v36_cd.v
+11a3b4def268c9ea22acb2566de66adf
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v36_cd:inst
+}
+# macro_sequence
+
+# end
+# entity
+sv36_cd
+# storage
+db|lab3_4.(4).cnf
+db|lab3_4.(4).cnf
+# case_insensitive
+# source_file
+sv36_cd.bdf
+e4b94c81eecabb37b3778a72bc912
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+s36_cd
+# storage
+db|lab3_4.(7).cnf
+db|lab3_4.(7).cnf
+# case_insensitive
+# source_file
+s36_cd.bdf
+04543d449ae59c528ffd8b2a371344
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s36_cd:inst4
 }
 # macro_sequence
 

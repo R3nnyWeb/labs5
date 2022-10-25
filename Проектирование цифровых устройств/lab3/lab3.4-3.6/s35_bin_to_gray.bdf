@@ -38,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 344 48 520 64)
+	(rect 80 80 256 96)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "g[3..0]" (rect 90 0 121 12)(font "Arial" ))
 	(pt 0 8)
@@ -261,9 +261,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "g3, g2, g1, g0" (rect 288 40 356 52)(font "Arial" ))
-	(pt 344 56)
-	(pt 280 56)
+	(text "g3, g2, g1, g0" (rect 24 72 92 84)(font "Arial" ))
+	(pt 80 88)
+	(pt 16 88)
 	(bus)
 )
 (junction (pt 56 120))

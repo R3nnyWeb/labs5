@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu Oct 20 21:42:16 2022
+Fitter Status : Successful - Tue Oct 25 09:54:18 2022
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : lab3_4
-Top-level Entity Name : sv35_bin_to_gray
+Top-level Entity Name : sv36_cd
 Family : MAX II
 Device : EPM240T100C3
 Timing Models : Final
-Total logic elements : 3 / 240 ( 1 % )
-Total pins : 12 / 80 ( 15 % )
+Total logic elements : 7 / 240 ( 3 % )
+Total pins : 10 / 80 ( 13 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
