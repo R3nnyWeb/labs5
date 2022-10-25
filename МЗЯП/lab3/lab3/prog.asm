@@ -1,15 +1,23 @@
 .686P
 .MODEL FLAT, STDCALL
-.STACK 4096														;размер стека
+.STACK 4096;размер стека
 option casemap : none
-include c:\masm32\include\windows.inc							;обратите внимание на путь к файлам inc и lib
+include c:\masm32\include\windows.inc                       ;обратите внимание на путь к файлам inc и lib
 include c:\masm32\include\user32.inc
 includelib c:\masm32\lib\user32.lib
 include c:\masm32\include\kernel32.inc
 includelib c:\masm32\lib\kernel32.lib
-.DATA															;сегмент инициализированных данных
-FileName DB "C:\Users\¬€чеслав\Desktop\labs5\ћ«яѕ\w_512.dat", 0	;здесь лучше указывать полный путь к файлу
+
+BSIZE equ 30
+
+.DATA;сегмент инициализированных данных
+FileName DB "C:\Users\¬€чеслав\Desktop\labs5\ћ«яѕ\w_512.dat", 0;здесь лучше указывать полный путь к файлу
 BadText db "File dont open!", 0
+
+buf db BSIZE dup(?)
+ifmt db "First bytes: %d", 0
+msg dd 1234
+
 .DATA?															;сегмент не инициализированных данных
 hFile HANDLE ?
 hMemory DWORD ?
@@ -19,10 +27,16 @@ SizeR DWORD ?
 dwBytesRead dd ?
 HW DD ?
 dwFileSize dd ?
+
+stdout dd ?
+cWritten dd ?
 																;EXTERN MessageBoxA@16:NEAR;так комментируетс€ одна строка строка
 .CODE															;сегмент кода
 START :															;точка старта программы
-																;открываем файл дл€ чтени€ через API функцию
+invoke GetStdHandle, -11
+mov stdout, eax
+
+;открываем файл дл€ чтени€ через API функцию
 invoke CreateFile, addr FileName, GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL
 mov hFile, eax													;возвращаем хендел файла
 cmp hFile, INVALID_HANDLE_VALUE									;провер€ем на хендел файла на валидность
@@ -48,8 +62,10 @@ mov ebx, [eax + 1]												;так читаем как integer cо второго байта буфера па
 mov bx, [eax + 512 * 2]											;так читаем 512 слово
 mov bl, [eax]													;так читаем первый байт
 mov bh, [eax + 1]												;так читаем второй байт
-mov ax, 4
-int 21h;
+
+invoke wsprintf, ADDR buf, ADDR ifmt, bl
+invoke WriteConsoleA, stdout, ADDR buf, BSIZE, ADDR cWritten, 0
+
 push eax
 add eax, 2048
 mov memID, eax
