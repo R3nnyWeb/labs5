@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Wed Sep 21 17:49:50 2022
+Analysis & Synthesis Status : Successful - Tue Oct 25 09:54:17 2022
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : lab3_4
 Top-level Entity Name : sv36_cd
 Family : MAX II
-Total logic elements : 6
-Total pins : 7
+Total logic elements : 7
+Total pins : 10
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

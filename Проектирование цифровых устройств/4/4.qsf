@@ -25,7 +25,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY sv41_mux
+set_global_assignment -name TOP_LEVEL_ENTITY s44_alu
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:10:26  SEPTEMBER 21, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 8.1
@@ -34,9 +34,19 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name BDF_FILE s41_mux.bdf
 set_global_assignment -name VERILOG_FILE v41_mux.v
 set_global_assignment -name BDF_FILE sv41_mux.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE 4.vwf
+set_global_assignment -name BDF_FILE s42_mux.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE w42_mux.vwf
+set_global_assignment -name VERILOG_FILE v42_mux.v
+set_global_assignment -name VERILOG_FILE v43_alu.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE w43_mux.vwf
+set_global_assignment -name BDF_FILE s44_alu.bdf
+set_global_assignment -name BDF_FILE s_nor4.bdf
+set_global_assignment -name BDF_FILE s_xor4.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE 4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE w44_alu.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE w44_alu.vwf

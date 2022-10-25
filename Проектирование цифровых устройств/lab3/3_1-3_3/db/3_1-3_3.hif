@@ -22,23 +22,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-s31_dc
-# storage
-db|3_1-3_3.(0).cnf
-db|3_1-3_3.(0).cnf
-# case_insensitive
-# source_file
-s31_dc.bdf
-6b7ec33daf533a56ad676a53c1eeaab5
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
 s32_indic
 # storage
 db|3_1-3_3.(1).cnf
@@ -90,6 +73,23 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 v32_indicator:inst
+}
+# macro_sequence
+
+# end
+# entity
+s31_dc
+# storage
+db|3_1-3_3.(0).cnf
+db|3_1-3_3.(0).cnf
+# case_insensitive
+# source_file
+s31_dc.bdf
+3e7412ba5c206c6d946ec94d1fee2eaa
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
 }
 # macro_sequence
 

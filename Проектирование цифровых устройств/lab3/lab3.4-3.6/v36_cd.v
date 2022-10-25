@@ -13,4 +13,4 @@ always
 	4'b0100: q=2'b10;
 	4'b1000: q=2'b11;
 	endcase
-endmodule
+endmodule  

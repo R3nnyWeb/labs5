@@ -1,5 +1,5 @@
 Assembler report for 4
-Wed Sep 21 18:29:28 2022
+Mon Sep 26 14:25:08 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: c:/altera/81/quartus/4/4.sof
-  6. Assembler Device Options: c:/altera/81/quartus/4/4.pof
+  5. Assembler Device Options: F:/4/4.sof
+  6. Assembler Device Options: F:/4/4.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Sep 21 18:29:28 2022 ;
+; Assembler Status      ; Successful - Mon Sep 26 14:25:08 2022 ;
 ; Revision Name         ; 4                                     ;
-; Top-level Entity Name ; sv41_mux                              ;
+; Top-level Entity Name ; s44_alu                               ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -77,37 +77,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------+
-; Assembler Generated Files    ;
-+------------------------------+
-; File Name                    ;
-+------------------------------+
-; c:/altera/81/quartus/4/4.sof ;
-; c:/altera/81/quartus/4/4.pof ;
-+------------------------------+
++---------------------------+
+; Assembler Generated Files ;
++---------------------------+
+; File Name                 ;
++---------------------------+
+; F:/4/4.sof                ;
+; F:/4/4.pof                ;
++---------------------------+
 
 
-+--------------------------------------------------------+
-; Assembler Device Options: c:/altera/81/quartus/4/4.sof ;
-+----------------+---------------------------------------+
-; Option         ; Setting                               ;
-+----------------+---------------------------------------+
-; Device         ; EP2S15F484C3                          ;
-; JTAG usercode  ; 0xFFFFFFFF                            ;
-; Checksum       ; 0x00276703                            ;
-+----------------+---------------------------------------+
++--------------------------------------+
+; Assembler Device Options: F:/4/4.sof ;
++----------------+---------------------+
+; Option         ; Setting             ;
++----------------+---------------------+
+; Device         ; EP2S15F484C3        ;
+; JTAG usercode  ; 0xFFFFFFFF          ;
+; Checksum       ; 0x00277B1C          ;
++----------------+---------------------+
 
 
-+--------------------------------------------------------+
-; Assembler Device Options: c:/altera/81/quartus/4/4.pof ;
-+--------------------+-----------------------------------+
-; Option             ; Setting                           ;
-+--------------------+-----------------------------------+
-; Device             ; EPC16                             ;
-; JTAG usercode      ; 0xFFFFFFFF                        ;
-; Checksum           ; 0x1EF65001                        ;
-; Compression Ratio  ; 3                                 ;
-+--------------------+-----------------------------------+
++--------------------------------------+
+; Assembler Device Options: F:/4/4.pof ;
++--------------------+-----------------+
+; Option             ; Setting         ;
++--------------------+-----------------+
+; Device             ; EPC16           ;
+; JTAG usercode      ; 0xFFFFFFFF      ;
+; Checksum           ; 0x1EF5CBA0      ;
+; Compression Ratio  ; 3               ;
++--------------------+-----------------+
 
 
 +--------------------+
@@ -116,14 +116,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Sep 21 18:29:27 2022
+    Info: Processing started: Mon Sep 26 14:25:06 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off 4 -c 4
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 224 megabytes
-    Info: Processing ended: Wed Sep 21 18:29:28 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Mon Sep 26 14:25:08 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
