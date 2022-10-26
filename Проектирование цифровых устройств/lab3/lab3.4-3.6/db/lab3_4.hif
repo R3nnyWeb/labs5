@@ -69,6 +69,9 @@ d8c25886913fe7d6b4cad7d8814c6cfe
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+|
+}
 # macro_sequence
 
 # end
@@ -101,6 +104,9 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
+}
+# hierarchies {
+v35_bin_to_gray:inst2
 }
 # macro_sequence
 
@@ -168,9 +174,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-v36_cd:inst
-}
 # macro_sequence
 
 # end
@@ -187,9 +190,6 @@ e4b94c81eecabb37b3778a72bc912
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -208,8 +208,25 @@ s36_cd.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+s35_bin_to_gray
+# storage
+db|lab3_4.(8).cnf
+db|lab3_4.(8).cnf
+# case_insensitive
+# source_file
+s35_bin_to_gray.bdf
+44222875ace8f98f7edf33c8b5caa57e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-s36_cd:inst4
+s35_bin_to_gray:inst
 }
 # macro_sequence
 

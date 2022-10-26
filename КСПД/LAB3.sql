@@ -97,4 +97,29 @@ WHERE Услуга = @serviceNubmer
 GO
 
 EXEC P4
+GO
 
+ALTER TABLE Ателье
+ADD Наценка int NULL
+
+GO
+ALTER PROC P5
+AS
+UPDATE Ателье
+SET Наценка = 
+	(SELECT Наценка
+	FROM 
+		(SELECT Ателье, CASE
+				WHEN COUNT(Ателье) < 2 THEN 0
+				WHEN COUNT(Ателье) > 5 THEN 40
+				ELSE 25
+			END AS Наценка
+		FROM Стоимость
+		GROUP BY Ателье) AS Наценки
+	WHERE Ателье.Номер = Наценки.Ателье)
+GO
+EXEC P5
+
+SELECT * FROM Ателье
+SELECT * FROM Стоимость
+GO

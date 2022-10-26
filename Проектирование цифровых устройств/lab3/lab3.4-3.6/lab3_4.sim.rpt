@@ -1,5 +1,5 @@
 Simulator report for lab3_4
-Tue Oct 25 09:54:32 2022
+Wed Oct 26 23:46:40 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -45,42 +45,42 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 17 nodes     ;
+; Simulation Netlist Size     ; 15 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 152          ;
+; Total Number of Transitions ; 179          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; MAX II       ;
 ; Device                      ; EPM240T100C3 ;
 +-----------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                      ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
-; Option                                                                                     ; Setting    ; Default Value ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
-; Simulation mode                                                                            ; Timing     ; Timing        ;
-; Start time                                                                                 ; 0 ns       ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; w36_cd.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
-; Check outputs                                                                              ; Off        ; Off           ;
-; Report simulation coverage                                                                 ; On         ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
-; Display missing 1-value coverage report                                                    ; On         ; On            ;
-; Display missing 0-value coverage report                                                    ; On         ; On            ;
-; Detect setup and hold time violations                                                      ; Off        ; Off           ;
-; Detect glitches                                                                            ; Off        ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
-; Generate Signal Activity File                                                              ; Off        ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
-; Group bus channels in simulation results                                                   ; Off        ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                               ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Option                                                                                     ; Setting             ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Simulation mode                                                                            ; Timing              ; Timing        ;
+; Start time                                                                                 ; 0 ns                ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                ;               ;
+; Vector input source                                                                        ; w35_bin_to_gray.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                  ; On            ;
+; Check outputs                                                                              ; Off                 ; Off           ;
+; Report simulation coverage                                                                 ; On                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                 ; Off           ;
+; Detect glitches                                                                            ; Off                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
 
 
 +----------------------+
@@ -96,7 +96,7 @@ Please use Quartus II to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 17           ;
+; Total nodes checked                                 ; 15           ;
 ; Total output ports checked                          ; 15           ;
 ; Total output ports with complete 1/0-value coverage ; 15           ;
 ; Total output ports with no 1/0-value coverage       ; 0            ;
@@ -106,27 +106,27 @@ Please use Quartus II to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                        ;
-+--------------------------------+--------------------------------+------------------+
-; Node Name                      ; Output Port Name               ; Output Port Type ;
-+--------------------------------+--------------------------------+------------------+
-; |sv36_cd|v36_cd:inst|Equal0~52 ; |sv36_cd|v36_cd:inst|Equal0~52 ; combout          ;
-; |sv36_cd|s36_cd:inst4|inst     ; |sv36_cd|s36_cd:inst4|inst     ; combout          ;
-; |sv36_cd|s36_cd:inst4|inst1    ; |sv36_cd|s36_cd:inst4|inst1    ; combout          ;
-; |sv36_cd|v36_cd:inst|Mux2~3    ; |sv36_cd|v36_cd:inst|Mux2~3    ; combout          ;
-; |sv36_cd|v36_cd:inst|Equal0~53 ; |sv36_cd|v36_cd:inst|Equal0~53 ; combout          ;
-; |sv36_cd|d[1]                  ; |sv36_cd|d[1]~corein           ; combout          ;
-; |sv36_cd|d[3]                  ; |sv36_cd|d[3]~corein           ; combout          ;
-; |sv36_cd|d[2]                  ; |sv36_cd|d[2]~corein           ; combout          ;
-; |sv36_cd|d[0]                  ; |sv36_cd|d[0]~corein           ; combout          ;
-; |sv36_cd|g                     ; |sv36_cd|g                     ; padio            ;
-; |sv36_cd|vg                    ; |sv36_cd|vg                    ; padio            ;
-; |sv36_cd|q[1]                  ; |sv36_cd|q[1]                  ; padio            ;
-; |sv36_cd|q[0]                  ; |sv36_cd|q[0]                  ; padio            ;
-; |sv36_cd|vq[1]                 ; |sv36_cd|vq[1]                 ; padio            ;
-; |sv36_cd|vq[0]                 ; |sv36_cd|vq[0]                 ; padio            ;
-+--------------------------------+--------------------------------+------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                    ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |sv35_bin_to_gray|s35_bin_to_gray:inst|inst3 ; |sv35_bin_to_gray|s35_bin_to_gray:inst|inst3 ; combout          ;
+; |sv35_bin_to_gray|s35_bin_to_gray:inst|inst4 ; |sv35_bin_to_gray|s35_bin_to_gray:inst|inst4 ; combout          ;
+; |sv35_bin_to_gray|s35_bin_to_gray:inst|inst5 ; |sv35_bin_to_gray|s35_bin_to_gray:inst|inst5 ; combout          ;
+; |sv35_bin_to_gray|b[3]                       ; |sv35_bin_to_gray|b[3]~corein                ; combout          ;
+; |sv35_bin_to_gray|b[2]                       ; |sv35_bin_to_gray|b[2]~corein                ; combout          ;
+; |sv35_bin_to_gray|b[1]                       ; |sv35_bin_to_gray|b[1]~corein                ; combout          ;
+; |sv35_bin_to_gray|b[0]                       ; |sv35_bin_to_gray|b[0]~corein                ; combout          ;
+; |sv35_bin_to_gray|sg[3]                      ; |sv35_bin_to_gray|sg[3]                      ; padio            ;
+; |sv35_bin_to_gray|sg[2]                      ; |sv35_bin_to_gray|sg[2]                      ; padio            ;
+; |sv35_bin_to_gray|sg[1]                      ; |sv35_bin_to_gray|sg[1]                      ; padio            ;
+; |sv35_bin_to_gray|sg[0]                      ; |sv35_bin_to_gray|sg[0]                      ; padio            ;
+; |sv35_bin_to_gray|vg[3]                      ; |sv35_bin_to_gray|vg[3]                      ; padio            ;
+; |sv35_bin_to_gray|vg[2]                      ; |sv35_bin_to_gray|vg[2]                      ; padio            ;
+; |sv35_bin_to_gray|vg[1]                      ; |sv35_bin_to_gray|vg[1]                      ; padio            ;
+; |sv35_bin_to_gray|vg[0]                      ; |sv35_bin_to_gray|vg[0]                      ; padio            ;
++----------------------------------------------+----------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -158,17 +158,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Tue Oct 25 09:54:32 2022
+    Info: Processing started: Wed Oct 26 23:46:40 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab3_4 -c lab3_4
-Info: Using vector source file "D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/lab3.4-3.6/w36_cd.vwf"
+Info: Using vector source file "C:/Users/Вчеслав/Desktop/labs5/Проектирование цифровых устройств/lab3/lab3.4-3.6/w35_bin_to_gray.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 152
+Info: Number of transitions in simulation is 179
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 156 megabytes
-    Info: Processing ended: Tue Oct 25 09:54:32 2022
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Wed Oct 26 23:46:40 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
