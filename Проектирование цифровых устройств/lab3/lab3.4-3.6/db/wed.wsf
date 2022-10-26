@@ -686,13 +686,13 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/lab3.4-3.
 	}
 }
 
-VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/lab3.4-3.6/w36_cd.vwf")
+VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/lab3.4-3.6/db/lab3_4.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 478400;
-		NUMERATOR = 1196;
-		DENOMINATOR = 478400;
+		ZEND = 500000;
+		NUMERATOR = 1290;
+		DENOMINATOR = 500000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -809,12 +809,12 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/lab3.4-3.
 	}
 }
 
-VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/lab3.4-3.6/db/lab3_4.sim.cvwf")
+VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/lab3.4-3.6/w36_cd.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
 		ZEND = 1000000;
-		NUMERATOR = 1290;
+		NUMERATOR = 1495;
 		DENOMINATOR = 1000000;
 		TOP_INDEX = 0;
 	}

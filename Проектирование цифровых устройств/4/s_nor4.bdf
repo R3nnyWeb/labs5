@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 880 240 1056 256)
+	(rect 344 248 520 264)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "q[3..0]" (rect 90 0 121 12)(font "Arial" ))
 	(pt 0 8)
@@ -245,17 +245,6 @@ applicable agreement for further details.
 	(pt 512 344)
 )
 (connector
-	(pt 744 248)
-	(pt 744 240)
-	(bus)
-)
-(connector
-	(text "q3,q2,q1,q0" (rect 752 232 809 244)(font "Arial" ))
-	(pt 880 248)
-	(pt 744 248)
-	(bus)
-)
-(connector
 	(text "q3" (rect 624 152 635 164)(font "Arial" ))
 	(pt 616 168)
 	(pt 656 168)
@@ -289,5 +278,16 @@ applicable agreement for further details.
 	(text "b3,b2,b1,b0" (rect 424 168 481 180)(font "Arial" ))
 	(pt 416 184)
 	(pt 480 184)
+	(bus)
+)
+(connector
+	(pt 200 248)
+	(pt 200 256)
+	(bus)
+)
+(connector
+	(text "q3,q2,q1,q0" (rect 216 240 273 252)(font "Arial" ))
+	(pt 200 256)
+	(pt 344 256)
 	(bus)
 )
