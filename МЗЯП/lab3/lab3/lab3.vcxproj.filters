@@ -15,8 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="prog.asm">
+    <MASM Include="lab3.asm">
       <Filter>Исходные файлы</Filter>
     </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prog.asm">
+      <Filter>Исходные файлы</Filter>
+    </None>
   </ItemGroup>
 </Project>

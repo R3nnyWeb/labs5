@@ -69,9 +69,6 @@ d8c25886913fe7d6b4cad7d8814c6cfe
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -104,9 +101,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-v35_bin_to_gray:inst2
 }
 # macro_sequence
 
@@ -145,6 +139,43 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
+s35_bin_to_gray
+# storage
+db|lab3_4.(8).cnf
+db|lab3_4.(8).cnf
+# case_insensitive
+# source_file
+s35_bin_to_gray.bdf
+44222875ace8f98f7edf33c8b5caa57e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+sv36_cd
+# storage
+db|lab3_4.(4).cnf
+db|lab3_4.(4).cnf
+# case_insensitive
+# source_file
+sv36_cd.bdf
+4edc2d5d267ac361cb6b325af26fcafc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 v36_cd
 # storage
 db|lab3_4.(6).cnf
@@ -156,7 +187,7 @@ ON
 # case_sensitive
 # source_file
 v36_cd.v
-11a3b4def268c9ea22acb2566de66adf
+1258c748d9d30f23a39ab78a49f667d
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -174,22 +205,8 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# macro_sequence
-
-# end
-# entity
-sv36_cd
-# storage
-db|lab3_4.(4).cnf
-db|lab3_4.(4).cnf
-# case_insensitive
-# source_file
-sv36_cd.bdf
-e4b94c81eecabb37b3778a72bc912
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+# hierarchies {
+v36_cd:inst1
 }
 # macro_sequence
 
@@ -202,31 +219,14 @@ db|lab3_4.(7).cnf
 # case_insensitive
 # source_file
 s36_cd.bdf
-04543d449ae59c528ffd8b2a371344
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-s35_bin_to_gray
-# storage
-db|lab3_4.(8).cnf
-db|lab3_4.(8).cnf
-# case_insensitive
-# source_file
-s35_bin_to_gray.bdf
-44222875ace8f98f7edf33c8b5caa57e
+d0eb397f79fddba95234f0dea211b99
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-s35_bin_to_gray:inst
+s36_cd:inst
 }
 # macro_sequence
 

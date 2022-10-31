@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "laba1", "laba1.exe", "{49FB16C7-97D3-4012-9AA7-D981D76A9504}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Users\komle\OneDrive\Рабочий стол\5 семестр\Машинно-зависимые языки прог\Лабы\1\Debug\laba1.exe
+		RemoteMachine = DESKTOP-EBUHP1P
+		StartingDirectory = C:\Users\komle\OneDrive\Рабочий стол\5 семестр\Машинно-зависимые языки прог\Лабы\1\Debug
+		Environment = По умолчанию
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49FB16C7-97D3-4012-9AA7-D981D76A9504}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7C17904-D190-4BF6-8F1A-24DAA0C8F8A5}
+	EndGlobalSection
+EndGlobal

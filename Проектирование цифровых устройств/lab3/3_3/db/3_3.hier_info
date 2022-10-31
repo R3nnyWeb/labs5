@@ -1,28 +1,28 @@
 |sv33_cd
-vg <= v33_cd:inst1.g
-d[0] => v33_cd:inst1.d[0]
+vg <= v33_cd:inst3.g
+d[0] => v33_cd:inst3.d[0]
 d[0] => s33_cd:inst.d[0]
-d[1] => v33_cd:inst1.d[1]
+d[1] => v33_cd:inst3.d[1]
 d[1] => s33_cd:inst.d[1]
-d[2] => v33_cd:inst1.d[2]
+d[2] => v33_cd:inst3.d[2]
 d[2] => s33_cd:inst.d[2]
-d[3] => v33_cd:inst1.d[3]
+d[3] => v33_cd:inst3.d[3]
 d[3] => s33_cd:inst.d[3]
-sg <= s33_cd:inst.g
-sq[0] <= s33_cd:inst.q[0]
-sq[1] <= s33_cd:inst.q[1]
-vq[0] <= v33_cd:inst1.q[0]
-vq[1] <= v33_cd:inst1.q[1]
+g <= s33_cd:inst.g
+q[0] <= s33_cd:inst.q[0]
+q[1] <= s33_cd:inst.q[1]
+vq[0] <= v33_cd:inst3.q[0]
+vq[1] <= v33_cd:inst3.q[1]
 
 
-|sv33_cd|v33_cd:inst1
-d[0] => ~NO_FANOUT~
-d[1] => ~NO_FANOUT~
-d[2] => ~NO_FANOUT~
-d[3] => ~NO_FANOUT~
+|sv33_cd|v33_cd:inst3
+d[0] => Equal2.IN0
+d[1] => Equal2.IN1
+d[2] => Equal2.IN2
+d[3] => Equal2.IN3
 q[0] <= <GND>
 q[1] <= <GND>
-g <= <GND>
+g <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sv33_cd|s33_cd:inst

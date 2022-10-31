@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 3_3
-Thu Oct 20 21:18:25 2022
+Thu Oct 27 09:06:57 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Oct 20 21:18:25 2022   ;
+; Analysis & Synthesis Status ; Successful - Thu Oct 27 09:06:57 2022   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; 3_3                                     ;
 ; Top-level Entity Name       ; sv33_cd                                 ;
@@ -117,15 +117,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+
-; s33_cd.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/3_3/s33_cd.bdf  ;
-; v33_cd.v                         ; yes             ; User Verilog HDL File              ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/3_3/v33_cd.v    ;
-; sv33_cd.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/3_3/sv33_cd.bdf ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                           ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+
+; s33_cd.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab3/3_3/s33_cd.bdf  ;
+; v33_cd.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab3/3_3/v33_cd.v    ;
+; sv33_cd.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab3/3_3/sv33_cd.bdf ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -155,21 +155,22 @@ applicable agreement for further details.
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ; I/O pins                                    ; 10    ;
-; Maximum fan-out node                        ; d[3]  ;
+; Maximum fan-out node                        ; d[2]  ;
 ; Maximum fan-out                             ; 3     ;
-; Total fan-out                               ; 12    ;
-; Average fan-out                             ; 0.92  ;
+; Total fan-out                               ; 13    ;
+; Average fan-out                             ; 1.00  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name  ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------+--------------+
-; |sv33_cd                   ; 3 (0)       ; 0            ; 0          ; 10   ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sv33_cd             ; work         ;
-;    |s33_cd:inst|           ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sv33_cd|s33_cd:inst ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                    ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------+--------------+
+; |sv33_cd                   ; 3 (0)       ; 0            ; 0          ; 10   ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sv33_cd              ; work         ;
+;    |s33_cd:inst|           ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sv33_cd|s33_cd:inst  ; work         ;
+;    |v33_cd:inst3|          ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |sv33_cd|v33_cd:inst3 ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -194,7 +195,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Thu Oct 20 21:18:25 2022
+    Info: Processing started: Thu Oct 27 09:06:56 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 3_3 -c 3_3
 Info: Found 1 design units, including 1 entities, in source file s33_cd.bdf
     Info: Found entity 1: s33_cd
@@ -203,17 +204,17 @@ Info: Found 1 design units, including 1 entities, in source file v33_cd.v
 Info: Found 1 design units, including 1 entities, in source file sv33_cd.bdf
     Info: Found entity 1: sv33_cd
 Info: Elaborating entity "sv33_cd" for the top level hierarchy
-Info: Elaborating entity "v33_cd" for hierarchy "v33_cd:inst1"
+Info: Elaborating entity "v33_cd" for hierarchy "v33_cd:inst3"
+Warning (10059): Verilog HDL Case Statement warning at v33_cd.v(7): case item expression never matches the case expression because it contains an 'x' or 'z' value
 Warning (10059): Verilog HDL Case Statement warning at v33_cd.v(8): case item expression never matches the case expression because it contains an 'x' or 'z' value
 Warning (10059): Verilog HDL Case Statement warning at v33_cd.v(9): case item expression never matches the case expression because it contains an 'x' or 'z' value
-Warning (10059): Verilog HDL Case Statement warning at v33_cd.v(10): case item expression never matches the case expression because it contains an 'x' or 'z' value
 Warning (10270): Verilog HDL Case Statement warning at v33_cd.v(6): incomplete case statement has no default case item
 Warning (10240): Verilog HDL Always Construct warning at v33_cd.v(6): inferring latch(es) for variable "q", which holds its previous value in one or more paths through the always construct
+Warning (10230): Verilog HDL assignment warning at v33_cd.v(14): truncated value with size 32 to match size of target (1)
 Info (10041): Inferred latch for "q[0]" at v33_cd.v(6)
 Info (10041): Inferred latch for "q[1]" at v33_cd.v(6)
 Info: Elaborating entity "s33_cd" for hierarchy "s33_cd:inst"
 Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "vg" is stuck at GND
     Warning (13410): Pin "vq[1]" is stuck at GND
     Warning (13410): Pin "vq[0]" is stuck at GND
 Info: Implemented 13 device resources after synthesis - the final resource count might be different
@@ -221,9 +222,9 @@ Info: Implemented 13 device resources after synthesis - the final resource count
     Info: Implemented 6 output pins
     Info: Implemented 3 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 217 megabytes
-    Info: Processing ended: Thu Oct 20 21:18:25 2022
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 218 megabytes
+    Info: Processing ended: Thu Oct 27 09:06:57 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

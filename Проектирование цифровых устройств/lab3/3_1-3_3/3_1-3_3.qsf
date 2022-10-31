@@ -25,7 +25,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY s32_indic
+set_global_assignment -name TOP_LEVEL_ENTITY s31_dc
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:23:39  SEPTEMBER 21, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 8.1
@@ -58,7 +58,7 @@ set_location_assignment PIN_12 -to g
 set_location_assignment PIN_39 -to h
 set_location_assignment PIN_40 -to z
 set_global_assignment -name MISC_FILE "D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab3/3_1-3_3/3_1-3_3.dpf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE w32.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE v32_DC.vwf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name VECTOR_WAVEFORM_FILE w32.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE w32.vwf

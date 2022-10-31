@@ -1,5 +1,5 @@
 Flow report for 3_3
-Thu Oct 20 21:18:28 2022
+Thu Oct 27 09:07:00 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Thu Oct 20 21:18:28 2022   ;
+; Flow Status             ; Successful - Thu Oct 27 09:07:00 2022   ;
 ; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name           ; 3_3                                     ;
 ; Top-level Entity Name   ; sv33_cd                                 ;
@@ -58,25 +58,25 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/20/2022 21:18:25 ;
+; Start date & time ; 10/27/2022 09:06:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; 3_3                 ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                      ;
-+---------------------------------------+--------------------------------+---------------+-------------+----------------+
-; Assignment Name                       ; Value                          ; Default Value ; Entity Name ; Section Id     ;
-+---------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 39908803013047.166628990525808 ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP                ; 85                             ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP                ; 0                              ; --            ; --          ; --             ;
-; MISC_FILE                             ; E:/3_1-3_3/3_3/3_3.dpf         ; --            ; --          ; --             ;
-; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                      ; sv33_cd                        ; 3_3           ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS    ; Off                            ; --            ; --          ; eda_blast_fpga ;
-+---------------------------------------+--------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++---------------------------------------+-------------------------------+---------------+-------------+----------------+
+; Assignment Name                       ; Value                         ; Default Value ; Entity Name ; Section Id     ;
++---------------------------------------+-------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                 ; 9447194415088.166685081608188 ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                            ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                             ; --            ; --          ; --             ;
+; MISC_FILE                             ; E:/3_1-3_3/3_3/3_3.dpf        ; --            ; --          ; --             ;
+; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                      ; sv33_cd                       ; 3_3           ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS    ; Off                           ; --            ; --          ; eda_blast_fpga ;
++---------------------------------------+-------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -84,10 +84,10 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 217 MB              ; 00:00:00                           ;
-; Fitter                  ; 00:00:00     ; 1.0                     ; 215 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 192 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 164 MB              ; 00:00:00                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 218 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 217 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 193 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 165 MB              ; 00:00:00                           ;
 ; Total                   ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
@@ -97,10 +97,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
