@@ -1,0 +1,3 @@
+﻿  Assembling Source.asm...
+Source.asm(31): warning A4014: instructions and initialized data not supported in BSS segments
+  lab4.vcxproj -> D:\MyDoc\Projects\labs5\МЗЯП\lab4\lab4\Debug\lab4.exe
