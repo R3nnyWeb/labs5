@@ -199,11 +199,10 @@ TRANSITION_LIST("k")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 4;
-			LEVEL 0 FOR 120.0;
-			LEVEL 1 FOR 120.0;
+			REPEAT = 5;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
 		}
-		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -212,13 +211,9 @@ TRANSITION_LIST("a[3]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 480.0;
-			LEVEL 1 FOR 480.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 300.0;
 	}
 }
 
@@ -227,13 +222,14 @@ TRANSITION_LIST("a[2]")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
 		NODE
 		{
 			REPEAT = 2;
-			LEVEL 0 FOR 240.0;
-			LEVEL 1 FOR 240.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
 		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 100.0;
 	}
 }
 
@@ -244,11 +240,10 @@ TRANSITION_LIST("a[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 4;
-			LEVEL 0 FOR 120.0;
-			LEVEL 1 FOR 120.0;
+			REPEAT = 5;
+			LEVEL 1 FOR 100.0;
+			LEVEL 0 FOR 100.0;
 		}
-		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -259,11 +254,10 @@ TRANSITION_LIST("a[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 8;
-			LEVEL 0 FOR 60.0;
-			LEVEL 1 FOR 60.0;
+			REPEAT = 10;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
 		}
-		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -272,13 +266,14 @@ TRANSITION_LIST("b[3]")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
 		NODE
 		{
 			REPEAT = 2;
-			LEVEL 0 FOR 240.0;
-			LEVEL 1 FOR 240.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
 		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 100.0;
 	}
 }
 
@@ -289,11 +284,10 @@ TRANSITION_LIST("b[2]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 4;
-			LEVEL 0 FOR 120.0;
-			LEVEL 1 FOR 120.0;
+			REPEAT = 5;
+			LEVEL 1 FOR 100.0;
+			LEVEL 0 FOR 100.0;
 		}
-		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -304,11 +298,10 @@ TRANSITION_LIST("b[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 8;
-			LEVEL 0 FOR 60.0;
-			LEVEL 1 FOR 60.0;
+			REPEAT = 10;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
 		}
-		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -317,14 +310,7 @@ TRANSITION_LIST("b[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 16;
-			LEVEL 0 FOR 30.0;
-			LEVEL 1 FOR 30.0;
-		}
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
