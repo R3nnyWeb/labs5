@@ -35,12 +35,6 @@ ffac8760e52c6f59ec6db455af6ea14f
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-s42_mux:inst|s41_mux:inst
-s42_mux:inst|s41_mux:inst2
-s42_mux:inst|s41_mux:inst3
-s42_mux:inst|s41_mux:inst4
-}
 # macro_sequence
 
 # end
@@ -108,9 +102,6 @@ s42_mux.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-s42_mux:inst
-}
 # macro_sequence
 
 # end
@@ -144,6 +135,9 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# hierarchies {
+|
+}
 # macro_sequence
 
 # end
@@ -160,9 +154,6 @@ s44_alu.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -181,9 +172,6 @@ s_xor4.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-s_xor4:inst3
-}
 # macro_sequence
 
 # end
@@ -200,9 +188,6 @@ s_nor4.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-s_nor4:inst2
 }
 # macro_sequence
 
