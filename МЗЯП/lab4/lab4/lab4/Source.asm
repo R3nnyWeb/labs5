@@ -9,11 +9,11 @@ include c:/masm32/include/kernel32.inc
 includelib c:/masm32/lib/kernel32.lib
 .DATA
 
-;file
-FileName db "D:\MyDoc\Projects\labs5\МЗЯП\lab4\usertype.dat",0
+;Файл
+FileName db "B:\base.dat",0
 BadText db "File dont open!",0
 
-;struct
+;Структура
 workers struc
 id dw 0h
 fio db 30 dup (' ')
