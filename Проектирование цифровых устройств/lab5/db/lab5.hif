@@ -169,6 +169,9 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# hierarchies {
+|
+}
 # macro_sequence
 
 # end
@@ -252,8 +255,22 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-|
+# macro_sequence
+
+# end
+# entity
+s52_rs
+# storage
+db|lab5.(10).cnf
+db|lab5.(10).cnf
+# case_insensitive
+# source_file
+s52_rs.bdf
+ca599bb42b76712d1dc9b972ada8871
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
 }
 # macro_sequence
 

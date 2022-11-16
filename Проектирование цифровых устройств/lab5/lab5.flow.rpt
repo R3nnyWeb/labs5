@@ -1,5 +1,5 @@
 Flow report for lab5
-Wed Oct 05 16:04:55 2022
+Wed Nov 16 10:27:06 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,15 +38,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Wed Oct 05 16:04:55 2022   ;
+; Flow Status             ; Successful - Wed Nov 16 10:27:06 2022   ;
 ; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name           ; lab5                                    ;
-; Top-level Entity Name   ; v57                                     ;
+; Top-level Entity Name   ; v55_jk                                  ;
 ; Family                  ; MAX II                                  ;
 ; Device                  ; EPM240T100C5                            ;
 ; Timing Models           ; Final                                   ;
 ; Met timing requirements ; Yes                                     ;
-; Total logic elements    ; 2 / 240 ( < 1 % )                       ;
+; Total logic elements    ; 1 / 240 ( < 1 % )                       ;
 ; Total pins              ; 4 / 80 ( 5 % )                          ;
 ; Total virtual pins      ; 0                                       ;
 ; UFM blocks              ; 0 / 1 ( 0 % )                           ;
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/05/2022 16:04:45 ;
+; Start date & time ; 11/16/2022 10:27:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab5                ;
 +-------------------+---------------------+
@@ -69,15 +69,15 @@ applicable agreement for further details.
 +---------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                       ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +---------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 71094331888171.166497508503764 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                 ; 39908803013047.166858362315148 ; --            ; --          ; --             ;
 ; FITTER_EFFORT                         ; Standard Fit                   ; Auto Fit      ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP                ; 85                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP                ; 0                              ; --            ; --          ; --             ;
 ; MISC_FILE                             ; F:/lab5/lab5.dpf               ; --            ; --          ; --             ;
-; PARTITION_COLOR                       ; 16764057                       ; --            ; v57         ; Top            ;
-; PARTITION_NETLIST_TYPE                ; SOURCE                         ; --            ; v57         ; Top            ;
+; PARTITION_COLOR                       ; 16764057                       ; --            ; v55_jk      ; Top            ;
+; PARTITION_NETLIST_TYPE                ; SOURCE                         ; --            ; v55_jk      ; Top            ;
 ; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                      ; v57                            ; lab5          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                      ; v55_jk                         ; lab5          ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS    ; Off                            ; --            ; --          ; eda_blast_fpga ;
 +---------------------------------------+--------------------------------+---------------+-------------+----------------+
 
@@ -87,11 +87,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 202 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:03     ; 1.0                     ; 194 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 181 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 152 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:06     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 224 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 217 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 194 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 164 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:00     ; --                      ; --                  ; 00:00:00                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -100,10 +100,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
-; Fitter                  ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
-; Assembler               ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
-; Classic Timing Analyzer ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
+; Analysis & Synthesis    ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
