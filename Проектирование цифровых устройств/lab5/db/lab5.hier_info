@@ -1,11 +1,9 @@
-|v55_jk
-c => q~reg0.CLK
-j => always0~2.IN0
-j => always0~1.IN0
-j => always0~0.IN0
-k => always0~2.IN1
-k => always0~0.IN1
-k => always0~1.IN1
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|v57
+c => q_stat$latch.LATCH_ENABLE
+c => q_din~reg0.CLK
+d => q_stat$latch.DATAIN
+d => q_din~reg0.DATAIN
+q_stat <= q_stat$latch.DB_MAX_OUTPUT_PORT_TYPE
+q_din <= q_din~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
