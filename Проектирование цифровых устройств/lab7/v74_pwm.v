@@ -1,0 +1,10 @@
+//ШИМ-модулятор
+module v74_pwm (c, q, n, pwm);
+input c;
+input [3:0] n;
+output [3:0] q;
+reg [3:0] q;
+output pwm;
+always @(posedge c) q = q +1;
+assign pwm =n>q;
+endmodule

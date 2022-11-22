@@ -15,13 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="prog.asm">
+    <ClCompile Include="MainApp.cpp">
       <Filter>Исходные файлы</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <MASM Include="mainWindow.asm">
-      <Filter>Исходные файлы</Filter>
-    </MASM>
+    </ClCompile>
   </ItemGroup>
 </Project>

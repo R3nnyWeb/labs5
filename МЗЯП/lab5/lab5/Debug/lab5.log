@@ -1,0 +1,3 @@
+﻿  Assembling mainWindow.asm...
+mainWindow.asm(133): error A2006: undefined symbol : StrToFloat4
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: выход из команды "ml.exe /c /nologo /Zi /Fo"Debug\mainWindow.obj" /W3 /errorReport:prompt  /TamainWindow.asm" с кодом "1".
