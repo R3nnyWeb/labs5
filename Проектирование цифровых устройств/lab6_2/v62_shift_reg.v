@@ -1,0 +1,8 @@
+module v62_shift_reg(c, si, so, q);
+input c, si; 
+output so;
+reg so;
+output [7:0] q;
+reg [7:0] q;
+always @ (posedge c) {q,so} = {si,q};
+endmodule
