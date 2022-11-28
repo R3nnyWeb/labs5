@@ -35,6 +35,173 @@ s62_shift_reg.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+sv62
+# storage
+db|lab6_2.(1).cnf
+db|lab6_2.(1).cnf
+# case_insensitive
+# source_file
+sv62.bdf
+135e393ea2ca8f6243121c4c8e313ca9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+v62_shift_reg
+# storage
+db|lab6_2.(2).cnf
+db|lab6_2.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v62_shift_reg.v
+d288de5ff29d223c80b179962c5522ce
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+v63
+# storage
+db|lab6_2.(3).cnf
+db|lab6_2.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v63.v
+6fe85dc514cffcf22d3d33cf2bd33fff
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+s63
+# storage
+db|lab6_2.(4).cnf
+db|lab6_2.(4).cnf
+# case_insensitive
+# source_file
+s63.bdf
+a9df6caa78c1fe62bdda6c721e52ae18
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+sv63
+# storage
+db|lab6_2.(5).cnf
+db|lab6_2.(5).cnf
+# case_insensitive
+# source_file
+sv63.bdf
+ed8c84d68ce16a835182dfc7bf178baf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+w64
+# storage
+db|lab6_2.(6).cnf
+db|lab6_2.(6).cnf
+# case_insensitive
+# source_file
+w64.bdf
+acae3b72f32ef2b7cd5e98aa99518c2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+v65_alu
+# storage
+db|lab6_2.(7).cnf
+db|lab6_2.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v65_alu.v
+be08d22fbce1bac33f3c97ef4a7b6b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
 # hierarchies {
 |
 }
