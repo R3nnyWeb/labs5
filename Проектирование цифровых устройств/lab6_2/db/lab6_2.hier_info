@@ -1,36 +1,14 @@
-|sv62
-vso <= v62_shift_reg:inst1.so
-c => v62_shift_reg:inst1.c
-si => v62_shift_reg:inst1.si
-vq[0] <= v62_shift_reg:inst1.q[0]
-vq[1] <= v62_shift_reg:inst1.q[1]
-vq[2] <= v62_shift_reg:inst1.q[2]
-vq[3] <= v62_shift_reg:inst1.q[3]
-vq[4] <= v62_shift_reg:inst1.q[4]
-vq[5] <= v62_shift_reg:inst1.q[5]
-vq[6] <= v62_shift_reg:inst1.q[6]
-vq[7] <= v62_shift_reg:inst1.q[7]
-
-
-|sv62|v62_shift_reg:inst1
-c => q[7]~reg0.CLK
-c => q[6]~reg0.CLK
-c => q[5]~reg0.CLK
-c => q[4]~reg0.CLK
-c => q[3]~reg0.CLK
-c => q[2]~reg0.CLK
-c => q[1]~reg0.CLK
-c => q[0]~reg0.CLK
-c => so~reg0.CLK
-si => q[7]~reg0.DATAIN
-so <= so~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|w64
+si <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.CLK
+c => inst2.CLK
+c => inst1.CLK
+c => inst.CLK
+c => inst4.CLK
+q[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -80,7 +80,7 @@ GND*                         : A11       :        :                   :         
 GND*                         : A12       :        :                   :         : 2         :                
 GND*                         : A13       :        :                   :         : 2         :                
 GND*                         : A14       :        :                   :         : 2         :                
-GND*                         : A15       :        :                   :         : 2         :                
+q[4]                         : A15       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : A16       :        :                   :         : 2         :                
 GND*                         : A17       :        :                   :         : 2         :                
 GND*                         : A18       :        :                   :         : 2         :                
@@ -106,7 +106,7 @@ GND*                         : B17       :        :                   :         
 GND*                         : B18       :        :                   :         : 2         :                
 GND*                         : B19       :        :                   :         : 2         :                
 GND*                         : B20       :        :                   :         : 2         :                
-vq[5]                        : C1        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : C1        :        :                   :         : 1         :                
 GND*                         : C2        :        :                   :         : 1         :                
 GND*                         : C3        :        :                   :         : 1         :                
 NC                           : C4        :        :                   :         :           :                
@@ -127,8 +127,8 @@ GND*                         : C18       :        :                   :         
 GND*                         : C19       :        :                   :         : 2         :                
 GND*                         : C20       :        :                   :         : 2         :                
 GND*                         : D1        :        :                   :         : 1         :                
-vso                          : D2        : output : 3.3-V LVTTL       :         : 1         : N              
-vq[7]                        : D3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : D2        :        :                   :         : 1         :                
+GND*                         : D3        :        :                   :         : 1         :                
 NC                           : D4        :        :                   :         :           :                
 NC                           : D5        :        :                   :         :           :                
 NC                           : D6        :        :                   :         :           :                
@@ -146,24 +146,24 @@ NC                           : D17       :        :                   :         
 GND*                         : D18       :        :                   :         : 2         :                
 GND*                         : D19       :        :                   :         : 2         :                
 GND*                         : D20       :        :                   :         : 2         :                
-si                           : E1        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : E1        :        :                   :         : 1         :                
 GND*                         : E2        :        :                   :         : 1         :                
-vq[3]                        : E3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : E3        :        :                   :         : 1         :                
 NC                           : E4        :        :                   :         :           :                
 GND*                         : E17       :        :                   :         : 2         :                
 GND*                         : E18       :        :                   :         : 2         :                
 GND*                         : E19       :        :                   :         : 2         :                
 GND*                         : E20       :        :                   :         : 2         :                
 GND*                         : F1        :        :                   :         : 1         :                
-vq[1]                        : F2        : output : 3.3-V LVTTL       :         : 1         : N              
-vq[2]                        : F3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : F2        :        :                   :         : 1         :                
+GND*                         : F3        :        :                   :         : 1         :                
 NC                           : F4        :        :                   :         :           :                
 NC                           : F17       :        :                   :         :           :                
 NC                           : F18       :        :                   :         :           :                
 GND*                         : F19       :        :                   :         : 2         :                
 GND*                         : F20       :        :                   :         : 2         :                
 GND*                         : G1        :        :                   :         : 1         :                
-vq[6]                        : G2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : G2        :        :                   :         : 1         :                
 NC                           : G3        :        :                   :         :           :                
 NC                           : G4        :        :                   :         :           :                
 NC                           : G17       :        :                   :         :           :                
@@ -171,7 +171,7 @@ NC                           : G18       :        :                   :         
 GND*                         : G19       :        :                   :         : 2         :                
 GND*                         : G20       :        :                   :         : 2         :                
 GND*                         : H1        :        :                   :         : 1         :                
-vq[0]                        : H2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : H2        :        :                   :         : 1         :                
 GND                          : H3        : gnd    :                   :         :           :                
 NC                           : H4        :        :                   :         :           :                
 NC                           : H17       :        :                   :         :           :                
@@ -234,7 +234,7 @@ NC                           : R17       :        :                   :         
 GND*                         : R18       :        :                   :         : 2         :                
 GND*                         : R19       :        :                   :         : 2         :                
 GND*                         : R20       :        :                   :         : 2         :                
-GND*                         : T1        :        :                   :         : 1         :                
+q[0]                         : T1        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : T2        :        :                   :         : 1         :                
 TMS                          : T3        : input  :                   :         : 1         :                
 GND*                         : T4        :        :                   :         : 1         :                
@@ -244,7 +244,7 @@ GND*                         : T19       :        :                   :         
 GND*                         : T20       :        :                   :         : 2         :                
 GND*                         : U1        :        :                   :         : 1         :                
 TDI                          : U2        : input  :                   :         : 1         :                
-vq[4]                        : U3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : U3        :        :                   :         : 1         :                
 GND*                         : U4        :        :                   :         : 1         :                
 NC                           : U5        :        :                   :         :           :                
 NC                           : U6        :        :                   :         :           :                
@@ -261,13 +261,13 @@ NC                           : U16       :        :                   :         
 GND*                         : U17       :        :                   :         : 2         :                
 GND*                         : U18       :        :                   :         : 2         :                
 GND*                         : U19       :        :                   :         : 2         :                
-GND*                         : U20       :        :                   :         : 2         :                
+q[2]                         : U20       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : V1        :        :                   :         : 1         :                
 TDO                          : V2        : output :                   :         : 1         :                
 GND*                         : V3        :        :                   :         : 1         :                
 GND*                         : V4        :        :                   :         : 1         :                
 GND*                         : V5        :        :                   :         : 1         :                
-GND*                         : V6        :        :                   :         : 1         :                
+q[1]                         : V6        : output : 3.3-V LVTTL       :         : 1         : N              
 NC                           : V7        :        :                   :         :           :                
 GND                          : V8        : gnd    :                   :         :           :                
 GND                          : V9        : gnd    :                   :         :           :                
@@ -304,9 +304,9 @@ GND*                         : W19       :        :                   :         
 GND*                         : W20       :        :                   :         : 2         :                
 GND*                         : Y1        :        :                   :         : 1         :                
 GND*                         : Y2        :        :                   :         : 1         :                
-GND*                         : Y3        :        :                   :         : 1         :                
+si                           : Y3        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : Y4        :        :                   :         : 1         :                
-GND*                         : Y5        :        :                   :         : 1         :                
+q[3]                         : Y5        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : Y6        :        :                   :         : 1         :                
 GND*                         : Y7        :        :                   :         : 1         :                
 GND*                         : Y8        :        :                   :         : 1         :                
