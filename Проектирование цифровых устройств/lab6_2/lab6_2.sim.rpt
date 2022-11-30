@@ -1,0 +1,205 @@
+Simulator report for lab6_2
+Wed Nov 30 10:01:53 2022
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------+
+; Simulator Summary                           ;
++-----------------------------+---------------+
+; Type                        ; Value         ;
++-----------------------------+---------------+
+; Simulation Start Time       ; 0 ps          ;
+; Simulation End Time         ; 1.0 us        ;
+; Simulation Netlist Size     ; 33 nodes      ;
+; Simulation Coverage         ;     100.00 %  ;
+; Total Number of Transitions ; 715           ;
+; Simulation Breakpoints      ; 0             ;
+; Family                      ; MAX II        ;
+; Device                      ; EPM570ZM256C7 ;
++-----------------------------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Option                                                                                     ; Setting     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Simulation mode                                                                            ; Timing      ; Timing        ;
+; Start time                                                                                 ; 0 ns        ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF        ;               ;
+; Vector input source                                                                        ; w65_alu.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
+; Check outputs                                                                              ; Off         ; Off           ;
+; Report simulation coverage                                                                 ; On          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
+; Display missing 1-value coverage report                                                    ; On          ; On            ;
+; Display missing 0-value coverage report                                                    ; On          ; On            ;
+; Detect setup and hold time violations                                                      ; Off         ; Off           ;
+; Detect glitches                                                                            ; Off         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
+; Generate Signal Activity File                                                              ; Off         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 33           ;
+; Total output ports checked                          ; 45           ;
+; Total output ports with complete 1/0-value coverage ; 45           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++--------------------+--------------------------+------------------+
+; Node Name          ; Output Port Name         ; Output Port Type ;
++--------------------+--------------------------+------------------+
+; |v65_alu|Add0~72   ; |v65_alu|Add0~72         ; combout          ;
+; |v65_alu|Add0~72   ; |v65_alu|Add0~73         ; cout0            ;
+; |v65_alu|Add0~72   ; |v65_alu|Add0~73COUT1_88 ; cout1            ;
+; |v65_alu|Mux3~225  ; |v65_alu|Mux3~225        ; combout          ;
+; |v65_alu|q[0]~reg0 ; |v65_alu|Mux3~226        ; combout          ;
+; |v65_alu|q[0]~reg0 ; |v65_alu|q[0]~reg0       ; regout           ;
+; |v65_alu|Add0~74   ; |v65_alu|Add0~74         ; combout          ;
+; |v65_alu|Add0~74   ; |v65_alu|Add0~75         ; cout0            ;
+; |v65_alu|Add0~74   ; |v65_alu|Add0~75COUT1_90 ; cout1            ;
+; |v65_alu|Add0~76   ; |v65_alu|Add0~76         ; combout          ;
+; |v65_alu|Add0~76   ; |v65_alu|Add0~77         ; cout0            ;
+; |v65_alu|Add0~76   ; |v65_alu|Add0~77COUT1_92 ; cout1            ;
+; |v65_alu|Add0~78   ; |v65_alu|Add0~78         ; combout          ;
+; |v65_alu|Add0~78   ; |v65_alu|Add0~79         ; cout0            ;
+; |v65_alu|Add0~78   ; |v65_alu|Add0~79COUT1_94 ; cout1            ;
+; |v65_alu|cf~reg0   ; |v65_alu|cf~reg0         ; regout           ;
+; |v65_alu|zf~reg0   ; |v65_alu|zf~reg0         ; regout           ;
+; |v65_alu|Add0~80   ; |v65_alu|Add0~80         ; combout          ;
+; |v65_alu|Mux0~18   ; |v65_alu|Mux0~18         ; combout          ;
+; |v65_alu|nf~reg0   ; |v65_alu|Mux0~19         ; combout          ;
+; |v65_alu|nf~reg0   ; |v65_alu|nf~reg0         ; regout           ;
+; |v65_alu|Mux1~18   ; |v65_alu|Mux1~18         ; combout          ;
+; |v65_alu|q[2]~reg0 ; |v65_alu|Mux1~19         ; combout          ;
+; |v65_alu|q[2]~reg0 ; |v65_alu|q[2]~reg0       ; regout           ;
+; |v65_alu|Mux2~26   ; |v65_alu|Mux2~26         ; combout          ;
+; |v65_alu|q[1]~reg0 ; |v65_alu|Mux2~27         ; combout          ;
+; |v65_alu|q[1]~reg0 ; |v65_alu|q[1]~reg0       ; regout           ;
+; |v65_alu|d[0]      ; |v65_alu|d[0]~corein     ; combout          ;
+; |v65_alu|k[1]      ; |v65_alu|k[1]~corein     ; combout          ;
+; |v65_alu|k[0]      ; |v65_alu|k[0]~corein     ; combout          ;
+; |v65_alu|d[1]      ; |v65_alu|d[1]~corein     ; combout          ;
+; |v65_alu|d[2]      ; |v65_alu|d[2]~corein     ; combout          ;
+; |v65_alu|d[3]      ; |v65_alu|d[3]~corein     ; combout          ;
+; |v65_alu|c         ; |v65_alu|c~corein        ; combout          ;
+; |v65_alu|q[0]      ; |v65_alu|q[0]            ; padio            ;
+; |v65_alu|q[1]      ; |v65_alu|q[1]            ; padio            ;
+; |v65_alu|q[2]      ; |v65_alu|q[2]            ; padio            ;
+; |v65_alu|q[3]      ; |v65_alu|q[3]            ; padio            ;
+; |v65_alu|ql[0]     ; |v65_alu|ql[0]           ; padio            ;
+; |v65_alu|ql[1]     ; |v65_alu|ql[1]           ; padio            ;
+; |v65_alu|ql[2]     ; |v65_alu|ql[2]           ; padio            ;
+; |v65_alu|ql[3]     ; |v65_alu|ql[3]           ; padio            ;
+; |v65_alu|cf        ; |v65_alu|cf              ; padio            ;
+; |v65_alu|zf        ; |v65_alu|zf              ; padio            ;
+; |v65_alu|nf        ; |v65_alu|nf              ; padio            ;
++--------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Wed Nov 30 10:01:53 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab6_2 -c lab6_2
+Info: Using vector source file "D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab6_2/w65_alu.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 715
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Wed Nov 30 10:01:53 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
