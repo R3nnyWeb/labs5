@@ -1,8 +1,11 @@
-.586
+.686P
 .MODEL FLAT, stdcall
 RGBW equ 00CCCCCCh; цвет фона окна
 include win.inc
 include console.inc
+
+;includelib C : / masm32 / lib / masm32.lib
+;include C : / masm32 / include / masm32rt.inc
 .data
 	HWND DD 0; дескриптор главного окна
 	HINST DD 0; дескриптор приложения
@@ -17,7 +20,7 @@ include console.inc
 	CAP db 'Сообщение', 0
 	TEXTA db 20 dup(0); текст в полях редактирования
 	TEXTB db 20 dup(0)
-	summa dd 0
+	num dd 0
 	hBut DD ? ; дескриптор кнопки
 	hedt1 DD ? ; дескриптор поля 1
 	hedt2 DD ? ; дескриптор поля 2
@@ -130,17 +133,17 @@ WMCOMMAND:; обработка нажатия кнопки
 	jne COM_END; команда не соответствует нажатию кнопки
 	INVOKE SendMessage, hedt1, WM_GETTEXT, 20, offset TEXTA
 	INVOKE SendMessage, hedt2, WM_GETTEXT, 20, offset TEXTB
-	INVOKE StrTo, offset TEXTA
+	INVOKE StrToFloat, ADDR TEXTA, ADDR num
+	mov eax, num
+	add num, eax
 	FINIT
-	mov summa, eax
-	fld summa
+	fld num
 	fcos
-	fstp summa
-	;add summa, eax
+	fstp num
 	mov eax, sum_len
 	INVOKE TextOutA, ; стирание строки результата в окне
 	hdc, 80, 50, offset mess2, eax
-	INVOKE IntToStr, summa, offset mess2 + 1
+	INVOKE FloatToStr, ADDR num, offset mess2 + 1
 	INVOKE LENSTR, offset mess2; определение длины результата
 	push eax
 	INVOKE TextOutA, ; вывод результата
@@ -167,7 +170,7 @@ WMPAINT:; перерисовка окна
 	JMP FINISH
 ;------------------------------------------------------------------
 DEFWNDPROC:; обработка сообщения по умолчанию
-	INVOKE DefWindowProc,
+	INVOKE DefWindowProc, 
 	hW, Mes, wParam, lParam
 	JMP FINISH
 ;------------------------------------------------------------------
