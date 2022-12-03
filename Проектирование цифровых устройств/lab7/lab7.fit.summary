@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed Nov 16 17:11:17 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : lab7
+Top-level Entity Name : sv73_cdiv1
+Family : MAX II
+Device : EPM570ZM256C7
+Timing Models : Preliminary
+Total logic elements : 16 / 570 ( 3 % )
+Total pins : 15 / 160 ( 9 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

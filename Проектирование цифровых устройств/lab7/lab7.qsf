@@ -25,12 +25,27 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM570ZM256C7
-set_global_assignment -name TOP_LEVEL_ENTITY lab7
+set_global_assignment -name TOP_LEVEL_ENTITY sv73_cdiv1
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:23:19  NOVEMBER 16, 2022"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:15:49  NOVEMBER 02, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 8.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name VERILOG_FILE v74_pwm.v
-set_global_assignment -name BDF_FILE s74_pwm.bdf
+set_global_assignment -name BDF_FILE s71.bdf
+set_global_assignment -name LL_ROOT_REGION ON -entity lab7 -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab7 -section_id "Root Region"
+set_global_assignment -name VECTOR_WAVEFORM_FILE w71.vwf
+set_global_assignment -name VERILOG_FILE v71_revcnt.v
+set_global_assignment -name VERILOG_FILE v72_24cnt.v
+set_global_assignment -name LL_ROOT_REGION ON -entity s71 -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity s71 -section_id "Root Region"
+set_global_assignment -name BDF_FILE sv72.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE w72.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE w71_rev.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE w72_24.vwf
+set_global_assignment -name BDF_FILE s73_cdiv1.bdf
+set_global_assignment -name VERILOG_FILE v73_cdiv1.v
+set_global_assignment -name BDF_FILE sv73_cdiv1.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE w73.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE w73.vwf

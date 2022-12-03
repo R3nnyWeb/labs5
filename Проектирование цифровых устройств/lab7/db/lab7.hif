@@ -1,0 +1,221 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+41
+2760
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+s71
+# storage
+db|lab7.(0).cnf
+db|lab7.(0).cnf
+# case_insensitive
+# source_file
+s71.bdf
+3cf045ec79feb4ba53c26870921c576
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+v71_revcnt
+# storage
+db|lab7.(3).cnf
+db|lab7.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v71_revcnt.v
+48d413fdd781dcb563fc4496197ca83b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+v72_24cnt
+# storage
+db|lab7.(1).cnf
+db|lab7.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v72_24cnt.v
+790ac56d6923c702c62f0338ee52757
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+sv72
+# storage
+db|lab7.(2).cnf
+db|lab7.(2).cnf
+# case_insensitive
+# source_file
+sv72.bdf
+ca3909aca5669e88c6bf7f267615b9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+s73_cdiv1
+# storage
+db|lab7.(4).cnf
+db|lab7.(4).cnf
+# case_insensitive
+# source_file
+s73_cdiv1.bdf
+712e7d753b45442ab34bbe6899467b4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s73_cdiv1:inst
+}
+# macro_sequence
+
+# end
+# entity
+4count
+# storage
+db|lab7.(5).cnf
+db|lab7.(5).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|4count.bdf
+58df3cdc539defbbc413475c87351fb9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s73_cdiv1:inst|4count:inst
+}
+# macro_sequence
+
+# end
+# entity
+v73_cdiv1
+# storage
+db|lab7.(7).cnf
+db|lab7.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v73_cdiv1.v
+b7eeccc0316fa0b0ad635cf31455d3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v73_cdiv1:inst1
+}
+# macro_sequence
+
+# end
+# entity
+sv73_cdiv1
+# storage
+db|lab7.(6).cnf
+db|lab7.(6).cnf
+# case_insensitive
+# source_file
+sv73_cdiv1.bdf
+94efa8df274020103d417eb34b97c0e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
