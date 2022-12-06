@@ -1,5 +1,9 @@
 Flow report for lab7
+<<<<<<< HEAD
 Wed Nov 30 17:47:23 2022
+=======
+Wed Nov 16 17:11:21 2022
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,16 +42,28 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
+<<<<<<< HEAD
 ; Flow Status             ; Successful - Wed Nov 30 17:47:23 2022   ;
 ; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name           ; lab7                                    ;
 ; Top-level Entity Name   ; s75_counters                            ;
+=======
+; Flow Status             ; Successful - Wed Nov 16 17:11:21 2022   ;
+; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Revision Name           ; lab7                                    ;
+; Top-level Entity Name   ; sv73_cdiv1                              ;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 ; Family                  ; MAX II                                  ;
 ; Device                  ; EPM570ZM256C7                           ;
 ; Timing Models           ; Preliminary                             ;
 ; Met timing requirements ; Yes                                     ;
+<<<<<<< HEAD
 ; Total logic elements    ; 12 / 570 ( 2 % )                        ;
 ; Total pins              ; 10 / 160 ( 6 % )                        ;
+=======
+; Total logic elements    ; 16 / 570 ( 3 % )                        ;
+; Total pins              ; 15 / 160 ( 9 % )                        ;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 ; Total virtual pins      ; 0                                       ;
 ; UFM blocks              ; 0 / 1 ( 0 % )                           ;
 +-------------------------+-----------------------------------------+
@@ -58,12 +74,17 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
 ; Start date & time ; 11/30/2022 17:47:15 ;
+=======
+; Start date & time ; 11/16/2022 17:11:14 ;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab7                ;
 +-------------------+---------------------+
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------------------------------------------+
 ; Flow Non-Default Global Settings                                                                                  ;
 +------------------------------------+-------------------------------+---------------+-------------+----------------+
@@ -75,6 +96,19 @@ applicable agreement for further details.
 ; TOP_LEVEL_ENTITY                   ; s75_counters                  ; lab7          ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                           ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+-------------------------------+---------------+-------------+----------------+
+=======
++--------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                   ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 71094331888171.166860787402840 ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                             ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                              ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                   ; sv73_cdiv1                     ; lab7          ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -82,11 +116,19 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 225 MB              ; 00:00:01                           ;
 ; Fitter                  ; 00:00:01     ; 1.0                     ; 217 MB              ; 00:00:00                           ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 194 MB              ; 00:00:01                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 166 MB              ; 00:00:00                           ;
 ; Total                   ; 00:00:04     ; --                      ; --                  ; 00:00:02                           ;
+=======
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 209 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 193 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 181 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 153 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -95,10 +137,17 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis    ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
 ; Fitter                  ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
 ; Assembler               ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
 ; Classic Timing Analyzer ; LAPTOP-642HNTAG  ; Windows Vista ; 6.2        ; x86_64         ;
+=======
+; Analysis & Synthesis    ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
+; Fitter                  ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
+; Assembler               ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
+; Classic Timing Analyzer ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 +-------------------------+------------------+---------------+------------+----------------+
 
 

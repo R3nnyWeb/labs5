@@ -1,5 +1,9 @@
 Analysis & Synthesis report for lab7
+<<<<<<< HEAD
 Wed Nov 30 17:47:16 2022
+=======
+Wed Nov 16 17:11:16 2022
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,6 +43,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status ; Successful - Wed Nov 30 17:47:16 2022   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; lab7                                    ;
@@ -46,6 +51,15 @@ applicable agreement for further details.
 ; Family                      ; MAX II                                  ;
 ; Total logic elements        ; 12                                      ;
 ; Total pins                  ; 10                                      ;
+=======
+; Analysis & Synthesis Status ; Successful - Wed Nov 16 17:11:15 2022   ;
+; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Revision Name               ; lab7                                    ;
+; Top-level Entity Name       ; sv73_cdiv1                              ;
+; Family                      ; MAX II                                  ;
+; Total logic elements        ; 16                                      ;
+; Total pins                  ; 15                                      ;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 ; Total virtual pins          ; 0                                       ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                           ;
 +-----------------------------+-----------------------------------------+
@@ -57,7 +71,11 @@ applicable agreement for further details.
 ; Option                                                         ; Setting            ; Default Value      ;
 +----------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                         ; EPM570ZM256C7      ;                    ;
+<<<<<<< HEAD
 ; Top-level entity name                                          ; s75_counters       ; lab7               ;
+=======
+; Top-level entity name                                          ; sv73_cdiv1         ; lab7               ;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 ; Family name                                                    ; MAX II             ; Stratix II         ;
 ; Use Generated Physical Constraints File                        ; Off                ;                    ;
 ; Use smart compilation                                          ; Off                ; Off                ;
@@ -117,6 +135,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
+<<<<<<< HEAD
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                            ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+
@@ -172,6 +191,64 @@ applicable agreement for further details.
 ;    |v72_24cnt:inst2|       ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |s75_counters|v72_24cnt:inst2 ; work         ;
 ;    |v73_cdiv1:inst4|       ; 8 (8)       ; 4            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |s75_counters|v73_cdiv1:inst4 ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
+=======
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                              ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+
+; s73_cdiv1.bdf                    ; yes             ; User Block Diagram/Schematic File  ; E:/lab7/s73_cdiv1.bdf                                     ;
+; v73_cdiv1.v                      ; yes             ; User Verilog HDL File              ; E:/lab7/v73_cdiv1.v                                       ;
+; sv73_cdiv1.bdf                   ; yes             ; User Block Diagram/Schematic File  ; E:/lab7/sv73_cdiv1.bdf                                    ;
+; 4count.bdf                       ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/others/maxplus2/4count.bdf ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 16    ;
+;     -- Combinational with no register       ; 8     ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 8     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 8     ;
+;     -- 3 input functions                    ; 3     ;
+;     -- 2 input functions                    ; 5     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 16    ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 8     ;
+; I/O pins                                    ; 15    ;
+; Maximum fan-out node                        ; c     ;
+; Maximum fan-out                             ; 8     ;
+; Total fan-out                               ; 69    ;
+; Average fan-out                             ; 2.23  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                    ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+--------------+
+; |sv73_cdiv1                ; 16 (0)      ; 8            ; 0          ; 15   ; 0            ; 8 (0)        ; 0 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |sv73_cdiv1                            ; work         ;
+;    |s73_cdiv1:inst|        ; 8 (3)       ; 4            ; 0          ; 0    ; 0            ; 4 (3)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |sv73_cdiv1|s73_cdiv1:inst             ; work         ;
+;       |4count:inst|        ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |sv73_cdiv1|s73_cdiv1:inst|4count:inst ; work         ;
+;    |v73_cdiv1:inst1|       ; 8 (8)       ; 4            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |sv73_cdiv1|v73_cdiv1:inst1            ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+--------------+
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -196,6 +273,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+<<<<<<< HEAD
     Info: Processing started: Wed Nov 30 17:47:14 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab7 -c lab7
 Info: Found 1 design units, including 1 entities, in source file v74_pwm.v
@@ -212,10 +290,21 @@ Info: Found 1 design units, including 1 entities, in source file s71.bdf
     Info: Found entity 1: s71
 Info: Found 1 design units, including 1 entities, in source file sv73_cdiv1.bdf
     Info: Found entity 1: sv73_cdiv1
+=======
+    Info: Processing started: Wed Nov 16 17:11:14 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab7 -c lab7
+Info: Found 1 design units, including 1 entities, in source file s71.bdf
+    Info: Found entity 1: s71
+Info: Found 1 design units, including 1 entities, in source file v71_revcnt.v
+    Info: Found entity 1: v71_revcnt
+Info: Found 1 design units, including 1 entities, in source file v72_24cnt.v
+    Info: Found entity 1: v72_24cnt
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 Info: Found 1 design units, including 1 entities, in source file sv72.bdf
     Info: Found entity 1: sv72
 Info: Found 1 design units, including 1 entities, in source file s73_cdiv1.bdf
     Info: Found entity 1: s73_cdiv1
+<<<<<<< HEAD
 Info: Found 1 design units, including 1 entities, in source file v72_24cnt.v
     Info: Found entity 1: v72_24cnt
 Info: Found 1 design units, including 1 entities, in source file v71_revcnt.v
@@ -236,6 +325,32 @@ Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 225 megabytes
     Info: Processing ended: Wed Nov 30 17:47:17 2022
     Info: Elapsed time: 00:00:03
+=======
+Info: Found 1 design units, including 1 entities, in source file v73_cdiv1.v
+    Info: Found entity 1: v73_cdiv1
+Info: Found 1 design units, including 1 entities, in source file sv73_cdiv1.bdf
+    Info: Found entity 1: sv73_cdiv1
+Info: Elaborating entity "sv73_cdiv1" for the top level hierarchy
+Info: Elaborating entity "s73_cdiv1" for hierarchy "s73_cdiv1:inst"
+Info: Elaborating entity "4count" for hierarchy "s73_cdiv1:inst|4count:inst"
+Info: Elaborated megafunction instantiation "s73_cdiv1:inst|4count:inst"
+Info: Elaborating entity "v73_cdiv1" for hierarchy "v73_cdiv1:inst1"
+Warning (10230): Verilog HDL assignment warning at v73_cdiv1.v(9): truncated value with size 32 to match size of target (4)
+Info: Implemented 31 device resources after synthesis - the final resource count might be different
+    Info: Implemented 5 input pins
+    Info: Implemented 10 output pins
+    Info: Implemented 16 logic cells
+Warning: Ignored assignments for entity "lab7" -- entity does not exist in design
+    Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity lab7 -section_id "Root Region" is ignored
+    Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab7 -section_id "Root Region" is ignored
+Warning: Ignored assignments for entity "s71" -- entity does not exist in design
+    Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity s71 -section_id "Root Region" is ignored
+    Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity s71 -section_id "Root Region" is ignored
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 209 megabytes
+    Info: Processing ended: Wed Nov 16 17:11:16 2022
+    Info: Elapsed time: 00:00:02
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
     Info: Total CPU time (on all processors): 00:00:01
 
 

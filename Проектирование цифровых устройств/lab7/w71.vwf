@@ -49,7 +49,11 @@ SIGNAL("q[3]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+<<<<<<< HEAD
 	PARENT = "";
+=======
+	PARENT = "q";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 
 SIGNAL("q[2]")
@@ -59,7 +63,11 @@ SIGNAL("q[2]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+<<<<<<< HEAD
 	PARENT = "";
+=======
+	PARENT = "q";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 
 SIGNAL("q[1]")
@@ -69,7 +77,11 @@ SIGNAL("q[1]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+<<<<<<< HEAD
 	PARENT = "";
+=======
+	PARENT = "q";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 
 SIGNAL("q[0]")
@@ -79,7 +91,11 @@ SIGNAL("q[0]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+<<<<<<< HEAD
 	PARENT = "";
+=======
+	PARENT = "q";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 
 SIGNAL("w[3]")
@@ -89,7 +105,11 @@ SIGNAL("w[3]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+<<<<<<< HEAD
 	PARENT = "";
+=======
+	PARENT = "w";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 
 SIGNAL("w[2]")
@@ -99,7 +119,11 @@ SIGNAL("w[2]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+<<<<<<< HEAD
 	PARENT = "";
+=======
+	PARENT = "w";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 
 SIGNAL("w[1]")
@@ -109,7 +133,11 @@ SIGNAL("w[1]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+<<<<<<< HEAD
 	PARENT = "";
+=======
+	PARENT = "w";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 
 SIGNAL("w[0]")
@@ -119,7 +147,11 @@ SIGNAL("w[0]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+<<<<<<< HEAD
 	PARENT = "";
+=======
+	PARENT = "w";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 
 TRANSITION_LIST("c")

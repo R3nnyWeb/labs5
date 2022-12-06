@@ -20,6 +20,7 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
+<<<<<<< HEAD
 VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w74_pwm.vwf")
 {
 	ZOOM{
@@ -265,6 +266,15 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		ZEND = 0;
 		NUMERATOR = 0;
 		DENOMINATOR = 0;
+=======
+VECTOR("E:/lab7/w71.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 1000000;
+		NUMERATOR = 1367;
+		DENOMINATOR = 1000000;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -349,6 +359,7 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 	}
 }
 
+<<<<<<< HEAD
 VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w73.vwf")
 {
 	ZOOM{
@@ -356,6 +367,15 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		ZEND = 0;
 		NUMERATOR = 0;
 		DENOMINATOR = 0;
+=======
+VECTOR("E:/lab7/w71_rev.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 1000000;
+		NUMERATOR = 1107;
+		DENOMINATOR = 1000000;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -375,8 +395,21 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		FLAG = N;
 	}
 	LINE{
+<<<<<<< HEAD
 		SIGNAL = "n";
 		INDEX = 1;
+=======
+		SIGNAL = "dnup";
+		INDEX = 1;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "n";
+		INDEX = 2;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -384,6 +417,7 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 	}
 	LINE{
 		SIGNAL = "n[3]";
+<<<<<<< HEAD
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -392,6 +426,8 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 	}
 	LINE{
 		SIGNAL = "n[2]";
+=======
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -399,7 +435,11 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		FLAG = N;
 	}
 	LINE{
+<<<<<<< HEAD
 		SIGNAL = "n[1]";
+=======
+		SIGNAL = "n[2]";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -407,7 +447,11 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		FLAG = N;
 	}
 	LINE{
+<<<<<<< HEAD
 		SIGNAL = "n[0]";
+=======
+		SIGNAL = "n[1]";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -415,13 +459,18 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		FLAG = N;
 	}
 	LINE{
+<<<<<<< HEAD
 		SIGNAL = "s_clr";
+=======
+		SIGNAL = "n[0]";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
+<<<<<<< HEAD
 	LINE{
 		SIGNAL = "s_q";
 		INDEX = 7;
@@ -519,6 +568,17 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		ZEND = 0;
 		NUMERATOR = 0;
 		DENOMINATOR = 0;
+=======
+}
+
+VECTOR("E:/lab7/w72_24.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 1000000;
+		NUMERATOR = 1367;
+		DENOMINATOR = 1000000;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -547,6 +607,7 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 	}
 }
 
+<<<<<<< HEAD
 VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w72.vwf")
 {
 	ZOOM{
@@ -554,6 +615,15 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		ZEND = 0;
 		NUMERATOR = 0;
 		DENOMINATOR = 0;
+=======
+VECTOR("E:/lab7/w72.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 1000000;
+		NUMERATOR = 1367;
+		DENOMINATOR = 1000000;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -622,6 +692,7 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 	}
 }
 
+<<<<<<< HEAD
 VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/db/lab7.sim.cvwf")
 {
 	ZOOM{
@@ -629,6 +700,15 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/d
 		ZEND = 10000000;
 		NUMERATOR = 953;
 		DENOMINATOR = 10000000;
+=======
+VECTOR("E:/lab7/db/lab7.sim.cvwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 1000000;
+		NUMERATOR = 1191;
+		DENOMINATOR = 1000000;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -640,7 +720,11 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/d
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
+<<<<<<< HEAD
 		SIGNAL = "clk";
+=======
+		SIGNAL = "c";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		INDEX = 0;
 		FORMAT = E;
 		SCALE = 1;
@@ -648,6 +732,7 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/d
 		FLAG = N;
 	}
 	LINE{
+<<<<<<< HEAD
 		SIGNAL = "n";
 		INDEX = 1;
 		FORMAT = T;
@@ -682,6 +767,10 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/d
 	LINE{
 		SIGNAL = "n[0]";
 		INDEX = 5;
+=======
+		SIGNAL = "dnup";
+		INDEX = 1;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -689,7 +778,11 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/d
 	}
 	LINE{
 		SIGNAL = "q";
+<<<<<<< HEAD
 		INDEX = 6;
+=======
+		INDEX = 2;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -697,6 +790,7 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/d
 	}
 	LINE{
 		SIGNAL = "q[3]";
+<<<<<<< HEAD
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -780,6 +874,8 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 	}
 	LINE{
 		SIGNAL = "n[2]";
+=======
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -787,7 +883,11 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		FLAG = N;
 	}
 	LINE{
+<<<<<<< HEAD
 		SIGNAL = "n[1]";
+=======
+		SIGNAL = "q[2]";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -795,7 +895,11 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		FLAG = N;
 	}
 	LINE{
+<<<<<<< HEAD
 		SIGNAL = "n[0]";
+=======
+		SIGNAL = "q[1]";
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -803,6 +907,7 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 		FLAG = N;
 	}
 	LINE{
+<<<<<<< HEAD
 		SIGNAL = "q";
 		INDEX = 6;
 		FORMAT = T;
@@ -845,6 +950,10 @@ VECTOR("C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/w
 	LINE{
 		SIGNAL = "reset";
 		INDEX = 11;
+=======
+		SIGNAL = "q[0]";
+		INDEX = 6;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

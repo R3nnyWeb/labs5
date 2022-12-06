@@ -1871,9 +1871,9 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab6_2/db/lab6
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 2000000;
-		NUMERATOR = 1390;
-		DENOMINATOR = 2000000;
+		ZEND = 440287;
+		NUMERATOR = 1224;
+		DENOMINATOR = 440287;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -1893,7 +1893,7 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab6_2/db/lab6
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "q";
+		SIGNAL = "k";
 		INDEX = 1;
 		FORMAT = T;
 		SCALE = 1;
@@ -1901,7 +1901,7 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab6_2/db/lab6
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "q[4]";
+		SIGNAL = "k[1]";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -1909,7 +1909,7 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab6_2/db/lab6
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "q[3]";
+		SIGNAL = "k[0]";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -1917,15 +1917,15 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab6_2/db/lab6
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "q[2]";
+		SIGNAL = "d";
 		INDEX = 4;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "q[1]";
+		SIGNAL = "d[3]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -1933,7 +1933,7 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab6_2/db/lab6
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "q[0]";
+		SIGNAL = "d[2]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -1941,8 +1941,120 @@ VECTOR("D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab6_2/db/lab6
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "si";
+		SIGNAL = "d[1]";
 		INDEX = 7;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "d[0]";
+		INDEX = 8;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ql";
+		INDEX = 9;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ql[3]";
+		INDEX = 10;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ql[2]";
+		INDEX = 11;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ql[1]";
+		INDEX = 12;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ql[0]";
+		INDEX = 13;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "q";
+		INDEX = 14;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "q[3]";
+		INDEX = 15;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "q[2]";
+		INDEX = 16;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "q[1]";
+		INDEX = 17;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "q[0]";
+		INDEX = 18;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "cf";
+		INDEX = 19;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "nf";
+		INDEX = 20;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "zf";
+		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
