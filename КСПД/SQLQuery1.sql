@@ -1,102 +1,102 @@
 USE master
-CREATE DATABASE Ателье
-ON 
-   (NAME = 'Ателье',
-   FILENAME = 'B:\DB\Ателье.mdf',
+CREATE DATABASE РђС‚РµР»СЊРµ
+ON
+   (NAME = 'РђС‚РµР»СЊРµ',
+   FILENAME = 'B:\DB\РђС‚РµР»СЊРµ.mdf',
    SIZE = 1,
    MAXSIZE = 10,
    FILEGROWTH = 1)
    LOG ON
-   (NAME = 'Ателье_log',
-  FILENAME = 'B:\DB\Ателье_log.mdf',
+   (NAME = 'РђС‚РµР»СЊРµ_log',
+  FILENAME = 'B:\DB\РђС‚РµР»СЊРµ_log.mdf',
    SIZE = 1,
    MAXSIZE = 5,
    FILEGROWTH = 1)
    GO
 
-USE Ателье
-CREATE TABLE Ателье
-(Номер int IDENTITY(1,1) not null,
-CONSTRAINT PK_Ателье primary key (Номер),
-Название varchar(30) not null,
-Адрес varchar(30) not null,
-Телефон int null check( Телефон like '[1-9][0-9][0-9][0-9][0-9][0-9]') 
+USE РђС‚РµР»СЊРµ
+CREATE TABLE РђС‚РµР»СЊРµ
+(РќРѕРјРµСЂ int IDENTITY(1,1) not null,
+CONSTRAINT PK_РђС‚РµР»СЊРµ primary key (РќРѕРјРµСЂ),
+РќР°Р·РІР°РЅРёРµ varchar(30) not null,
+РђРґСЂРµСЃ varchar(30) not null,
+РўРµР»РµС„РѕРЅ int null check( РўРµР»РµС„РѕРЅ like '[1-9][0-9][0-9][0-9][0-9][0-9]')
 )
-GO 
---ALTER TABLE Ателье
---ADD CONSTRAINT PK_Ателье primary key (Номер)
+GO
+--ALTER TABLE РђС‚РµР»СЊРµ
+--ADD CONSTRAINT PK_РђС‚РµР»СЊРµ primary key (РќРѕРјРµСЂ)
 --GO
-ALTER TABLE Ателье
-ADD CONSTRAINT UK_Ателье unique(Название)
+ALTER TABLE РђС‚РµР»СЊРµ
+ADD CONSTRAINT UK_РђС‚РµР»СЊРµ unique(РќР°Р·РІР°РЅРёРµ)
 GO
 
-USE Ателье
-CREATE TABLE Услуги
-(Код int IDENTITY(1,1) not null,
-Название varchar(30) not null,
-[Длительность выполнения] int null check([Длительность выполнения] > 0)
-)
-GO 
-ALTER TABLE Услуги 
-ADD CONSTRAINT PK_Услуги primary key (Код)
-GO
-
-USE Ателье
-CREATE TABLE Стоимость
-(Ателье int not null,
-Услуга int  not null,
-Стоимость smallmoney not null check (Стоимость > 0)
+USE РђС‚РµР»СЊРµ
+CREATE TABLE РЈСЃР»СѓРіРё
+(РљРѕРґ int IDENTITY(1,1) not null,
+РќР°Р·РІР°РЅРёРµ varchar(30) not null,
+[Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІС‹РїРѕР»РЅРµРЅРёСЏ] int null check([Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІС‹РїРѕР»РЅРµРЅРёСЏ] > 0)
 )
 GO
-
-ALTER TABLE Стоимость
-ADD CONSTRAINT PK_Стоимость primary key (Ателье, Услуга)
+ALTER TABLE РЈСЃР»СѓРіРё
+ADD CONSTRAINT PK_РЈСЃР»СѓРіРё primary key (РљРѕРґ)
 GO
 
-ALTER TABLE Стоимость
-ADD CONSTRAINT FK_Стоимость_Ателье foreign
-key (Ателье) references Ателье(Номер)
+USE РђС‚РµР»СЊРµ
+CREATE TABLE РЎС‚РѕРёРјРѕСЃС‚СЊ
+(РђС‚РµР»СЊРµ int not null,
+РЈСЃР»СѓРіР° int  not null,
+РЎС‚РѕРёРјРѕСЃС‚СЊ smallmoney not null check (РЎС‚РѕРёРјРѕСЃС‚СЊ > 0)
+)
 GO
 
-ALTER TABLE Стоимость
-ADD CONSTRAINT FK_Стоимость_Услуги foreign
-key (Услуга) references Услуги(Код)
+ALTER TABLE РЎС‚РѕРёРјРѕСЃС‚СЊ
+ADD CONSTRAINT PK_РЎС‚РѕРёРјРѕСЃС‚СЊ primary key (РђС‚РµР»СЊРµ, РЈСЃР»СѓРіР°)
 GO
 
-DBCC CHECKIDENT('Ателье',RESEED,1)
-GO
-INSERT INTO Ателье VALUES
-	('Золотое Руно', 'Новая, 28/32', 250085),
-	('Золушка', 'Разина, 2А', 445791),
-	('Имидж', 'Карла Маркса, 11', 289622),
-	('Канесса', 'Энгельса, 35', 445044),
-	('Карина', 'Дзержинского, 40', NULL),
-	('Кутюрье', 'Халтурина, 1Б', 324088),
-	('Макошь', 'Фрунзе, 15', 456077),
-	('Миранда-А', 'Крупской, 27', 557890),
-	('Мода', 'ЛенКом, 13', 296057),
-	('Образ', 'Урицкого, 25', 411840)
-
+ALTER TABLE РЎС‚РѕРёРјРѕСЃС‚СЊ
+ADD CONSTRAINT FK_РЎС‚РѕРёРјРѕСЃС‚СЊ_РђС‚РµР»СЊРµ foreign
+key (РђС‚РµР»СЊРµ) references РђС‚РµР»СЊРµ(РќРѕРјРµСЂ)
 GO
 
-
-DBCC CHECKIDENT('Услуги',RESEED,1)
+ALTER TABLE РЎС‚РѕРёРјРѕСЃС‚СЊ
+ADD CONSTRAINT FK_РЎС‚РѕРёРјРѕСЃС‚СЊ_РЈСЃР»СѓРіРё foreign
+key (РЈСЃР»СѓРіР°) references РЈСЃР»СѓРіРё(РљРѕРґ)
 GO
-INSERT INTO Услуги VALUES
-('Укорачивание',10),
-('Подгонка', 22),
-('Корректировка', 29),
-('Перекрой', 30),
-('Изменение фасона', 21),
-('Замена подкладки', 15),
-('Замена фурнитуры', 8),
-('Вышивка', NULL),
-('Пошив', 35),
-('Штопка', 17)
+
+DBCC CHECKIDENT('РђС‚РµР»СЊРµ',RESEED,1)
+GO
+INSERT INTO РђС‚РµР»СЊРµ VALUES
+	('Р—РѕР»РѕС‚РѕРµ Р СѓРЅРѕ', 'РќРѕРІР°СЏ, 28/32', 250085),
+	('Р—РѕР»СѓС€РєР°', 'Р Р°Р·РёРЅР°, 2Рђ', 445791),
+	('РРјРёРґР¶', 'РљР°СЂР»Р° РњР°СЂРєСЃР°, 11', 289622),
+	('РљР°РЅРµСЃСЃР°', 'Р­РЅРіРµР»СЊСЃР°, 35', 445044),
+	('РљР°СЂРёРЅР°', 'Р”Р·РµСЂР¶РёРЅСЃРєРѕРіРѕ, 40', NULL),
+	('РљСѓС‚СЋСЂСЊРµ', 'РҐР°Р»С‚СѓСЂРёРЅР°, 1Р‘', 324088),
+	('РњР°РєРѕС€СЊ', 'Р¤СЂСѓРЅР·Рµ, 15', 456077),
+	('РњРёСЂР°РЅРґР°-Рђ', 'РљСЂСѓРїСЃРєРѕР№, 27', 557890),
+	('РњРѕРґР°', 'Р›РµРЅРљРѕРј, 13', 296057),
+	('РћР±СЂР°Р·', 'РЈСЂРёС†РєРѕРіРѕ, 25', 411840)
+
 GO
 
 
-INSERT INTO Стоимость VALUES
+DBCC CHECKIDENT('РЈСЃР»СѓРіРё',RESEED,1)
+GO
+INSERT INTO РЈСЃР»СѓРіРё VALUES
+('РЈРєРѕСЂР°С‡РёРІР°РЅРёРµ',10),
+('РџРѕРґРіРѕРЅРєР°', 22),
+('РљРѕСЂСЂРµРєС‚РёСЂРѕРІРєР°', 29),
+('РџРµСЂРµРєСЂРѕР№', 30),
+('РР·РјРµРЅРµРЅРёРµ С„Р°СЃРѕРЅР°', 21),
+('Р—Р°РјРµРЅР° РїРѕРґРєР»Р°РґРєРё', 15),
+('Р—Р°РјРµРЅР° С„СѓСЂРЅРёС‚СѓСЂС‹', 8),
+('Р’С‹С€РёРІРєР°', NULL),
+('РџРѕС€РёРІ', 35),
+('РЁС‚РѕРїРєР°', 17)
+GO
+
+
+INSERT INTO РЎС‚РѕРёРјРѕСЃС‚СЊ VALUES
 (1,1,400),
 (1,2,850),
 (1,3,700),
@@ -120,12 +120,12 @@ INSERT INTO Стоимость VALUES
 
 go
 
---USE Ателье
-SELECT * 
-FROM dbo.Ателье
+--USE РђС‚РµР»СЊРµ
+SELECT *
+FROM dbo.РђС‚РµР»СЊРµ
 GO
-SELECT * 
-FROM dbo.Услуги
+SELECT *
+FROM dbo.РЈСЃР»СѓРіРё
 GO
-select * from dbo.Стоимость
+select * from dbo.РЎС‚РѕРёРјРѕСЃС‚СЊ
 go
