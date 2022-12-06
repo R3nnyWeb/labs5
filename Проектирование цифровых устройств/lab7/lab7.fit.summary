@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed Nov 30 17:47:19 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : lab7
+Top-level Entity Name : s75_counters
+Family : MAX II
+Device : EPM570ZM256C7
+Timing Models : Preliminary
+Total logic elements : 12 / 570 ( 2 % )
+Total pins : 10 / 160 ( 6 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

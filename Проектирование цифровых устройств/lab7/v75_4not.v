@@ -1,0 +1,5 @@
+module v75_4not (d, q);
+input [3:0] d;
+output [3:0] q;
+assign q=~d;
+endmodule
