@@ -1,3 +1,6 @@
+set_global_assignment -name FAMILY "Stratix II"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY lab9
 #!/bin/sh
 
 #
@@ -43,3 +46,8 @@
 #       by Bash, Ksh, etc; in particular arrays are avoided.
 #
 #    
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name BDF_FILE s11_mealy.bdf
+set_global_assignment -name BDF_FILE s11_moore.bdf
+set_global_assignment -name VERILOG_FILE v12_mealy.v
+set_global_assignment -name VERILOG_FILE v12_moore.v
