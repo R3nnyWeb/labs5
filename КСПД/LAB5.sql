@@ -33,24 +33,54 @@ INSERT INTO ВыполнениеУслуг(Услуга, Ателье, Дата�
 (7,10,CAST('2022-01-12 22:00' as datetime)),
 (8,10,CAST('2022-02-12 15:00' as datetime)),
 (9,10,CAST('2022-03-12 19:01' as datetime)),
-(10,10,CAST('2022-04-12 12:02' as datetime))
+(10,10,CAST('2022-04-12 12:02' as datetime)),
+(10,1,CAST('2022-01-01 12:02' as datetime))
 GO
 
+DELETE FROM ВыполнениеУслуг WHERE  Ателье = 10
 
 /*1.1. Разработать функцию, возвращающую список услуг, которые
 не предоставлялись за последние 3 месяца.
 */
 GO
-CREATE FUNCTION getServicesNotLastThreeMonth()
+CREATE OR ALTER FUNCTION getServicesNotLastThreeMonth()
 RETURNS TABLE
 AS
     RETURN (SELECT *
            FROM Услуги
            WHERE Код  IN (SELECT DISTINCT Услуга
                              FROM ВыполнениеУслуг
-                             WHERE DATEDIFF(MONTH , ДатаВремя,GETDATE() ) < 3))
+                             WHERE DATEDIFF(MONTH , ДатаВремя,GETDATE() ) > 3)
+        AND Код NOT IN (SELECT DISTINCT Услуга
+                             FROM ВыполнениеУслуг
+                             WHERE DATEDIFF(MONTH , ДатаВремя,GETDATE() ) < 3)
+        UNION
+        SELECT *
+        FROM Услуги
+        WHERE Код NOT IN (SELECT Услуга
+                          FROM ВыполнениеУслуг))
 GO
 SELECT * FROM getServicesNotLastThreeMonth();
+/*1.2. Разработать функцию, возвращающую список ателье, которые
+не предоставляли услугу «Пошив» за последние 3 месяца.*/
+CREATE FUNCTION getAtelNotLastThreeMonth()
+RETURNS  TABLE
+    AS
+    RETURN(SELECT *
+          FROM Ателье
+          WHERE Номер IN (SELECT Ателье
+                          FROM ВыполнениеУслуг
+                          WHERE Услуга  IN (SELECT Код
+                                            FROM Услуги
+                                            WHERE Название = 'Пошив')
+                          AND DATEDIFF(MONTH , ДатаВремя,GETDATE() ) < 3)
+          UNION
+          SELECT *
+          FROM Ателье
+          WHERE Номер NOT IN (SELECT Ателье
+                              FROM ВыполнениеУслуг))
+GO
+
 
 /*1.3. Разработать функцию, возвращающую список ателье, которые
 предоставляли все услуги за последние 3 месяца.
