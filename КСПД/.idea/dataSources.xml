@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlserver://DESKTOP-BERKHRI\MSSQLSERVER:1433</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="MS SQL SERVER" uuid="023e4376-64c1-4953-83d6-98e3d5ea08bb">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://DESKTOP-FJE4S55\MSSQLSERVER:1433</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

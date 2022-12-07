@@ -145,3 +145,28 @@ AS BEGIN
 END
 
 SELECT * FROM getStatistics()
+use Ателье
+CREATE FUNCTION higherOrLower(@Стоимость smallmoney, @Среднее smallmoney)
+RETURNS varchar(20)
+AS BEGIN
+    IF (@Стоимость < @Среднее)
+    RETURN 'Ниже среднего'
+    RETURN 'Выше среднего'
+END
+GO
+
+
+
+ALTER TABLE Стоимость
+ADD ОтСреднего varchar(30) NULL
+
+
+DECLARE @AVG smallmoney;
+
+SELECT @AVG = AVG(Стоимость)
+FROM Стоимость
+
+UPDATE Стоимость
+SET Стоимость.ОтСреднего = dbo.higherOrLower(Стоимость, @AVG)
+
+SELECT * FROM  Стоимость
