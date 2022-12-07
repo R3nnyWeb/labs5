@@ -5,29 +5,50 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
+<<<<<<< HEAD
+Actual Time    : 0.831 ns
+From           : n[3]
+To             : v73_cdiv1:inst4|q[3]
+From Clock     : --
+To Clock       : clk
+=======
 Actual Time    : 15.937 ns
 From           : n[2]
 To             : v73_cdiv1:inst1|q[1]
 From Clock     : --
 To Clock       : c
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
+<<<<<<< HEAD
+Actual Time    : 23.558 ns
+From           : v73_cdiv1:inst4|q[0]
+To             : q[0]
+From Clock     : clk
+=======
 Actual Time    : 20.220 ns
 From           : v73_cdiv1:inst1|q[3]
 To             : v_clr
 From Clock     : c
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
+<<<<<<< HEAD
+Actual Time    : 13.347 ns
+From           : n[3]
+To             : reset
+=======
 Actual Time    : 20.415 ns
 From           : n[2]
 To             : v_clr
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,6 +56,23 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
+<<<<<<< HEAD
+Actual Time    : 5.606 ns
+From           : n[1]
+To             : v73_cdiv1:inst4|q[0]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 102.28 MHz ( period = 9.777 ns )
+From           : v73_cdiv1:inst4|q[0]
+To             : v73_cdiv1:inst4|q[3]
+From Clock     : clk
+To Clock       : clk
+=======
 Actual Time    : -7.172 ns
 From           : n[3]
 To             : s73_cdiv1:inst|4count:inst|44
@@ -50,6 +88,7 @@ From           : v73_cdiv1:inst1|q[3]
 To             : v73_cdiv1:inst1|q[1]
 From Clock     : c
 To Clock       : c
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 Failed Paths   : 0
 
 Type           : Total number of failed paths

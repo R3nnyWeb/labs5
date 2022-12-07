@@ -22,14 +22,23 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
+<<<<<<< HEAD
+sw_pwm
+=======
 s71
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 # storage
 db|lab7.(0).cnf
 db|lab7.(0).cnf
 # case_insensitive
 # source_file
+<<<<<<< HEAD
+sw_pwm.bdf
+8db2f98bd1743d723a3ab89967946b9
+=======
 s71.bdf
 3cf045ec79feb4ba53c26870921c576
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -39,7 +48,45 @@ AUTO
 
 # end
 # entity
+<<<<<<< HEAD
+s74_pwm
+# storage
+db|lab7.(1).cnf
+db|lab7.(1).cnf
+# case_insensitive
+# source_file
+s74_pwm.bdf
+9c1eac42692b785f8a1aeba6cefdaa4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+4count
+# storage
+db|lab7.(2).cnf
+db|lab7.(2).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|altera|81|quartus|libraries|others|maxplus2|4count.bdf
+58df3cdc539defbbc413475c87351fb9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+v74_pwm
+=======
 v71_revcnt
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 # storage
 db|lab7.(3).cnf
 db|lab7.(3).cnf
@@ -49,8 +96,13 @@ ON
 }
 # case_sensitive
 # source_file
+<<<<<<< HEAD
+v74_pwm.v
+eb356e99a5402033241c9c11858ba64
+=======
 v71_revcnt.v
 48d413fdd781dcb563fc4496197ca83b
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -72,10 +124,37 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
+<<<<<<< HEAD
+s75_counters
+# storage
+db|lab7.(4).cnf
+db|lab7.(4).cnf
+# case_insensitive
+# source_file
+s75_counters.bdf
+a574956018bbfd5e764f92c366c673c9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+v72_24cnt
+# storage
+db|lab7.(6).cnf
+db|lab7.(6).cnf
+=======
 v72_24cnt
 # storage
 db|lab7.(1).cnf
 db|lab7.(1).cnf
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -101,6 +180,10 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+<<<<<<< HEAD
+# hierarchies {
+v72_24cnt:inst2
+=======
 # macro_sequence
 
 # end
@@ -157,6 +240,7 @@ AUTO
 }
 # hierarchies {
 s73_cdiv1:inst|4count:inst
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 # macro_sequence
 
@@ -164,8 +248,13 @@ s73_cdiv1:inst|4count:inst
 # entity
 v73_cdiv1
 # storage
+<<<<<<< HEAD
+db|lab7.(5).cnf
+db|lab7.(5).cnf
+=======
 db|lab7.(7).cnf
 db|lab7.(7).cnf
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -173,7 +262,11 @@ ON
 # case_sensitive
 # source_file
 v73_cdiv1.v
+<<<<<<< HEAD
+62e088c3d321b59f613452363fa194
+=======
 b7eeccc0316fa0b0ad635cf31455d3
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -192,12 +285,50 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
+<<<<<<< HEAD
+v73_cdiv1:inst4
+=======
 v73_cdiv1:inst1
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
+v75_4not
+# storage
+db|lab7.(7).cnf
+db|lab7.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v75_4not.v
+cdf8b82193a1c3e31328f12c294d434
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v75_4not:inst
+v75_4not:inst1
+=======
 sv73_cdiv1
 # storage
 db|lab7.(6).cnf
@@ -213,6 +344,7 @@ AUTO
 }
 # hierarchies {
 |
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 }
 # macro_sequence
 

@@ -106,9 +106,15 @@ GND*                         : B17       :        :                   :         
 GND*                         : B18       :        :                   :         : 2         :                
 GND*                         : B19       :        :                   :         : 2         :                
 GND*                         : B20       :        :                   :         : 2         :                
+<<<<<<< HEAD
+n[0]                         : C1        : input  : 3.3-V LVTTL       :         : 1         : N              
+q[3]                         : C2        : output : 3.3-V LVTTL       :         : 1         : N              
+n[2]                         : C3        : input  : 3.3-V LVTTL       :         : 1         : N              
+=======
 s_q[1]                       : C1        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : C2        :        :                   :         : 1         :                
 GND*                         : C3        :        :                   :         : 1         :                
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 NC                           : C4        :        :                   :         :           :                
 GND*                         : C5        :        :                   :         : 2         :                
 NC                           : C6        :        :                   :         :           :                
@@ -126,8 +132,13 @@ GND*                         : C17       :        :                   :         
 GND*                         : C18       :        :                   :         : 2         :                
 GND*                         : C19       :        :                   :         : 2         :                
 GND*                         : C20       :        :                   :         : 2         :                
+<<<<<<< HEAD
+GND*                         : D1        :        :                   :         : 1         :                
+reset                        : D2        : output : 3.3-V LVTTL       :         : 1         : N              
+=======
 n[3]                         : D1        : input  : 3.3-V LVTTL       :         : 1         : N              
 s_q[3]                       : D2        : output : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 GND*                         : D3        :        :                   :         : 1         :                
 NC                           : D4        :        :                   :         :           :                
 NC                           : D5        :        :                   :         :           :                
@@ -147,6 +158,18 @@ GND*                         : D18       :        :                   :         
 GND*                         : D19       :        :                   :         : 2         :                
 GND*                         : D20       :        :                   :         : 2         :                
 GND*                         : E1        :        :                   :         : 1         :                
+<<<<<<< HEAD
+n[3]                         : E2        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : E3        :        :                   :         : 1         :                
+NC                           : E4        :        :                   :         :           :                
+GND*                         : E17       :        :                   :         : 2         :                
+GND*                         : E18       :        :                   :         : 2         :                
+q[0]                         : E19       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : E20       :        :                   :         : 2         :                
+GND*                         : F1        :        :                   :         : 1         :                
+GND*                         : F2        :        :                   :         : 1         :                
+n[1]                         : F3        : input  : 3.3-V LVTTL       :         : 1         : N              
+=======
 GND*                         : E2        :        :                   :         : 1         :                
 GND*                         : E3        :        :                   :         : 1         :                
 NC                           : E4        :        :                   :         :           :                
@@ -157,6 +180,7 @@ GND*                         : E20       :        :                   :         
 GND*                         : F1        :        :                   :         : 1         :                
 GND*                         : F2        :        :                   :         : 1         :                
 v_q3[1]                      : F3        : output : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 NC                           : F4        :        :                   :         :           :                
 NC                           : F17       :        :                   :         :           :                
 NC                           : F18       :        :                   :         :           :                
@@ -168,7 +192,11 @@ NC                           : G3        :        :                   :         
 NC                           : G4        :        :                   :         :           :                
 NC                           : G17       :        :                   :         :           :                
 NC                           : G18       :        :                   :         :           :                
+<<<<<<< HEAD
+GND*                         : G19       :        :                   :         : 2         :                
+=======
 v_q3[2]                      : G19       : output : 3.3-V LVTTL       :         : 2         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 GND*                         : G20       :        :                   :         : 2         :                
 GND*                         : H1        :        :                   :         : 1         :                
 GND*                         : H2        :        :                   :         : 1         :                
@@ -176,17 +204,28 @@ GND                          : H3        : gnd    :                   :         
 NC                           : H4        :        :                   :         :           :                
 NC                           : H17       :        :                   :         :           :                
 GND                          : H18       : gnd    :                   :         :           :                
+<<<<<<< HEAD
+GND*                         : H19       :        :                   :         : 2         :                
+GND*                         : H20       :        :                   :         : 2         :                
+GND*                         : J1        :        :                   :         : 1         :                
+GND*                         : J2        :        :                   :         : 1         :                
+=======
 n[1]                         : H19       : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : H20       :        :                   :         : 2         :                
 GND*                         : J1        :        :                   :         : 1         :                
 s_q[2]                       : J2        : output : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 GND                          : J3        : gnd    :                   :         :           :                
 GND                          : J4        : gnd    :                   :         :           :                
 GND                          : J17       : gnd    :                   :         :           :                
 VCCIO2                       : J18       : power  :                   : 3.3V    : 2         :                
 GND*                         : J19       :        :                   :         : 2         :                
 GND*                         : J20       :        :                   :         : 2         :                
+<<<<<<< HEAD
+clk                          : K1        : input  : 3.3-V LVTTL       :         : 1         : N              
+=======
 c                            : K1        : input  : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 NC                           : K2        :        :                   :         :           :                
 VCCIO1                       : K3        : power  :                   : 3.3V    : 1         :                
 VCCINT                       : K4        : power  :                   : 1.8V    :           :                
@@ -194,7 +233,11 @@ VCCIO2                       : K17       : power  :                   : 3.3V    
 VCCIO2                       : K18       : power  :                   : 3.3V    : 2         :                
 NC                           : K19       :        :                   :         :           :                
 GND*                         : K20       :        :                   :         : 2         :                
+<<<<<<< HEAD
+GND*                         : L1        :        :                   :         : 1         :                
+=======
 v_q3[3]                      : L1        : output : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 NC                           : L2        :        :                   :         :           :                
 VCCIO1                       : L3        : power  :                   : 3.3V    : 1         :                
 VCCIO1                       : L4        : power  :                   : 3.3V    : 1         :                
@@ -202,7 +245,11 @@ VCCINT                       : L17       : power  :                   : 1.8V    
 VCCIO2                       : L18       : power  :                   : 3.3V    : 2         :                
 NC                           : L19       :        :                   :         :           :                
 GND*                         : L20       :        :                   :         : 2         :                
+<<<<<<< HEAD
+GND*                         : M1        :        :                   :         : 1         :                
+=======
 n[2]                         : M1        : input  : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 GND*                         : M2        :        :                   :         : 1         :                
 VCCIO1                       : M3        : power  :                   : 3.3V    : 1         :                
 GND                          : M4        : gnd    :                   :         :           :                
@@ -218,7 +265,11 @@ NC                           : N17       :        :                   :         
 GND                          : N18       : gnd    :                   :         :           :                
 GND*                         : N19       :        :                   :         : 2         :                
 GND*                         : N20       :        :                   :         : 2         :                
+<<<<<<< HEAD
+GND*                         : P1        :        :                   :         : 1         :                
+=======
 v_clr                        : P1        : output : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 GND*                         : P2        :        :                   :         : 1         :                
 NC                           : P3        :        :                   :         :           :                
 NC                           : P4        :        :                   :         :           :                
@@ -235,14 +286,22 @@ GND*                         : R18       :        :                   :         
 GND*                         : R19       :        :                   :         : 2         :                
 GND*                         : R20       :        :                   :         : 2         :                
 GND*                         : T1        :        :                   :         : 1         :                
+<<<<<<< HEAD
+GND*                         : T2        :        :                   :         : 1         :                
+=======
 s_clr                        : T2        : output : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 TMS                          : T3        : input  :                   :         : 1         :                
 GND*                         : T4        :        :                   :         : 1         :                
 NC                           : T17       :        :                   :         :           :                
 GND*                         : T18       :        :                   :         : 2         :                
 GND*                         : T19       :        :                   :         : 2         :                
 GND*                         : T20       :        :                   :         : 2         :                
+<<<<<<< HEAD
+GND*                         : U1        :        :                   :         : 1         :                
+=======
 v_q3[0]                      : U1        : output : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 TDI                          : U2        : input  :                   :         : 1         :                
 GND*                         : U3        :        :                   :         : 1         :                
 GND*                         : U4        :        :                   :         : 1         :                
@@ -265,7 +324,11 @@ GND*                         : U20       :        :                   :         
 GND*                         : V1        :        :                   :         : 1         :                
 TDO                          : V2        : output :                   :         : 1         :                
 GND*                         : V3        :        :                   :         : 1         :                
+<<<<<<< HEAD
+q[1]                         : V4        : output : 3.3-V LVTTL       :         : 1         : N              
+=======
 GND*                         : V4        :        :                   :         : 1         :                
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 GND*                         : V5        :        :                   :         : 1         :                
 GND*                         : V6        :        :                   :         : 1         :                
 NC                           : V7        :        :                   :         :           :                
@@ -302,11 +365,19 @@ GND*                         : W17       :        :                   :         
 GND*                         : W18       :        :                   :         : 1         :                
 GND*                         : W19       :        :                   :         : 2         :                
 GND*                         : W20       :        :                   :         : 2         :                
+<<<<<<< HEAD
+q[2]                         : Y1        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : Y2        :        :                   :         : 1         :                
+GND*                         : Y3        :        :                   :         : 1         :                
+GND*                         : Y4        :        :                   :         : 1         :                
+GND*                         : Y5        :        :                   :         : 1         :                
+=======
 GND*                         : Y1        :        :                   :         : 1         :                
 GND*                         : Y2        :        :                   :         : 1         :                
 GND*                         : Y3        :        :                   :         : 1         :                
 GND*                         : Y4        :        :                   :         : 1         :                
 s_q[0]                       : Y5        : output : 3.3-V LVTTL       :         : 1         : N              
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 GND*                         : Y6        :        :                   :         : 1         :                
 GND*                         : Y7        :        :                   :         : 1         :                
 GND*                         : Y8        :        :                   :         : 1         :                

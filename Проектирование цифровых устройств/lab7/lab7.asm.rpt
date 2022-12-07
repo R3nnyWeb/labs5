@@ -1,5 +1,9 @@
 Assembler report for lab7
+<<<<<<< HEAD
+Wed Nov 30 17:47:21 2022
+=======
 Wed Nov 16 17:11:19 2022
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -10,7 +14,11 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
+<<<<<<< HEAD
+  5. Assembler Device Options: C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/lab7.pof
+=======
   5. Assembler Device Options: E:/lab7/lab7.pof
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
   6. Assembler Messages
 
 
@@ -37,9 +45,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD
+; Assembler Status      ; Successful - Wed Nov 30 17:47:21 2022 ;
+; Revision Name         ; lab7                                  ;
+; Top-level Entity Name ; s75_counters                          ;
+=======
 ; Assembler Status      ; Successful - Wed Nov 16 17:11:19 2022 ;
 ; Revision Name         ; lab7                                  ;
 ; Top-level Entity Name ; sv73_cdiv1                            ;
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 ; Family                ; MAX II                                ;
 ; Device                ; EPM570ZM256C7                         ;
 +-----------------------+---------------------------------------+
@@ -73,6 +87,26 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+-----------+---------------+
 
 
+<<<<<<< HEAD
++---------------------------------------------------------------------------------+
+; Assembler Generated Files                                                       ;
++---------------------------------------------------------------------------------+
+; File Name                                                                       ;
++---------------------------------------------------------------------------------+
+; C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/lab7.pof ;
++---------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Вячеслав/Desktop/labs5/Проектирование цифровых устройств/lab7/lab7.pof ;
++----------------+------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                  ;
++----------------+------------------------------------------------------------------------------------------+
+; Device         ; EPM570ZM256C7                                                                            ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                               ;
+; Checksum       ; 0x003412EF                                                                               ;
++----------------+------------------------------------------------------------------------------------------+
+=======
 +---------------------------+
 ; Assembler Generated Files ;
 +---------------------------+
@@ -91,6 +125,7 @@ applicable agreement for further details.
 ; JTAG usercode  ; 0xFFFFFFFF                ;
 ; Checksum       ; 0x0033FD1E                ;
 +----------------+---------------------------+
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 
 
 +--------------------+
@@ -99,14 +134,25 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+<<<<<<< HEAD
+    Info: Processing started: Wed Nov 30 17:47:20 2022
+=======
     Info: Processing started: Wed Nov 16 17:11:19 2022
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab7 -c lab7
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
+<<<<<<< HEAD
+    Info: Peak virtual memory: 194 megabytes
+    Info: Processing ended: Wed Nov 30 17:47:22 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+=======
     Info: Peak virtual memory: 181 megabytes
     Info: Processing ended: Wed Nov 16 17:11:19 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 
 

@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+|s75_counters
+reset <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clk => v72_24cnt:inst2.c
+n[0] => v75_4not:inst.d[0]
+n[1] => v75_4not:inst.d[1]
+n[2] => v75_4not:inst.d[2]
+n[3] => v75_4not:inst.d[3]
+q[0] <= v75_4not:inst1.q[0]
+q[1] <= v75_4not:inst1.q[1]
+q[2] <= v75_4not:inst1.q[2]
+q[3] <= v75_4not:inst1.q[3]
+
+
+|s75_counters|v73_cdiv1:inst4
+=======
 |sv73_cdiv1
 s_clr <= s73_cdiv1:inst.clr
 c => s73_cdiv1:inst.c
@@ -79,6 +95,7 @@ COUT <= 37.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sv73_cdiv1|v73_cdiv1:inst1
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d
 c => q[3]~reg0.CLK
 c => q[2]~reg0.CLK
 c => q[1]~reg0.CLK
@@ -94,3 +111,36 @@ n[3] => clr~0.IN1
 clr <= clr~6.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
+|s75_counters|v72_24cnt:inst2
+c => q[3].CLK
+c => q[2].CLK
+c => q[1].CLK
+c => q[0].CLK
+s <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|s75_counters|v75_4not:inst
+d[0] => q[0].DATAIN
+d[1] => q[1].DATAIN
+d[2] => q[2].DATAIN
+d[3] => q[3].DATAIN
+q[0] <= d[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= d[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= d[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= d[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|s75_counters|v75_4not:inst1
+d[0] => q[0].DATAIN
+d[1] => q[1].DATAIN
+d[2] => q[2].DATAIN
+d[3] => q[3].DATAIN
+q[0] <= d[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= d[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= d[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= d[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+=======
+>>>>>>> 773f9edf913f98580ecc0d28587cef0062fccf3d

@@ -1,11 +1,12 @@
 .686P
 .MODEL FLAT, stdcall
+option casemap : none
 RGBW equ 00CCCCCCh; цвет фона окна
 include win.inc
 include console.inc
 
-;includelib C : / masm32 / lib / masm32.lib
-;include C : / masm32 / include / masm32rt.inc
+include C:/masm32/include/masm32.inc
+includelib C:/masm32/lib/masm32.lib
 .data
 	HWND DD 0; дескриптор главного окна
 	HINST DD 0; дескриптор приложения
@@ -127,27 +128,25 @@ WMCREATE:; создание окна
 	MOV EAX, 0
 	JMP FINISH
 ;------------------------------------------------------------------
-WMCOMMAND:; обработка нажатия кнопки
+WMCOMMAND:	; обработка нажатия кнопки
 	mov eax, hBut
 	cmp lParam, eax
 	jne COM_END; команда не соответствует нажатию кнопки
 	INVOKE SendMessage, hedt1, WM_GETTEXT, 20, offset TEXTA
 	INVOKE SendMessage, hedt2, WM_GETTEXT, 20, offset TEXTB
-	INVOKE StrToFloat, ADDR TEXTA, ADDR num
+	INVOKE StrToFloat, offset TEXTA, offset num
 	mov eax, num
 	add num, eax
-	FINIT
-	fld num
-	fcos
-	fstp num
+	;FINIT
+	;fld num
+	;fcos
+	;fstp num
 	mov eax, sum_len
-	INVOKE TextOutA, ; стирание строки результата в окне
-	hdc, 80, 50, offset mess2, eax
-	INVOKE FloatToStr, ADDR num, offset mess2 + 1
+	INVOKE TextOutA, hdc, 80, 50, offset mess2, eax; стирание строки результата в окне
+	INVOKE FloatToStr, qword ptr (num), offset mess2 + 1
 	INVOKE LENSTR, offset mess2; определение длины результата
 	push eax
-	INVOKE TextOutA, ; вывод результата
-	hdc, 80, 50, offset mess2, eax
+	INVOKE TextOutA, hdc, 80, 50, offset mess2, eax; вывод результата
 	pop ecx; очистка строки
 	inc ecx
 	mov al, ' '
