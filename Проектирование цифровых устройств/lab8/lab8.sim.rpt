@@ -1,5 +1,5 @@
 Simulator report for lab8
-Thu Dec 08 14:08:06 2022
+Thu Dec 08 15:55:50 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+---------------+
 ; Simulation Start Time       ; 0 ps          ;
 ; Simulation End Time         ; 10.0 us       ;
-; Simulation Netlist Size     ; 13 nodes      ;
+; Simulation Netlist Size     ; 15 nodes      ;
 ; Simulation Coverage         ;     100.00 %  ;
-; Total Number of Transitions ; 393           ;
+; Total Number of Transitions ; 545           ;
 ; Simulation Breakpoints      ; 0             ;
 ; Family                      ; MAX II        ;
 ; Device                      ; EPM570ZM256C7 ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 ; Simulation mode                                                                            ; Timing     ; Timing        ;
 ; Start time                                                                                 ; 0 ns       ; 0 ns          ;
 ; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; w82.vwf    ;               ;
+; Vector input source                                                                        ; w83.vwf    ;               ;
 ; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
 ; Check outputs                                                                              ; Off        ; Off           ;
 ; Report simulation coverage                                                                 ; On         ; On            ;
@@ -96,9 +96,9 @@ Please use Quartus II to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 13           ;
-; Total output ports checked                          ; 11           ;
-; Total output ports with complete 1/0-value coverage ; 11           ;
+; Total nodes checked                                 ; 15           ;
+; Total output ports checked                          ; 12           ;
+; Total output ports with complete 1/0-value coverage ; 12           ;
 ; Total output ports with no 1/0-value coverage       ; 0            ;
 ; Total output ports with no 1-value coverage         ; 0            ;
 ; Total output ports with no 0-value coverage         ; 0            ;
@@ -106,23 +106,24 @@ Please use Quartus II to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                      ;
-+-----------------------+-----------------------+------------------+
-; Node Name             ; Output Port Name      ; Output Port Type ;
-+-----------------------+-----------------------+------------------+
-; |s82|4count:inst|45   ; |s82|4count:inst|45   ; regout           ;
-; |s82|inst13~7         ; |s82|inst13~7         ; combout          ;
-; |s82|4count:inst|44   ; |s82|4count:inst|44   ; regout           ;
-; |s82|4count:inst|2~18 ; |s82|4count:inst|2~18 ; combout          ;
-; |s82|c                ; |s82|c~corein         ; combout          ;
-; |s82|y                ; |s82|y                ; padio            ;
-; |s82|cout             ; |s82|cout             ; padio            ;
-; |s82|q[3]             ; |s82|q[3]             ; padio            ;
-; |s82|q[2]             ; |s82|q[2]             ; padio            ;
-; |s82|q[1]             ; |s82|q[1]             ; padio            ;
-; |s82|q[0]             ; |s82|q[0]             ; padio            ;
-+-----------------------+-----------------------+------------------+
++--------------------------------------------------+
+; Complete 1/0-Value Coverage                      ;
++------------+------------------+------------------+
+; Node Name  ; Output Port Name ; Output Port Type ;
++------------+------------------+------------------+
+; |v83|y~156 ; |v83|y~156       ; combout          ;
+; |v83|y~157 ; |v83|y~157       ; combout          ;
+; |v83|y~158 ; |v83|y~158       ; combout          ;
+; |v83|y~6   ; |v83|y~6         ; combout          ;
+; |v83|c     ; |v83|c~corein    ; combout          ;
+; |v83|q[0]  ; |v83|q[0]        ; padio            ;
+; |v83|q[1]  ; |v83|q[1]        ; padio            ;
+; |v83|q[2]  ; |v83|q[2]        ; padio            ;
+; |v83|y[0]  ; |v83|y[0]        ; padio            ;
+; |v83|y[1]  ; |v83|y[1]        ; padio            ;
+; |v83|y[2]  ; |v83|y[2]        ; padio            ;
+; |v83|y[3]  ; |v83|y[3]        ; padio            ;
++------------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -154,17 +155,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Thu Dec 08 14:08:06 2022
+    Info: Processing started: Thu Dec 08 15:55:50 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab8 -c lab8
-Info: Using vector source file "D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab8/w82.vwf"
+Info: Using vector source file "D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab8/w83.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 393
+Info: Number of transitions in simulation is 545
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 157 megabytes
-    Info: Processing ended: Thu Dec 08 14:08:06 2022
+    Info: Processing ended: Thu Dec 08 15:55:50 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

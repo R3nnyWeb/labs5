@@ -1,5 +1,5 @@
 Flow report for lab8
-Thu Dec 08 14:07:54 2022
+Thu Dec 08 15:55:40 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,16 +38,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Thu Dec 08 14:07:54 2022   ;
+; Flow Status             ; Successful - Thu Dec 08 15:55:40 2022   ;
 ; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name           ; lab8                                    ;
-; Top-level Entity Name   ; s82                                     ;
+; Top-level Entity Name   ; v83                                     ;
 ; Family                  ; MAX II                                  ;
 ; Device                  ; EPM570ZM256C7                           ;
 ; Timing Models           ; Preliminary                             ;
 ; Met timing requirements ; Yes                                     ;
-; Total logic elements    ; 6 / 570 ( 1 % )                         ;
-; Total pins              ; 7 / 160 ( 4 % )                         ;
+; Total logic elements    ; 7 / 570 ( 1 % )                         ;
+; Total pins              ; 8 / 160 ( 5 % )                         ;
 ; Total virtual pins      ; 0                                       ;
 ; UFM blocks              ; 0 / 1 ( 0 % )                           ;
 +-------------------------+-----------------------------------------+
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/08/2022 14:07:51 ;
+; Start date & time ; 12/08/2022 15:55:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab8                ;
 +-------------------+---------------------+
@@ -69,10 +69,10 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 39908803013047.167049767129044 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 39908803013047.167050413715584 ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                              ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                   ; s82                            ; lab8          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                   ; v83                            ; lab8          ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 
@@ -82,11 +82,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 225 MB              ; 00:00:00                           ;
-; Fitter                  ; 00:00:00     ; 1.0                     ; 217 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 193 MB              ; 00:00:00                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 226 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 216 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 194 MB              ; 00:00:00                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 165 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:00     ; --                      ; --                  ; 00:00:00                           ;
+; Total                   ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -35,9 +35,6 @@ c:|altera|81|quartus|libraries|others|maxplus2|4count.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-4count:inst
-}
 # macro_sequence
 
 # end
@@ -104,6 +101,9 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# hierarchies {
+|
+}
 # macro_sequence
 
 # end
@@ -115,14 +115,28 @@ db|lab8.(0).cnf
 # case_insensitive
 # source_file
 s82.bdf
-e0cf91e1618376fa9b34d2ec7ff18f72
+f165d1bab131ee988a4383a47b7943c
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
+# macro_sequence
+
+# end
+# entity
+s81_form
+# storage
+db|lab8.(4).cnf
+db|lab8.(4).cnf
+# case_insensitive
+# source_file
+s81_form.bdf
+5d9239a13c1da239f7b6d63faa9bf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
 }
 # macro_sequence
 

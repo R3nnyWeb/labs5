@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 15.095 ns
-From           : 4count:inst|46
-To             : cout
+Actual Time    : 15.131 ns
+From           : q[2]~reg0
+To             : q[2]
 From Clock     : c
 To Clock       : --
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'c'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 153.80 MHz ( period = 6.502 ns )
-From           : 4count:inst|45
-To             : 4count:inst|43
+Actual Time    : 184.95 MHz ( period = 5.407 ns )
+From           : q[0]~reg0
+To             : q[2]~reg0
 From Clock     : c
 To Clock       : c
 Failed Paths   : 0
