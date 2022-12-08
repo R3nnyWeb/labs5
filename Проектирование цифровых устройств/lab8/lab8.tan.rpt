@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for lab8
-Wed Nov 30 17:51:53 2022
+Thu Dec 08 14:07:54 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -35,15 +35,15 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                                                ;
-+------------------------------+-------+---------------+----------------------------------+-----------+-----------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time                      ; From      ; To        ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+----------------------------------+-----------+-----------+------------+----------+--------------+
-; Worst-case tco               ; N/A   ; None          ; 15.131 ns                        ; q[2]~reg0 ; q[2]      ; c          ; --       ; 0            ;
-; Clock Setup: 'c'             ; N/A   ; None          ; 184.95 MHz ( period = 5.407 ns ) ; q[0]~reg0 ; q[2]~reg0 ; c          ; c        ; 0            ;
-; Total number of failed paths ;       ;               ;                                  ;           ;           ;            ;          ; 0            ;
-+------------------------------+-------+---------------+----------------------------------+-----------+-----------+------------+----------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                          ;
++------------------------------+-------+---------------+----------------------------------+----------------+----------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From           ; To             ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+----------------+----------------+------------+----------+--------------+
+; Worst-case tco               ; N/A   ; None          ; 15.095 ns                        ; 4count:inst|46 ; cout           ; c          ; --       ; 0            ;
+; Clock Setup: 'c'             ; N/A   ; None          ; 153.80 MHz ( period = 6.502 ns ) ; 4count:inst|45 ; 4count:inst|43 ; c          ; c        ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;                ;                ;            ;          ; 0            ;
++------------------------------+-------+---------------+----------------------------------+----------------+----------------+------------+----------+--------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -87,41 +87,41 @@ applicable agreement for further details.
 +-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clock Setup: 'c'                                                                                                                                                             ;
-+-------+----------------------------------+-----------+-----------+------------+----------+-----------------------------+---------------------------+-------------------------+
-; Slack ; Actual fmax (period)             ; From      ; To        ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
-+-------+----------------------------------+-----------+-----------+------------+----------+-----------------------------+---------------------------+-------------------------+
-; N/A   ; 184.95 MHz ( period = 5.407 ns ) ; q[0]~reg0 ; q[2]~reg0 ; c          ; c        ; None                        ; None                      ; 4.599 ns                ;
-; N/A   ; 208.94 MHz ( period = 4.786 ns ) ; q[1]~reg0 ; q[2]~reg0 ; c          ; c        ; None                        ; None                      ; 3.978 ns                ;
-; N/A   ; 209.25 MHz ( period = 4.779 ns ) ; q[1]~reg0 ; q[1]~reg0 ; c          ; c        ; None                        ; None                      ; 3.971 ns                ;
-; N/A   ; 283.37 MHz ( period = 3.529 ns ) ; q[0]~reg0 ; q[1]~reg0 ; c          ; c        ; None                        ; None                      ; 2.721 ns                ;
-; N/A   ; 284.41 MHz ( period = 3.516 ns ) ; q[0]~reg0 ; q[0]~reg0 ; c          ; c        ; None                        ; None                      ; 2.708 ns                ;
-; N/A   ; 291.80 MHz ( period = 3.427 ns ) ; q[2]~reg0 ; q[2]~reg0 ; c          ; c        ; None                        ; None                      ; 2.619 ns                ;
-+-------+----------------------------------+-----------+-----------+------------+----------+-----------------------------+---------------------------+-------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'c'                                                                                                                                                                       ;
++-------+----------------------------------+----------------+----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)             ; From           ; To             ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+----------------------------------+----------------+----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 153.80 MHz ( period = 6.502 ns ) ; 4count:inst|45 ; 4count:inst|43 ; c          ; c        ; None                        ; None                      ; 5.694 ns                ;
+; N/A   ; 186.64 MHz ( period = 5.358 ns ) ; 4count:inst|46 ; 4count:inst|44 ; c          ; c        ; None                        ; None                      ; 4.550 ns                ;
+; N/A   ; 186.92 MHz ( period = 5.350 ns ) ; 4count:inst|44 ; 4count:inst|43 ; c          ; c        ; None                        ; None                      ; 4.542 ns                ;
+; N/A   ; 209.42 MHz ( period = 4.775 ns ) ; 4count:inst|45 ; 4count:inst|44 ; c          ; c        ; None                        ; None                      ; 3.967 ns                ;
+; N/A   ; 209.82 MHz ( period = 4.766 ns ) ; 4count:inst|45 ; 4count:inst|45 ; c          ; c        ; None                        ; None                      ; 3.958 ns                ;
+; N/A   ; 216.50 MHz ( period = 4.619 ns ) ; 4count:inst|46 ; 4count:inst|43 ; c          ; c        ; None                        ; None                      ; 3.811 ns                ;
+; N/A   ; 286.70 MHz ( period = 3.488 ns ) ; 4count:inst|46 ; 4count:inst|45 ; c          ; c        ; None                        ; None                      ; 2.680 ns                ;
+; N/A   ; 287.52 MHz ( period = 3.478 ns ) ; 4count:inst|46 ; 4count:inst|46 ; c          ; c        ; None                        ; None                      ; 2.670 ns                ;
+; N/A   ; 288.85 MHz ( period = 3.462 ns ) ; 4count:inst|44 ; 4count:inst|44 ; c          ; c        ; None                        ; None                      ; 2.654 ns                ;
+; N/A   ; 291.80 MHz ( period = 3.427 ns ) ; 4count:inst|43 ; 4count:inst|43 ; c          ; c        ; None                        ; None                      ; 2.619 ns                ;
++-------+----------------------------------+----------------+----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
 
 
-+-------------------------------------------------------------------+
-; tco                                                               ;
-+-------+--------------+------------+-----------+------+------------+
-; Slack ; Required tco ; Actual tco ; From      ; To   ; From Clock ;
-+-------+--------------+------------+-----------+------+------------+
-; N/A   ; None         ; 15.131 ns  ; q[2]~reg0 ; q[2] ; c          ;
-; N/A   ; None         ; 14.330 ns  ; q[1]~reg0 ; y[1] ; c          ;
-; N/A   ; None         ; 14.292 ns  ; q[0]~reg0 ; y[1] ; c          ;
-; N/A   ; None         ; 14.058 ns  ; q[1]~reg0 ; y[2] ; c          ;
-; N/A   ; None         ; 14.036 ns  ; q[1]~reg0 ; y[0] ; c          ;
-; N/A   ; None         ; 14.010 ns  ; q[0]~reg0 ; y[0] ; c          ;
-; N/A   ; None         ; 13.675 ns  ; q[2]~reg0 ; y[2] ; c          ;
-; N/A   ; None         ; 12.709 ns  ; q[2]~reg0 ; y[1] ; c          ;
-; N/A   ; None         ; 12.449 ns  ; q[1]~reg0 ; y[3] ; c          ;
-; N/A   ; None         ; 12.417 ns  ; q[2]~reg0 ; y[0] ; c          ;
-; N/A   ; None         ; 12.124 ns  ; q[1]~reg0 ; q[1] ; c          ;
-; N/A   ; None         ; 12.071 ns  ; q[2]~reg0 ; y[3] ; c          ;
-; N/A   ; None         ; 11.439 ns  ; q[0]~reg0 ; y[2] ; c          ;
-; N/A   ; None         ; 10.596 ns  ; q[0]~reg0 ; q[0] ; c          ;
-; N/A   ; None         ; 9.838 ns   ; q[0]~reg0 ; y[3] ; c          ;
-+-------+--------------+------------+-----------+------+------------+
++------------------------------------------------------------------------+
+; tco                                                                    ;
++-------+--------------+------------+----------------+------+------------+
+; Slack ; Required tco ; Actual tco ; From           ; To   ; From Clock ;
++-------+--------------+------------+----------------+------+------------+
+; N/A   ; None         ; 15.095 ns  ; 4count:inst|46 ; cout ; c          ;
+; N/A   ; None         ; 14.949 ns  ; 4count:inst|44 ; q[2] ; c          ;
+; N/A   ; None         ; 14.202 ns  ; 4count:inst|45 ; y    ; c          ;
+; N/A   ; None         ; 14.146 ns  ; 4count:inst|45 ; cout ; c          ;
+; N/A   ; None         ; 14.145 ns  ; 4count:inst|46 ; y    ; c          ;
+; N/A   ; None         ; 14.079 ns  ; 4count:inst|44 ; cout ; c          ;
+; N/A   ; None         ; 12.596 ns  ; 4count:inst|43 ; y    ; c          ;
+; N/A   ; None         ; 12.544 ns  ; 4count:inst|43 ; cout ; c          ;
+; N/A   ; None         ; 12.042 ns  ; 4count:inst|45 ; q[1] ; c          ;
+; N/A   ; None         ; 10.389 ns  ; 4count:inst|46 ; q[0] ; c          ;
+; N/A   ; None         ; 10.389 ns  ; 4count:inst|43 ; q[3] ; c          ;
++-------+--------------+------------+----------------+------+------------+
 
 
 +--------------------------+
@@ -130,48 +130,49 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Nov 30 17:51:52 2022
+    Info: Processing started: Thu Dec 08 14:07:54 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off lab8 -c lab8
 Info: Started post-fitting delay annotation
 Warning: Timing characteristics of device EPM570ZM256C7 are preliminary
 Info: Delay annotation completed successfully
 Warning: Found pins functioning as undefined clocks and/or memory enables
     Info: Assuming node "c" is an undefined clock
-Info: Clock "c" has Internal fmax of 184.95 MHz between source register "q[0]~reg0" and destination register "q[2]~reg0" (period= 5.407 ns)
-    Info: + Longest register to register delay is 4.599 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X1_Y4_N2; Fanout = 8; REG Node = 'q[0]~reg0'
-        Info: 2: + IC(1.976 ns) + CELL(2.623 ns) = 4.599 ns; Loc. = LC_X1_Y4_N8; Fanout = 6; REG Node = 'q[2]~reg0'
-        Info: Total cell delay = 2.623 ns ( 57.03 % )
-        Info: Total interconnect delay = 1.976 ns ( 42.97 % )
+Info: Clock "c" has Internal fmax of 153.8 MHz between source register "4count:inst|45" and destination register "4count:inst|43" (period= 6.502 ns)
+    Info: + Longest register to register delay is 5.694 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X3_Y6_N5; Fanout = 6; REG Node = '4count:inst|45'
+        Info: 2: + IC(2.769 ns) + CELL(2.925 ns) = 5.694 ns; Loc. = LC_X3_Y6_N8; Fanout = 4; REG Node = '4count:inst|43'
+        Info: Total cell delay = 2.925 ns ( 51.37 % )
+        Info: Total interconnect delay = 2.769 ns ( 48.63 % )
     Info: - Smallest clock skew is 0.000 ns
         Info: + Shortest clock path from clock "c" to destination register is 4.184 ns
-            Info: 1: + IC(0.000 ns) + CELL(0.970 ns) = 0.970 ns; Loc. = PIN_K1; Fanout = 3; CLK Node = 'c'
-            Info: 2: + IC(1.590 ns) + CELL(1.624 ns) = 4.184 ns; Loc. = LC_X1_Y4_N8; Fanout = 6; REG Node = 'q[2]~reg0'
+            Info: 1: + IC(0.000 ns) + CELL(0.970 ns) = 0.970 ns; Loc. = PIN_K1; Fanout = 4; CLK Node = 'c'
+            Info: 2: + IC(1.590 ns) + CELL(1.624 ns) = 4.184 ns; Loc. = LC_X3_Y6_N8; Fanout = 4; REG Node = '4count:inst|43'
             Info: Total cell delay = 2.594 ns ( 62.00 % )
             Info: Total interconnect delay = 1.590 ns ( 38.00 % )
         Info: - Longest clock path from clock "c" to source register is 4.184 ns
-            Info: 1: + IC(0.000 ns) + CELL(0.970 ns) = 0.970 ns; Loc. = PIN_K1; Fanout = 3; CLK Node = 'c'
-            Info: 2: + IC(1.590 ns) + CELL(1.624 ns) = 4.184 ns; Loc. = LC_X1_Y4_N2; Fanout = 8; REG Node = 'q[0]~reg0'
+            Info: 1: + IC(0.000 ns) + CELL(0.970 ns) = 0.970 ns; Loc. = PIN_K1; Fanout = 4; CLK Node = 'c'
+            Info: 2: + IC(1.590 ns) + CELL(1.624 ns) = 4.184 ns; Loc. = LC_X3_Y6_N5; Fanout = 6; REG Node = '4count:inst|45'
             Info: Total cell delay = 2.594 ns ( 62.00 % )
             Info: Total interconnect delay = 1.590 ns ( 38.00 % )
     Info: + Micro clock to output delay of source is 0.489 ns
     Info: + Micro setup delay of destination is 0.319 ns
-Info: tco from clock "c" to destination pin "q[2]" through register "q[2]~reg0" is 15.131 ns
+Info: tco from clock "c" to destination pin "cout" through register "4count:inst|46" is 15.095 ns
     Info: + Longest clock path from clock "c" to source register is 4.184 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.970 ns) = 0.970 ns; Loc. = PIN_K1; Fanout = 3; CLK Node = 'c'
-        Info: 2: + IC(1.590 ns) + CELL(1.624 ns) = 4.184 ns; Loc. = LC_X1_Y4_N8; Fanout = 6; REG Node = 'q[2]~reg0'
+        Info: 1: + IC(0.000 ns) + CELL(0.970 ns) = 0.970 ns; Loc. = PIN_K1; Fanout = 4; CLK Node = 'c'
+        Info: 2: + IC(1.590 ns) + CELL(1.624 ns) = 4.184 ns; Loc. = LC_X3_Y6_N2; Fanout = 7; REG Node = '4count:inst|46'
         Info: Total cell delay = 2.594 ns ( 62.00 % )
         Info: Total interconnect delay = 1.590 ns ( 38.00 % )
     Info: + Micro clock to output delay of source is 0.489 ns
-    Info: + Longest register to pin delay is 10.458 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X1_Y4_N8; Fanout = 6; REG Node = 'q[2]~reg0'
-        Info: 2: + IC(8.484 ns) + CELL(1.974 ns) = 10.458 ns; Loc. = PIN_E17; Fanout = 0; PIN Node = 'q[2]'
-        Info: Total cell delay = 1.974 ns ( 18.88 % )
-        Info: Total interconnect delay = 8.484 ns ( 81.12 % )
+    Info: + Longest register to pin delay is 10.422 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X3_Y6_N2; Fanout = 7; REG Node = '4count:inst|46'
+        Info: 2: + IC(2.620 ns) + CELL(2.247 ns) = 4.867 ns; Loc. = LC_X3_Y6_N6; Fanout = 1; COMB Node = '4count:inst|2~18'
+        Info: 3: + IC(3.581 ns) + CELL(1.974 ns) = 10.422 ns; Loc. = PIN_M2; Fanout = 0; PIN Node = 'cout'
+        Info: Total cell delay = 4.221 ns ( 40.50 % )
+        Info: Total interconnect delay = 6.201 ns ( 59.50 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 167 megabytes
-    Info: Processing ended: Wed Nov 30 17:51:53 2022
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 177 megabytes
+    Info: Processing ended: Thu Dec 08 14:07:54 2022
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

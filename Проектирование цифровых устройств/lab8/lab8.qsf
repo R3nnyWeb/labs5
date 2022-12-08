@@ -25,7 +25,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM570ZM256C7
-set_global_assignment -name TOP_LEVEL_ENTITY v83
+set_global_assignment -name TOP_LEVEL_ENTITY s82
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:47:37  NOVEMBER 30, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 8.1
@@ -42,4 +42,6 @@ set_global_assignment -name VERILOG_FILE v82.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE w82_2.vwf
 set_global_assignment -name VERILOG_FILE v83.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE w83.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE w83.vwf
+set_global_assignment -name LL_ROOT_REGION ON -entity v83 -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity v83 -section_id "Root Region"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE w82.vwf

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab8
-Wed Nov 30 17:51:47 2022
+Thu Dec 08 14:07:51 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,13 +39,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Nov 30 17:51:47 2022   ;
+; Analysis & Synthesis Status ; Successful - Thu Dec 08 14:07:51 2022   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; lab8                                    ;
-; Top-level Entity Name       ; v83                                     ;
+; Top-level Entity Name       ; s82                                     ;
 ; Family                      ; MAX II                                  ;
-; Total logic elements        ; 7                                       ;
-; Total pins                  ; 8                                       ;
+; Total logic elements        ; 6                                       ;
+; Total pins                  ; 7                                       ;
 ; Total virtual pins          ; 0                                       ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                           ;
 +-----------------------------+-----------------------------------------+
@@ -57,7 +57,7 @@ applicable agreement for further details.
 ; Option                                                         ; Setting            ; Default Value      ;
 +----------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                         ; EPM570ZM256C7      ;                    ;
-; Top-level entity name                                          ; v83                ; lab8               ;
+; Top-level entity name                                          ; s82                ; lab8               ;
 ; Family name                                                    ; MAX II             ; Stratix II         ;
 ; Use Generated Physical Constraints File                        ; Off                ;                    ;
 ; Use smart compilation                                          ; Off                ; Off                ;
@@ -117,47 +117,48 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                     ;
-+----------------------------------+-----------------+------------------------+------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path ;
-+----------------------------------+-----------------+------------------------+------------------------------+
-; v83.v                            ; yes             ; User Verilog HDL File  ; E:/lab8/v83.v                ;
-+----------------------------------+-----------------+------------------------+------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
+; s82.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab8/s82.bdf ;
+; 4count.bdf                       ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/others/maxplus2/4count.bdf              ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Total logic elements                        ; 7         ;
-;     -- Combinational with no register       ; 4         ;
-;     -- Register only                        ; 0         ;
-;     -- Combinational with a register        ; 3         ;
-;                                             ;           ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 5         ;
-;     -- 2 input functions                    ; 1         ;
-;     -- 1 input functions                    ; 1         ;
-;     -- 0 input functions                    ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 7         ;
-;     -- arithmetic mode                      ; 0         ;
-;     -- qfbk mode                            ; 0         ;
-;     -- register cascade mode                ; 0         ;
-;     -- synchronous clear/load mode          ; 0         ;
-;     -- asynchronous clear/load mode         ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 3         ;
-; I/O pins                                    ; 8         ;
-; Maximum fan-out node                        ; q[0]~reg0 ;
-; Maximum fan-out                             ; 8         ;
-; Total fan-out                               ; 28        ;
-; Average fan-out                             ; 1.87      ;
-+---------------------------------------------+-----------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Total logic elements                        ; 6              ;
+;     -- Combinational with no register       ; 2              ;
+;     -- Register only                        ; 0              ;
+;     -- Combinational with a register        ; 4              ;
+;                                             ;                ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 2              ;
+;     -- 3 input functions                    ; 2              ;
+;     -- 2 input functions                    ; 1              ;
+;     -- 1 input functions                    ; 1              ;
+;     -- 0 input functions                    ; 0              ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 6              ;
+;     -- arithmetic mode                      ; 0              ;
+;     -- qfbk mode                            ; 0              ;
+;     -- register cascade mode                ; 0              ;
+;     -- synchronous clear/load mode          ; 0              ;
+;     -- asynchronous clear/load mode         ; 0              ;
+;                                             ;                ;
+; Total registers                             ; 4              ;
+; I/O pins                                    ; 7              ;
+; Maximum fan-out node                        ; 4count:inst|46 ;
+; Maximum fan-out                             ; 7              ;
+; Total fan-out                               ; 27             ;
+; Average fan-out                             ; 2.08           ;
++---------------------------------------------+----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -165,7 +166,8 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |v83                       ; 7 (7)       ; 3            ; 0          ; 8    ; 0            ; 4 (4)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |v83                ; work         ;
+; |s82                       ; 6 (1)       ; 4            ; 0          ; 7    ; 0            ; 2 (1)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |s82                ; work         ;
+;    |4count:inst|           ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |s82|4count:inst    ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -175,7 +177,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -191,7 +193,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Nov 30 17:51:46 2022
+    Info: Processing started: Thu Dec 08 14:07:51 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
 Info: Found 1 design units, including 1 entities, in source file s81_form.bdf
     Info: Found entity 1: s81_form
@@ -201,19 +203,23 @@ Info: Found 1 design units, including 1 entities, in source file v82.v
     Info: Found entity 1: v82
 Info: Found 1 design units, including 1 entities, in source file v83.v
     Info: Found entity 1: v83
-Info: Elaborating entity "v83" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at v83.v(6): truncated value with size 32 to match size of target (3)
-Info: Implemented 15 device resources after synthesis - the final resource count might be different
+Info: Elaborating entity "s82" for the top level hierarchy
+Info: Elaborating entity "4count" for hierarchy "4count:inst"
+Info: Elaborated megafunction instantiation "4count:inst"
+Info: Implemented 13 device resources after synthesis - the final resource count might be different
     Info: Implemented 1 input pins
-    Info: Implemented 7 output pins
-    Info: Implemented 7 logic cells
+    Info: Implemented 6 output pins
+    Info: Implemented 6 logic cells
 Warning: Ignored assignments for entity "lab8" -- entity does not exist in design
     Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity lab8 -section_id "Root Region" is ignored
     Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab8 -section_id "Root Region" is ignored
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 209 megabytes
-    Info: Processing ended: Wed Nov 30 17:51:47 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Warning: Ignored assignments for entity "v83" -- entity does not exist in design
+    Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity v83 -section_id "Root Region" is ignored
+    Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity v83 -section_id "Root Region" is ignored
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 225 megabytes
+    Info: Processing ended: Thu Dec 08 14:07:51 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

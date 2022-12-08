@@ -1,5 +1,5 @@
 Flow report for lab8
-Wed Nov 30 17:51:53 2022
+Thu Dec 08 14:07:54 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,16 +38,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Wed Nov 30 17:51:52 2022   ;
+; Flow Status             ; Successful - Thu Dec 08 14:07:54 2022   ;
 ; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name           ; lab8                                    ;
-; Top-level Entity Name   ; v83                                     ;
+; Top-level Entity Name   ; s82                                     ;
 ; Family                  ; MAX II                                  ;
 ; Device                  ; EPM570ZM256C7                           ;
 ; Timing Models           ; Preliminary                             ;
 ; Met timing requirements ; Yes                                     ;
-; Total logic elements    ; 7 / 570 ( 1 % )                         ;
-; Total pins              ; 8 / 160 ( 5 % )                         ;
+; Total logic elements    ; 6 / 570 ( 1 % )                         ;
+; Total pins              ; 7 / 160 ( 4 % )                         ;
 ; Total virtual pins      ; 0                                       ;
 ; UFM blocks              ; 0 / 1 ( 0 % )                           ;
 +-------------------------+-----------------------------------------+
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2022 17:51:46 ;
+; Start date & time ; 12/08/2022 14:07:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab8                ;
 +-------------------+---------------------+
@@ -69,10 +69,10 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 71094331888171.166981990603192 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 39908803013047.167049767129044 ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                              ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                   ; v83                            ; lab8          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                   ; s82                            ; lab8          ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 
@@ -82,11 +82,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 209 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:00     ; 1.0                     ; 193 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 181 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 153 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 225 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 217 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 193 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 165 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:00     ; --                      ; --                  ; 00:00:00                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -95,10 +95,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
-; Fitter                  ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
-; Assembler               ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
-; Classic Timing Analyzer ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
+; Analysis & Synthesis    ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
