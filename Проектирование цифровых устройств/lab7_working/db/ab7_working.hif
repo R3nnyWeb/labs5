@@ -135,9 +135,6 @@ sv73_cdiv1.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -154,9 +151,6 @@ s73_cdiv1.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-s73_cdiv1:inst
 }
 # macro_sequence
 
@@ -176,7 +170,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-s73_cdiv1:inst|4count:inst
+4count:inst
 }
 # macro_sequence
 
@@ -211,8 +205,92 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# macro_sequence
+
+# end
+# entity
+sw_pwm
+# storage
+db|ab7_working.(8).cnf
+db|ab7_working.(8).cnf
+# case_insensitive
+# source_file
+sw_pwm.bdf
+8db2f98bd1743d723a3ab89967946b9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+s74_pwm
+# storage
+db|ab7_working.(9).cnf
+db|ab7_working.(9).cnf
+# case_insensitive
+# source_file
+s74_pwm.bdf
+9c1eac42692b785f8a1aeba6cefdaa4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+v74_pwm
+# storage
+db|ab7_working.(10).cnf
+db|ab7_working.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v74_pwm.v
+eb356e99a5402033241c9c11858ba64
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+s74_pwm_rev
+# storage
+db|ab7_working.(11).cnf
+db|ab7_working.(11).cnf
+# case_insensitive
+# source_file
+s74_pwm_rev.bdf
+8da6cc79652b36d0d3d5f7380ee469
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-v73_cdiv1:inst1
+|
 }
 # macro_sequence
 

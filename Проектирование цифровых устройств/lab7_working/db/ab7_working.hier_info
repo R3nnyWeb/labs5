@@ -1,40 +1,20 @@
-|sv73_cdiv1
-s_clr <= s73_cdiv1:inst.clr
-c => s73_cdiv1:inst.c
-c => v73_cdiv1:inst1.c
-n[0] => s73_cdiv1:inst.n[0]
-n[0] => v73_cdiv1:inst1.n[0]
-n[1] => s73_cdiv1:inst.n[1]
-n[1] => v73_cdiv1:inst1.n[1]
-n[2] => s73_cdiv1:inst.n[2]
-n[2] => v73_cdiv1:inst1.n[2]
-n[3] => s73_cdiv1:inst.n[3]
-n[3] => v73_cdiv1:inst1.n[3]
-v_clr <= v73_cdiv1:inst1.clr
-s_q[0] <= s73_cdiv1:inst.q[0]
-s_q[1] <= s73_cdiv1:inst.q[1]
-s_q[2] <= s73_cdiv1:inst.q[2]
-s_q[3] <= s73_cdiv1:inst.q[3]
-v_q3[0] <= v73_cdiv1:inst1.q[0]
-v_q3[1] <= v73_cdiv1:inst1.q[1]
-v_q3[2] <= v73_cdiv1:inst1.q[2]
-v_q3[3] <= v73_cdiv1:inst1.q[3]
-
-
-|sv73_cdiv1|s73_cdiv1:inst
-clr <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+|s74_pwm_rev
+pwm <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+n[0] => inst15.IN3
+n[1] => inst14.IN2
+n[1] => inst11.IN0
+n[2] => inst10.IN0
+n[2] => inst13.IN1
+n[3] => inst12.IN0
+n[3] => inst9.IN0
 c => 4count:inst.CLK
-n[0] => inst4.IN1
-n[1] => inst3.IN1
-n[2] => inst2.IN1
-n[3] => inst1.IN1
 q[0] <= q0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q1.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q2.DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= q3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sv73_cdiv1|s73_cdiv1:inst|4count:inst
+|s74_pwm_rev|4count:inst
 QA <= 46.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 97.IN0
 CLRN => 101.IN0
@@ -76,21 +56,5 @@ QD <= 43.DB_MAX_OUTPUT_PORT_TYPE
 D => 98.IN2
 D => 31.IN0
 COUT <= 37.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|sv73_cdiv1|v73_cdiv1:inst1
-c => q[3]~reg0.CLK
-c => q[2]~reg0.CLK
-c => q[1]~reg0.CLK
-c => q[0]~reg0.CLK
-q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-n[0] => clr~5.IN1
-n[1] => clr~3.IN1
-n[2] => clr~1.IN1
-n[3] => clr~0.IN1
-clr <= clr~6.DB_MAX_OUTPUT_PORT_TYPE
 
 
