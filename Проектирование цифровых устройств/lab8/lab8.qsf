@@ -42,4 +42,6 @@ set_global_assignment -name VERILOG_FILE v82.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE w82_2.vwf
 set_global_assignment -name VERILOG_FILE v83.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE w83.vwf
+set_global_assignment -name LL_ROOT_REGION ON -entity v83 -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity v83 -section_id "Root Region"
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE w83.vwf

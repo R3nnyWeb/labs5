@@ -1,5 +1,5 @@
 Flow report for lab8
-Wed Nov 30 17:51:53 2022
+Thu Dec 08 15:55:40 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Wed Nov 30 17:51:52 2022   ;
+; Flow Status             ; Successful - Thu Dec 08 15:55:40 2022   ;
 ; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name           ; lab8                                    ;
 ; Top-level Entity Name   ; v83                                     ;
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2022 17:51:46 ;
+; Start date & time ; 12/08/2022 15:55:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab8                ;
 +-------------------+---------------------+
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 71094331888171.166981990603192 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 39908803013047.167050413715584 ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                              ; --            ; --          ; --             ;
 ; TOP_LEVEL_ENTITY                   ; v83                            ; lab8          ; --          ; --             ;
@@ -82,11 +82,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 209 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:00     ; 1.0                     ; 193 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 181 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 153 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 226 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 216 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 194 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 165 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -95,10 +95,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
-; Fitter                  ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
-; Assembler               ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
-; Classic Timing Analyzer ; ws210-6          ; Windows Vista ; 6.1        ; x86_64         ;
+; Analysis & Synthesis    ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; DESKTOP-BERKHRI  ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

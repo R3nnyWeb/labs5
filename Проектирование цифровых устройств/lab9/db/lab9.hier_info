@@ -1,0 +1,102 @@
+|sv12
+mealy_s_y1 <= s11_mealy:inst.y1
+c => s11_mealy:inst.c
+c => s11_moore:inst1.c
+c => v12_mealy:inst2.c
+c => v12_moore:inst3.c
+x2 => s11_mealy:inst.x2
+x2 => s11_moore:inst1.x2
+x2 => v12_mealy:inst2.x2
+x2 => v12_moore:inst3.x2
+x1 => s11_mealy:inst.x1
+x1 => s11_moore:inst1.x1
+x1 => v12_mealy:inst2.x1
+x1 => v12_moore:inst3.x1
+mealy_s_y2 <= s11_mealy:inst.y2
+mealy_s_y3 <= s11_mealy:inst.y3
+moore_s_y1 <= s11_moore:inst1.y1
+moore_s_y2 <= s11_moore:inst1.y2
+moore_s_y3 <= s11_moore:inst1.y3
+mealy_v_y1 <= v12_mealy:inst2.y1
+mealy_v_y2 <= v12_mealy:inst2.y2
+mealy_v_y3 <= v12_mealy:inst2.y3
+moore_v_y2 <= v12_moore:inst3.y2
+moore_v_y1 <= v12_moore:inst3.y1
+moore_v_y3 <= v12_moore:inst3.y3
+mealy_s_q[0] <= s11_mealy:inst.q[0]
+mealy_s_q[1] <= s11_mealy:inst.q[1]
+mealy_v_q[0] <= v12_mealy:inst2.q[0]
+mealy_v_q[1] <= v12_mealy:inst2.q[1]
+moore_s_q[0] <= s11_moore:inst1.q[0]
+moore_s_q[1] <= s11_moore:inst1.q[1]
+moore_s_q[2] <= s11_moore:inst1.q[2]
+moore_v_q[0] <= v12_moore:inst3.q[0]
+moore_v_q[1] <= v12_moore:inst3.q[1]
+moore_v_q[2] <= v12_moore:inst3.q[2]
+
+
+|sv12|s11_mealy:inst
+y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+c => inst6.CLK
+c => inst4.CLK
+x1 => inst3.IN1
+x1 => inst.IN0
+x1 => inst12.IN1
+x2 => inst5.IN2
+x2 => inst2.IN0
+x2 => inst13.IN2
+y2 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sv12|s11_moore:inst1
+y1 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+c => inst6.CLK
+c => inst10.CLK
+c => inst11.CLK
+x1 => inst4.IN0
+x1 => inst.IN1
+x2 => inst2.IN2
+y2 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sv12|v12_mealy:inst2
+c => q[1]~reg0.CLK
+c => q[0]~reg0.CLK
+x1 => y1~1.IN0
+x1 => always0~1.IN1
+x1 => y2~0.IN0
+x1 => always0~0.IN1
+x2 => y2~1.IN0
+x2 => y1~2.IN0
+x2 => always0~0.IN0
+x2 => always0~1.IN0
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= y1~4.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= y2~3.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= y3~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sv12|v12_moore:inst3
+c => q[2]~reg0.CLK
+c => q[1]~reg0.CLK
+c => q[0]~reg0.CLK
+x1 => always0~1.IN1
+x1 => always0~0.IN1
+x2 => always0~0.IN0
+x2 => always0~1.IN0
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= y1~4.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= y2~3.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= y3~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

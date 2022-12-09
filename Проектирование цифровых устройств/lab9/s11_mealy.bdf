@@ -677,11 +677,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(text "q1,q0" (rect -184 64 -157 76)(font "Arial" ))
-	(pt -136 80)
-	(pt -192 80)
-)
-(connector
 	(text "x1" (rect -176 168 -165 180)(font "Arial" ))
 	(pt -168 184)
 	(pt -184 184)
@@ -919,4 +914,10 @@ applicable agreement for further details.
 	(text "y3" (rect 808 208 820 220)(font "Arial" ))
 	(pt 800 224)
 	(pt 832 224)
+)
+(connector
+	(text "q1,q0" (rect -184 64 -157 76)(font "Arial" ))
+	(pt -136 80)
+	(pt -192 80)
+	(bus)
 )

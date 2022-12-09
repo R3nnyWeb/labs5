@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for lab8
-Wed Nov 30 17:51:53 2022
+Thu Dec 08 15:55:40 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -130,7 +130,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Nov 30 17:51:52 2022
+    Info: Processing started: Thu Dec 08 15:55:40 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off lab8 -c lab8
 Info: Started post-fitting delay annotation
 Warning: Timing characteristics of device EPM570ZM256C7 are preliminary
@@ -169,9 +169,9 @@ Info: tco from clock "c" to destination pin "q[2]" through register "q[2]~reg0" 
         Info: Total cell delay = 1.974 ns ( 18.88 % )
         Info: Total interconnect delay = 8.484 ns ( 81.12 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 167 megabytes
-    Info: Processing ended: Wed Nov 30 17:51:53 2022
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 177 megabytes
+    Info: Processing ended: Thu Dec 08 15:55:40 2022
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

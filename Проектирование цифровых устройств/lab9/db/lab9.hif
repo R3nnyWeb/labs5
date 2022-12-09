@@ -1,0 +1,174 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+7
+2996
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+s11_moore
+# storage
+db|lab9.(0).cnf
+db|lab9.(0).cnf
+# case_insensitive
+# source_file
+s11_moore.bdf
+1d8a3c906a2fcc739d33b18b988f27af
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s11_moore:inst1
+}
+# macro_sequence
+
+# end
+# entity
+s11
+# storage
+db|lab9.(1).cnf
+db|lab9.(1).cnf
+# case_insensitive
+# source_file
+s11.bdf
+44d5e772926284636fcaaa7a8172561d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+s11_mealy
+# storage
+db|lab9.(2).cnf
+db|lab9.(2).cnf
+# case_insensitive
+# source_file
+s11_mealy.bdf
+93e62b5f47cc2d6cdf61212f43fc64a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s11_mealy:inst
+}
+# macro_sequence
+
+# end
+# entity
+v12_mealy
+# storage
+db|lab9.(4).cnf
+db|lab9.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v12_mealy.v
+c8727886dc8b3f7abf6c8781f6b460
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v12_mealy:inst2
+}
+# macro_sequence
+
+# end
+# entity
+v12_moore
+# storage
+db|lab9.(5).cnf
+db|lab9.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v12_moore.v
+662156ea165ff9a82515a89e7e481ede
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v12_moore:inst3
+}
+# macro_sequence
+
+# end
+# entity
+sv12
+# storage
+db|lab9.(3).cnf
+db|lab9.(3).cnf
+# case_insensitive
+# source_file
+sv12.bdf
+e26c423684d1aa25b796c70cf8121d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

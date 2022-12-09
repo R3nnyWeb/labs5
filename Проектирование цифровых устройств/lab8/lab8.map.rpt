@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab8
-Wed Nov 30 17:51:47 2022
+Thu Dec 08 15:55:38 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Nov 30 17:51:47 2022   ;
+; Analysis & Synthesis Status ; Successful - Thu Dec 08 15:55:38 2022   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; lab8                                    ;
 ; Top-level Entity Name       ; v83                                     ;
@@ -117,13 +117,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                     ;
-+----------------------------------+-----------------+------------------------+------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path ;
-+----------------------------------+-----------------+------------------------+------------------------------+
-; v83.v                            ; yes             ; User Verilog HDL File  ; E:/lab8/v83.v                ;
-+----------------------------------+-----------------+------------------------+------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+
+; v83.v                            ; yes             ; User Verilog HDL File  ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab8/v83.v ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+
 
 
 +---------------------------------------------------------+
@@ -191,7 +191,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Nov 30 17:51:46 2022
+    Info: Processing started: Thu Dec 08 15:55:37 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
 Info: Found 1 design units, including 1 entities, in source file s81_form.bdf
     Info: Found entity 1: s81_form
@@ -211,9 +211,9 @@ Warning: Ignored assignments for entity "lab8" -- entity does not exist in desig
     Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity lab8 -section_id "Root Region" is ignored
     Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab8 -section_id "Root Region" is ignored
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 209 megabytes
-    Info: Processing ended: Wed Nov 30 17:51:47 2022
+    Info: Peak virtual memory: 226 megabytes
+    Info: Processing ended: Thu Dec 08 15:55:38 2022
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
