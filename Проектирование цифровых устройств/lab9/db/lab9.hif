@@ -170,5 +170,22 @@ AUTO
 # macro_sequence
 
 # end
+# entity
+sv13
+# storage
+db|lab9.(6).cnf
+db|lab9.(6).cnf
+# case_insensitive
+# source_file
+sv13.bdf
+66f923843b5d8178683a4833b3e5e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
 # complete
 

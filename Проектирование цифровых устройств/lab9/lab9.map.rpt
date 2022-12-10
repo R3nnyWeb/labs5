@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab9
-Wed Dec 07 21:01:25 2022
+Sat Dec 10 20:39:51 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Wed Dec 07 21:01:25 2022   ;
+; Analysis & Synthesis Status   ; Successful - Sat Dec 10 20:39:51 2022   ;
 ; Quartus II Version            ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                 ; lab9                                    ;
 ; Top-level Entity Name         ; sv12                                    ;
@@ -233,11 +233,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Dec 07 21:01:24 2022
+    Info: Processing started: Sat Dec 10 20:39:50 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab9 -c lab9
 Warning: Ignored assignments for entity "lab9" -- entity does not exist in design
     Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity lab9 -section_id "Root Region" is ignored
     Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab9 -section_id "Root Region" is ignored
+Warning: Ignored assignments for entity "sv12" -- entity does not exist in design
+    Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region" is ignored
+    Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region" is ignored
+    Warning: Assignment of entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS REPLACE_CONFLICTING -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -section_id Top is ignored
 Info: Found 1 design units, including 1 entities, in source file s11_mealy.bdf
     Info: Found entity 1: s11_mealy
 Info: Found 1 design units, including 1 entities, in source file s11_moore.bdf
@@ -250,6 +262,8 @@ Info: Found 1 design units, including 1 entities, in source file s11.bdf
     Info: Found entity 1: s11
 Info: Found 1 design units, including 1 entities, in source file sv12.bdf
     Info: Found entity 1: sv12
+Info: Found 1 design units, including 1 entities, in source file sv13.bdf
+    Info: Found entity 1: sv13
 Info: Elaborating entity "sv12" for the top level hierarchy
 Info: Elaborating entity "s11_mealy" for hierarchy "s11_mealy:inst"
 Info: Elaborating entity "s11_moore" for hierarchy "s11_moore:inst1"
@@ -264,9 +278,9 @@ Info: Implemented 47 device resources after synthesis - the final resource count
     Info: Implemented 3 input pins
     Info: Implemented 22 output pins
     Info: Implemented 22 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 8 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 20 warnings
     Info: Peak virtual memory: 224 megabytes
-    Info: Processing ended: Wed Dec 07 21:01:25 2022
+    Info: Processing ended: Sat Dec 10 20:39:51 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
