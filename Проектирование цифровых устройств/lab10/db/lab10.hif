@@ -1,0 +1,168 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+7
+2996
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+v21
+# storage
+db|lab10.(1).cnf
+db|lab10.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v21.v
+aae6f9e0cdda597cd2bd82f3559ac9
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+sv21
+# storage
+db|lab10.(2).cnf
+db|lab10.(2).cnf
+# case_insensitive
+# source_file
+sv21.bdf
+5a5a6913806630727fa0e42c30bc1627
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+s11
+# storage
+db|lab10.(0).cnf
+db|lab10.(0).cnf
+# case_insensitive
+# source_file
+s11.bdf
+1cfd6474e3e97ab0d9dc13e794e12c6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+s22
+# storage
+db|lab10.(3).cnf
+db|lab10.(3).cnf
+# case_insensitive
+# source_file
+s22.bdf
+ce5ea3919540bd378e2ee4362083c179
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s22:inst
+}
+# macro_sequence
+
+# end
+# entity
+v22
+# storage
+db|lab10.(4).cnf
+db|lab10.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v22.v
+5aedf320375d5332188e764fa32ec88
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v22:inst1
+}
+# macro_sequence
+
+# end
+# entity
+wsv22
+# storage
+db|lab10.(5).cnf
+db|lab10.(5).cnf
+# case_insensitive
+# source_file
+wsv22.bdf
+49e8b57d22853d3377106f326efbe8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,47 @@
+|wsv22
+sq[0] <= s22:inst.q[0]
+sq[1] <= s22:inst.q[1]
+sq[2] <= s22:inst.q[2]
+m => s22:inst.m
+m => v22:inst1.m
+c => s22:inst.c
+c => v22:inst1.c
+vq[0] <= v22:inst1.q[0]
+vq[1] <= v22:inst1.q[1]
+vq[2] <= v22:inst1.q[2]
+
+
+|wsv22|s22:inst
+q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+m => inst10.IN0
+m => inst16.IN1
+m => inst21.IN0
+m => inst22.IN3
+c => inst.CLK
+c => inst1.CLK
+c => inst2.CLK
+
+
+|wsv22|v22:inst1
+c => q[2]~reg0.CLK
+c => q[1]~reg0.CLK
+c => q[0]~reg0.CLK
+m => Mux1.IN4
+m => Mux0.IN6
+m => Mux1.IN5
+m => Mux1.IN6
+m => Mux1.IN7
+m => Mux0.IN7
+m => Mux1.IN0
+m => Mux1.IN1
+m => Mux1.IN2
+m => Mux1.IN3
+m => Mux0.IN4
+m => Mux0.IN5
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
