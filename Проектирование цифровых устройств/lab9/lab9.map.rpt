@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab9
-Sat Dec 10 20:39:51 2022
+Sun Dec 11 18:53:29 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -13,8 +13,7 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Multiplexer Restructuring Statistics (Restructuring Performed)
-  9. Analysis & Synthesis Messages
+  8. Analysis & Synthesis Messages
 
 
 
@@ -40,16 +39,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Sat Dec 10 20:39:51 2022   ;
+; Analysis & Synthesis Status   ; Successful - Sun Dec 11 18:53:29 2022   ;
 ; Quartus II Version            ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                 ; lab9                                    ;
-; Top-level Entity Name         ; sv12                                    ;
+; Top-level Entity Name         ; sv13                                    ;
 ; Family                        ; Stratix II                              ;
 ; Logic utilization             ; N/A                                     ;
-;     Combinational ALUTs       ; 22                                      ;
-;     Dedicated logic registers ; 10                                      ;
-; Total registers               ; 10                                      ;
-; Total pins                    ; 25                                      ;
+;     Combinational ALUTs       ; 6                                       ;
+;     Dedicated logic registers ; 3                                       ;
+; Total registers               ; 3                                       ;
+; Total pins                    ; 9                                       ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 0                                       ;
 ; DSP block 9-bit elements      ; 0                                       ;
@@ -63,7 +62,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                         ; Setting            ; Default Value      ;
 +----------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                          ; sv12               ; lab9               ;
+; Top-level entity name                                          ; sv13               ; lab9               ;
 ; Family name                                                    ; Stratix II         ; Stratix II         ;
 ; Use smart compilation                                          ; Off                ; Off                ;
 ; Restructure Multiplexers                                       ; Auto               ; Auto               ;
@@ -135,70 +134,62 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
-; s11_mealy.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab9/s11_mealy.bdf ;
-; s11_moore.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab9/s11_moore.bdf ;
-; v12_mealy.v                      ; yes             ; User Verilog HDL File              ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab9/v12_mealy.v   ;
-; v12_moore.v                      ; yes             ; User Verilog HDL File              ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab9/v12_moore.v   ;
-; sv12.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab9/sv12.bdf      ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                            ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
+; sv13.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab9/sv13.bdf ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+-----------------------------------------------+-------+
-; Resource                                      ; Usage ;
-+-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 22    ;
-; Dedicated logic registers                     ; 10    ;
-;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 0     ;
-;                                               ;       ;
-; Total combinational functions                 ; 22    ;
-; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 0     ;
-;     -- 6 input functions                      ; 0     ;
-;     -- 5 input functions                      ; 2     ;
-;     -- 4 input functions                      ; 8     ;
-;     -- <=3 input functions                    ; 12    ;
-;                                               ;       ;
-; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 22    ;
-;     -- extended LUT mode                      ; 0     ;
-;     -- arithmetic mode                        ; 0     ;
-;     -- shared arithmetic mode                 ; 0     ;
-;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 22    ;
-;                                               ;       ;
-; Total registers                               ; 10    ;
-;     -- Dedicated logic registers              ; 10    ;
-;     -- I/O registers                          ; 0     ;
-;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 11    ;
-;                                               ;       ;
-; I/O pins                                      ; 25    ;
-; Maximum fan-out node                          ; x1    ;
-; Maximum fan-out                               ; 10    ;
-; Total fan-out                                 ; 116   ;
-; Average fan-out                               ; 2.04  ;
-+-----------------------------------------------+-------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++-----------------------------------------------+--------+
+; Resource                                      ; Usage  ;
++-----------------------------------------------+--------+
+; Estimated ALUTs Used                          ; 6      ;
+; Dedicated logic registers                     ; 3      ;
+;                                               ;        ;
+; Estimated ALUTs Unavailable                   ; 0      ;
+;                                               ;        ;
+; Total combinational functions                 ; 6      ;
+; Combinational ALUT usage by number of inputs  ;        ;
+;     -- 7 input functions                      ; 0      ;
+;     -- 6 input functions                      ; 0      ;
+;     -- 5 input functions                      ; 2      ;
+;     -- 4 input functions                      ; 0      ;
+;     -- <=3 input functions                    ; 4      ;
+;                                               ;        ;
+; Combinational ALUTs by mode                   ;        ;
+;     -- normal mode                            ; 6      ;
+;     -- extended LUT mode                      ; 0      ;
+;     -- arithmetic mode                        ; 0      ;
+;     -- shared arithmetic mode                 ; 0      ;
+;                                               ;        ;
+; Estimated ALUT/register pairs used            ; 6      ;
+;                                               ;        ;
+; Total registers                               ; 3      ;
+;     -- Dedicated logic registers              ; 3      ;
+;     -- I/O registers                          ; 0      ;
+;                                               ;        ;
+; Estimated ALMs:  partially or completely used ; 3      ;
+;                                               ;        ;
+; I/O pins                                      ; 9      ;
+; Maximum fan-out node                          ; inst10 ;
+; Maximum fan-out                               ; 7      ;
+; Total fan-out                                 ; 33     ;
+; Average fan-out                               ; 1.83   ;
++-----------------------------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                             ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
-; |sv12                      ; 22 (0)            ; 10 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 25   ; 0            ; |sv12                 ; work         ;
-;    |s11_mealy:inst|        ; 5 (5)             ; 2 (2)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sv12|s11_mealy:inst  ; work         ;
-;    |s11_moore:inst1|       ; 6 (6)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sv12|s11_moore:inst1 ; work         ;
-;    |v12_mealy:inst2|       ; 5 (5)             ; 2 (2)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sv12|v12_mealy:inst2 ; work         ;
-;    |v12_moore:inst3|       ; 6 (6)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sv12|v12_moore:inst3 ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |sv13                      ; 6 (6)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 9    ; 0            ; |sv13               ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -207,7 +198,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 10    ;
+; Total registers                              ; 3     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -217,39 +208,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |sv12|v12_mealy:inst2|q[0] ;
-; 8:1                ; 2 bits    ; 10 ALUTs      ; 10 ALUTs             ; 0 ALUTs                ; Yes        ; |sv12|v12_moore:inst3|q[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Dec 10 20:39:50 2022
+    Info: Processing started: Sun Dec 11 18:53:28 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab9 -c lab9
 Warning: Ignored assignments for entity "lab9" -- entity does not exist in design
     Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity lab9 -section_id "Root Region" is ignored
     Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab9 -section_id "Root Region" is ignored
-Warning: Ignored assignments for entity "sv12" -- entity does not exist in design
-    Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region" is ignored
-    Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region" is ignored
-    Warning: Assignment of entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top is ignored
-    Warning: Assignment of entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top is ignored
-    Warning: Assignment of entity set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top is ignored
-    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -section_id Top is ignored
-    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -section_id Top is ignored
-    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS REPLACE_CONFLICTING -section_id Top is ignored
-    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -section_id Top is ignored
-    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -section_id Top is ignored
-    Warning: Assignment of entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -section_id Top is ignored
 Info: Found 1 design units, including 1 entities, in source file s11_mealy.bdf
     Info: Found entity 1: s11_mealy
 Info: Found 1 design units, including 1 entities, in source file s11_moore.bdf
@@ -264,23 +233,17 @@ Info: Found 1 design units, including 1 entities, in source file sv12.bdf
     Info: Found entity 1: sv12
 Info: Found 1 design units, including 1 entities, in source file sv13.bdf
     Info: Found entity 1: sv13
-Info: Elaborating entity "sv12" for the top level hierarchy
-Info: Elaborating entity "s11_mealy" for hierarchy "s11_mealy:inst"
-Info: Elaborating entity "s11_moore" for hierarchy "s11_moore:inst1"
-Warning: Block or symbol "OR2" of instance "inst17" overlaps another block or symbol
-Warning: Primitive "NOT" of instance "inst5" not used
-Info: Elaborating entity "v12_mealy" for hierarchy "v12_mealy:inst2"
-Info: Elaborating entity "v12_moore" for hierarchy "v12_moore:inst3"
+Info: Elaborating entity "sv13" for the top level hierarchy
 Warning: Ignored assignments for entity "lab9" -- entity does not exist in design
     Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity lab9 -section_id "Root Region" is ignored
     Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab9 -section_id "Root Region" is ignored
-Info: Implemented 47 device resources after synthesis - the final resource count might be different
+Info: Implemented 15 device resources after synthesis - the final resource count might be different
     Info: Implemented 3 input pins
-    Info: Implemented 22 output pins
-    Info: Implemented 22 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 224 megabytes
-    Info: Processing ended: Sat Dec 10 20:39:51 2022
+    Info: Implemented 6 output pins
+    Info: Implemented 6 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 223 megabytes
+    Info: Processing ended: Sun Dec 11 18:53:29 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

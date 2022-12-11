@@ -35,9 +35,6 @@ s11_moore.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-s11_moore:inst1
-}
 # macro_sequence
 
 # end
@@ -72,9 +69,6 @@ s11_mealy.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-s11_mealy:inst
-}
 # macro_sequence
 
 # end
@@ -107,9 +101,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-v12_mealy:inst2
 }
 # macro_sequence
 
@@ -144,9 +135,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-v12_moore:inst3
-}
 # macro_sequence
 
 # end
@@ -164,9 +152,6 @@ e26c423684d1aa25b796c70cf8121d
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -178,11 +163,14 @@ db|lab9.(6).cnf
 # case_insensitive
 # source_file
 sv13.bdf
-66f923843b5d8178683a4833b3e5e
+e182ed5cd77e66832ea3cf139f47a54
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

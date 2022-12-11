@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 3.754 ns
+Actual Time    : 3.179 ns
 From           : x2
-To             : s11_moore:inst1|inst10
+To             : inst4
 From Clock     : --
 To Clock       : c
 Failed Paths   : 0
@@ -15,29 +15,19 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 7.903 ns
-From           : s11_moore:inst1|inst6
-To             : moore_s_y1
+Actual Time    : 6.641 ns
+From           : inst
+To             : y1
 From Clock     : c
-To Clock       : --
-Failed Paths   : 0
-
-Type           : Worst-case tpd
-Slack          : N/A
-Required Time  : None
-Actual Time    : 10.269 ns
-From           : x2
-To             : mealy_s_y1
-From Clock     : --
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -2.643 ns
+Actual Time    : -2.293 ns
 From           : x1
-To             : v12_mealy:inst2|q[0]
+To             : inst
 From Clock     : --
 To Clock       : c
 Failed Paths   : 0
@@ -46,8 +36,8 @@ Type           : Clock Setup: 'c'
 Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
-From           : v12_moore:inst3|q[1]
-To             : v12_moore:inst3|q[2]
+From           : inst10
+To             : inst
 From Clock     : c
 To Clock       : c
 Failed Paths   : 0

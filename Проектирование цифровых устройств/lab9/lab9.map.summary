@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Dec 10 20:39:51 2022
+Analysis & Synthesis Status : Successful - Sun Dec 11 18:53:29 2022
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : lab9
-Top-level Entity Name : sv12
+Top-level Entity Name : sv13
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 22
-    Dedicated logic registers : 10
-Total registers : 10
-Total pins : 25
+    Combinational ALUTs : 6
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 9
 Total virtual pins : 0
 Total block memory bits : 0
 DSP block 9-bit elements : 0

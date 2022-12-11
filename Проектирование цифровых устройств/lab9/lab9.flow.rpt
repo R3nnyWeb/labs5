@@ -1,5 +1,5 @@
 Flow report for lab9
-Sat Dec 10 20:39:56 2022
+Sun Dec 11 18:53:34 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Sat Dec 10 20:39:56 2022   ;
+; Flow Status                   ; Successful - Sun Dec 11 18:53:34 2022   ;
 ; Quartus II Version            ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                 ; lab9                                    ;
-; Top-level Entity Name         ; sv12                                    ;
+; Top-level Entity Name         ; sv13                                    ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; Yes                                     ;
 ; Logic utilization             ; < 1 %                                   ;
-;     Combinational ALUTs       ; 22 / 12,480 ( < 1 % )                   ;
-;     Dedicated logic registers ; 10 / 12,480 ( < 1 % )                   ;
-; Total registers               ; 10                                      ;
-; Total pins                    ; 25 / 343 ( 7 % )                        ;
+;     Combinational ALUTs       ; 6 / 12,480 ( < 1 % )                    ;
+;     Dedicated logic registers ; 3 / 12,480 ( < 1 % )                    ;
+; Total registers               ; 3                                       ;
+; Total pins                    ; 9 / 343 ( 3 % )                         ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                     ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/10/2022 20:39:50 ;
+; Start date & time ; 12/11/2022 18:53:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab9                ;
 +-------------------+---------------------+
@@ -75,10 +75,10 @@ applicable agreement for further details.
 +------------------------+--------------------------------+---------------+-------------+------------+
 ; Assignment Name        ; Value                          ; Default Value ; Entity Name ; Section Id ;
 +------------------------+--------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID  ; 39908803013047.167069399003864 ; --            ; --          ; --         ;
-; PARTITION_COLOR        ; 16764057                       ; --            ; sv12        ; Top        ;
-; PARTITION_NETLIST_TYPE ; SOURCE                         ; --            ; sv12        ; Top        ;
-; TOP_LEVEL_ENTITY       ; sv12                           ; lab9          ; --          ; --         ;
+; COMPILER_SIGNATURE_ID  ; 39908803013047.167077400812444 ; --            ; --          ; --         ;
+; PARTITION_COLOR        ; 16764057                       ; --            ; sv13        ; Top        ;
+; PARTITION_NETLIST_TYPE ; SOURCE                         ; --            ; sv13        ; Top        ;
+; TOP_LEVEL_ENTITY       ; sv13                           ; lab9          ; --          ; --         ;
 +------------------------+--------------------------------+---------------+-------------+------------+
 
 
@@ -87,11 +87,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 224 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 268 MB              ; 00:00:02                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 234 MB              ; 00:00:01                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 223 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:02     ; 1.0                     ; 268 MB              ; 00:00:02                           ;
+; Assembler               ; 00:00:01     ; 1.0                     ; 237 MB              ; 00:00:01                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 168 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:03     ; --                      ; --                  ; 00:00:04                           ;
+; Total                   ; 00:00:04     ; --                      ; --                  ; 00:00:03                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

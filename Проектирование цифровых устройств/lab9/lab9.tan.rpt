@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for lab9
-Sat Dec 10 20:39:56 2022
+Sun Dec 11 18:53:34 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -13,9 +13,8 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   5. Clock Setup: 'c'
   6. tsu
   7. tco
-  8. tpd
-  9. th
- 10. Timing Analyzer Messages
+  8. th
+  9. Timing Analyzer Messages
 
 
 
@@ -38,18 +37,17 @@ applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                                                                                       ;
-+------------------------------+-------+---------------+------------------------------------------------+-----------------------+------------------------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time                                    ; From                  ; To                     ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+------------------------------------------------+-----------------------+------------------------+------------+----------+--------------+
-; Worst-case tsu               ; N/A   ; None          ; 3.754 ns                                       ; x2                    ; s11_moore:inst1|inst10 ; --         ; c        ; 0            ;
-; Worst-case tco               ; N/A   ; None          ; 7.903 ns                                       ; s11_moore:inst1|inst6 ; moore_s_y1             ; c          ; --       ; 0            ;
-; Worst-case tpd               ; N/A   ; None          ; 10.269 ns                                      ; x2                    ; mealy_s_y1             ; --         ; --       ; 0            ;
-; Worst-case th                ; N/A   ; None          ; -2.643 ns                                      ; x1                    ; v12_mealy:inst2|q[0]   ; --         ; c        ; 0            ;
-; Clock Setup: 'c'             ; N/A   ; None          ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[1]  ; v12_moore:inst3|q[2]   ; c          ; c        ; 0            ;
-; Total number of failed paths ;       ;               ;                                                ;                       ;                        ;            ;          ; 0            ;
-+------------------------------+-------+---------------+------------------------------------------------+-----------------------+------------------------+------------+----------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                       ;
++------------------------------+-------+---------------+------------------------------------------------+--------+-------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                                    ; From   ; To    ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+------------------------------------------------+--------+-------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 3.179 ns                                       ; x2     ; inst4 ; --         ; c        ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 6.641 ns                                       ; inst   ; y1    ; c          ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -2.293 ns                                      ; x1     ; inst  ; --         ; c        ; 0            ;
+; Clock Setup: 'c'             ; N/A   ; None          ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst10 ; inst  ; c          ; c        ; 0            ;
+; Total number of failed paths ;       ;               ;                                                ;        ;       ;            ;          ; 0            ;
++------------------------------+-------+---------------+------------------------------------------------+--------+-------+------------+----------+--------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -91,140 +89,64 @@ applicable agreement for further details.
 +-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clock Setup: 'c'                                                                                                                                                                                                     ;
-+-------+------------------------------------------------+------------------------+------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
-; Slack ; Actual fmax (period)                           ; From                   ; To                     ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
-+-------+------------------------------------------------+------------------------+------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[1]   ; v12_moore:inst3|q[2]   ; c          ; c        ; None                        ; None                      ; 0.735 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[2]   ; v12_moore:inst3|q[1]   ; c          ; c        ; None                        ; None                      ; 0.726 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[2]   ; v12_moore:inst3|q[0]   ; c          ; c        ; None                        ; None                      ; 0.724 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_moore:inst1|inst11 ; s11_moore:inst1|inst6  ; c          ; c        ; None                        ; None                      ; 0.667 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_moore:inst1|inst11 ; s11_moore:inst1|inst10 ; c          ; c        ; None                        ; None                      ; 0.666 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_moore:inst1|inst10 ; s11_moore:inst1|inst11 ; c          ; c        ; None                        ; None                      ; 0.654 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_mealy:inst|inst6   ; s11_mealy:inst|inst4   ; c          ; c        ; None                        ; None                      ; 0.591 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_mealy:inst|inst4   ; s11_mealy:inst|inst6   ; c          ; c        ; None                        ; None                      ; 0.530 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_mealy:inst|inst6   ; s11_mealy:inst|inst6   ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_mealy:inst|inst4   ; s11_mealy:inst|inst4   ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_moore:inst1|inst6  ; s11_moore:inst1|inst6  ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_moore:inst1|inst11 ; s11_moore:inst1|inst11 ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_moore:inst1|inst10 ; s11_moore:inst1|inst10 ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_mealy:inst2|q[1]   ; v12_mealy:inst2|q[1]   ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_mealy:inst2|q[0]   ; v12_mealy:inst2|q[0]   ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[0]   ; v12_moore:inst3|q[0]   ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[2]   ; v12_moore:inst3|q[2]   ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[1]   ; v12_moore:inst3|q[1]   ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_mealy:inst2|q[1]   ; v12_mealy:inst2|q[0]   ; c          ; c        ; None                        ; None                      ; 0.466 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_mealy:inst2|q[0]   ; v12_mealy:inst2|q[1]   ; c          ; c        ; None                        ; None                      ; 0.462 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[0]   ; v12_moore:inst3|q[1]   ; c          ; c        ; None                        ; None                      ; 0.453 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[0]   ; v12_moore:inst3|q[2]   ; c          ; c        ; None                        ; None                      ; 0.450 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_moore:inst1|inst10 ; s11_moore:inst1|inst6  ; c          ; c        ; None                        ; None                      ; 0.441 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_moore:inst1|inst6  ; s11_moore:inst1|inst11 ; c          ; c        ; None                        ; None                      ; 0.439 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; v12_moore:inst3|q[1]   ; v12_moore:inst3|q[0]   ; c          ; c        ; None                        ; None                      ; 0.438 ns                ;
-; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; s11_moore:inst1|inst6  ; s11_moore:inst1|inst10 ; c          ; c        ; None                        ; None                      ; 0.435 ns                ;
-+-------+------------------------------------------------+------------------------+------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'c'                                                                                                                                                                     ;
++-------+------------------------------------------------+--------+--------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From   ; To     ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+--------+--------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst10 ; inst   ; c          ; c        ; None                        ; None                      ; 1.054 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst   ; inst4  ; c          ; c        ; None                        ; None                      ; 0.787 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst4  ; inst   ; c          ; c        ; None                        ; None                      ; 0.770 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst   ; inst10 ; c          ; c        ; None                        ; None                      ; 0.735 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst10 ; inst10 ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst   ; inst   ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst4  ; inst4  ; c          ; c        ; None                        ; None                      ; 0.488 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst4  ; inst10 ; c          ; c        ; None                        ; None                      ; 0.431 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; inst10 ; inst4  ; c          ; c        ; None                        ; None                      ; 0.424 ns                ;
++-------+------------------------------------------------+--------+--------+------------+----------+-----------------------------+---------------------------+-------------------------+
 
 
-+------------------------------------------------------------------------------+
-; tsu                                                                          ;
-+-------+--------------+------------+------+------------------------+----------+
-; Slack ; Required tsu ; Actual tsu ; From ; To                     ; To Clock ;
-+-------+--------------+------------+------+------------------------+----------+
-; N/A   ; None         ; 3.754 ns   ; x2   ; s11_moore:inst1|inst10 ; c        ;
-; N/A   ; None         ; 3.753 ns   ; x2   ; v12_mealy:inst2|q[0]   ; c        ;
-; N/A   ; None         ; 3.752 ns   ; x2   ; v12_moore:inst3|q[1]   ; c        ;
-; N/A   ; None         ; 3.746 ns   ; x2   ; v12_moore:inst3|q[0]   ; c        ;
-; N/A   ; None         ; 3.744 ns   ; x2   ; v12_mealy:inst2|q[1]   ; c        ;
-; N/A   ; None         ; 3.623 ns   ; x2   ; s11_mealy:inst|inst6   ; c        ;
-; N/A   ; None         ; 2.885 ns   ; x1   ; s11_mealy:inst|inst6   ; c        ;
-; N/A   ; None         ; 2.885 ns   ; x1   ; s11_moore:inst1|inst6  ; c        ;
-; N/A   ; None         ; 2.884 ns   ; x1   ; s11_mealy:inst|inst4   ; c        ;
-; N/A   ; None         ; 2.884 ns   ; x1   ; s11_moore:inst1|inst10 ; c        ;
-; N/A   ; None         ; 2.884 ns   ; x1   ; v12_moore:inst3|q[0]   ; c        ;
-; N/A   ; None         ; 2.882 ns   ; x1   ; v12_mealy:inst2|q[0]   ; c        ;
-+-------+--------------+------------+------+------------------------+----------+
++-------------------------------------------------------------+
+; tsu                                                         ;
++-------+--------------+------------+------+-------+----------+
+; Slack ; Required tsu ; Actual tsu ; From ; To    ; To Clock ;
++-------+--------------+------------+------+-------+----------+
+; N/A   ; None         ; 3.179 ns   ; x2   ; inst4 ; c        ;
+; N/A   ; None         ; 3.175 ns   ; x2   ; inst  ; c        ;
+; N/A   ; None         ; 3.078 ns   ; x1   ; inst4 ; c        ;
+; N/A   ; None         ; 2.532 ns   ; x1   ; inst  ; c        ;
++-------+--------------+------------+------+-------+----------+
 
 
-+----------------------------------------------------------------------------------------+
-; tco                                                                                    ;
-+-------+--------------+------------+------------------------+--------------+------------+
-; Slack ; Required tco ; Actual tco ; From                   ; To           ; From Clock ;
-+-------+--------------+------------+------------------------+--------------+------------+
-; N/A   ; None         ; 7.903 ns   ; s11_moore:inst1|inst6  ; moore_s_y1   ; c          ;
-; N/A   ; None         ; 7.736 ns   ; s11_moore:inst1|inst11 ; moore_s_y1   ; c          ;
-; N/A   ; None         ; 7.641 ns   ; v12_moore:inst3|q[0]   ; moore_v_y1   ; c          ;
-; N/A   ; None         ; 7.582 ns   ; v12_moore:inst3|q[2]   ; moore_v_y1   ; c          ;
-; N/A   ; None         ; 7.348 ns   ; s11_mealy:inst|inst6   ; mealy_s_y1   ; c          ;
-; N/A   ; None         ; 7.323 ns   ; s11_mealy:inst|inst4   ; mealy_s_y1   ; c          ;
-; N/A   ; None         ; 7.125 ns   ; s11_moore:inst1|inst6  ; moore_s_y2   ; c          ;
-; N/A   ; None         ; 7.097 ns   ; v12_mealy:inst2|q[0]   ; mealy_v_y3   ; c          ;
-; N/A   ; None         ; 7.021 ns   ; s11_moore:inst1|inst10 ; moore_s_y2   ; c          ;
-; N/A   ; None         ; 6.989 ns   ; s11_moore:inst1|inst11 ; moore_s_y2   ; c          ;
-; N/A   ; None         ; 6.882 ns   ; v12_mealy:inst2|q[1]   ; mealy_v_y3   ; c          ;
-; N/A   ; None         ; 6.778 ns   ; v12_moore:inst3|q[0]   ; moore_v_q[0] ; c          ;
-; N/A   ; None         ; 6.479 ns   ; v12_moore:inst3|q[2]   ; moore_v_y3   ; c          ;
-; N/A   ; None         ; 6.477 ns   ; v12_moore:inst3|q[2]   ; moore_v_y2   ; c          ;
-; N/A   ; None         ; 6.470 ns   ; v12_moore:inst3|q[0]   ; moore_v_y3   ; c          ;
-; N/A   ; None         ; 6.468 ns   ; v12_moore:inst3|q[0]   ; moore_v_y2   ; c          ;
-; N/A   ; None         ; 6.403 ns   ; s11_moore:inst1|inst11 ; moore_s_y3   ; c          ;
-; N/A   ; None         ; 6.323 ns   ; v12_mealy:inst2|q[1]   ; mealy_v_y2   ; c          ;
-; N/A   ; None         ; 6.222 ns   ; s11_moore:inst1|inst10 ; moore_s_y3   ; c          ;
-; N/A   ; None         ; 6.188 ns   ; v12_mealy:inst2|q[0]   ; mealy_v_y1   ; c          ;
-; N/A   ; None         ; 6.153 ns   ; v12_moore:inst3|q[1]   ; moore_v_y3   ; c          ;
-; N/A   ; None         ; 6.152 ns   ; v12_moore:inst3|q[1]   ; moore_v_y2   ; c          ;
-; N/A   ; None         ; 6.100 ns   ; v12_moore:inst3|q[2]   ; moore_v_q[2] ; c          ;
-; N/A   ; None         ; 6.099 ns   ; v12_mealy:inst2|q[0]   ; mealy_v_y2   ; c          ;
-; N/A   ; None         ; 6.059 ns   ; s11_moore:inst1|inst6  ; moore_s_y3   ; c          ;
-; N/A   ; None         ; 6.057 ns   ; s11_mealy:inst|inst4   ; mealy_s_y2   ; c          ;
-; N/A   ; None         ; 6.002 ns   ; s11_mealy:inst|inst6   ; mealy_s_y2   ; c          ;
-; N/A   ; None         ; 5.945 ns   ; s11_mealy:inst|inst4   ; mealy_s_y3   ; c          ;
-; N/A   ; None         ; 5.902 ns   ; v12_mealy:inst2|q[1]   ; mealy_v_y1   ; c          ;
-; N/A   ; None         ; 5.793 ns   ; s11_mealy:inst|inst6   ; mealy_s_y3   ; c          ;
-; N/A   ; None         ; 5.783 ns   ; s11_mealy:inst|inst4   ; mealy_s_q[0] ; c          ;
-; N/A   ; None         ; 5.780 ns   ; v12_moore:inst3|q[1]   ; moore_v_q[1] ; c          ;
-; N/A   ; None         ; 5.739 ns   ; s11_mealy:inst|inst6   ; mealy_s_q[1] ; c          ;
-; N/A   ; None         ; 5.705 ns   ; s11_moore:inst1|inst6  ; moore_s_q[0] ; c          ;
-; N/A   ; None         ; 5.625 ns   ; v12_mealy:inst2|q[0]   ; mealy_v_q[0] ; c          ;
-; N/A   ; None         ; 5.579 ns   ; s11_moore:inst1|inst10 ; moore_s_q[1] ; c          ;
-; N/A   ; None         ; 5.565 ns   ; v12_mealy:inst2|q[1]   ; mealy_v_q[1] ; c          ;
-; N/A   ; None         ; 5.514 ns   ; s11_moore:inst1|inst11 ; moore_s_q[2] ; c          ;
-+-------+--------------+------------+------------------------+--------------+------------+
++----------------------------------------------------------------+
+; tco                                                            ;
++-------+--------------+------------+--------+------+------------+
+; Slack ; Required tco ; Actual tco ; From   ; To   ; From Clock ;
++-------+--------------+------------+--------+------+------------+
+; N/A   ; None         ; 6.641 ns   ; inst   ; y1   ; c          ;
+; N/A   ; None         ; 6.539 ns   ; inst10 ; y1   ; c          ;
+; N/A   ; None         ; 6.535 ns   ; inst10 ; y2   ; c          ;
+; N/A   ; None         ; 6.484 ns   ; inst4  ; q[1] ; c          ;
+; N/A   ; None         ; 6.423 ns   ; inst   ; y2   ; c          ;
+; N/A   ; None         ; 6.422 ns   ; inst10 ; y3   ; c          ;
+; N/A   ; None         ; 6.348 ns   ; inst4  ; y2   ; c          ;
+; N/A   ; None         ; 6.084 ns   ; inst4  ; y3   ; c          ;
+; N/A   ; None         ; 5.987 ns   ; inst   ; y3   ; c          ;
+; N/A   ; None         ; 5.700 ns   ; inst10 ; q[2] ; c          ;
+; N/A   ; None         ; 5.221 ns   ; inst   ; q[0] ; c          ;
++-------+--------------+------------+--------+------+------------+
 
 
-+-----------------------------------------------------------------+
-; tpd                                                             ;
-+-------+-------------------+-----------------+------+------------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From ; To         ;
-+-------+-------------------+-----------------+------+------------+
-; N/A   ; None              ; 10.269 ns       ; x2   ; mealy_s_y1 ;
-; N/A   ; None              ; 9.407 ns        ; x1   ; mealy_s_y1 ;
-; N/A   ; None              ; 9.213 ns        ; x2   ; mealy_v_y2 ;
-; N/A   ; None              ; 9.003 ns        ; x2   ; mealy_v_y1 ;
-; N/A   ; None              ; 8.971 ns        ; x2   ; mealy_s_y2 ;
-; N/A   ; None              ; 8.342 ns        ; x1   ; mealy_v_y2 ;
-; N/A   ; None              ; 8.105 ns        ; x1   ; mealy_s_y2 ;
-; N/A   ; None              ; 7.931 ns        ; x1   ; mealy_v_y1 ;
-+-------+-------------------+-----------------+------+------------+
-
-
-+------------------------------------------------------------------------------------+
-; th                                                                                 ;
-+---------------+-------------+-----------+------+------------------------+----------+
-; Minimum Slack ; Required th ; Actual th ; From ; To                     ; To Clock ;
-+---------------+-------------+-----------+------+------------------------+----------+
-; N/A           ; None        ; -2.643 ns ; x1   ; v12_mealy:inst2|q[0]   ; c        ;
-; N/A           ; None        ; -2.645 ns ; x1   ; s11_mealy:inst|inst4   ; c        ;
-; N/A           ; None        ; -2.645 ns ; x1   ; s11_moore:inst1|inst10 ; c        ;
-; N/A           ; None        ; -2.645 ns ; x1   ; v12_moore:inst3|q[0]   ; c        ;
-; N/A           ; None        ; -2.646 ns ; x1   ; s11_mealy:inst|inst6   ; c        ;
-; N/A           ; None        ; -2.646 ns ; x1   ; s11_moore:inst1|inst6  ; c        ;
-; N/A           ; None        ; -3.384 ns ; x2   ; s11_mealy:inst|inst6   ; c        ;
-; N/A           ; None        ; -3.505 ns ; x2   ; v12_mealy:inst2|q[1]   ; c        ;
-; N/A           ; None        ; -3.507 ns ; x2   ; v12_moore:inst3|q[0]   ; c        ;
-; N/A           ; None        ; -3.513 ns ; x2   ; v12_moore:inst3|q[1]   ; c        ;
-; N/A           ; None        ; -3.514 ns ; x2   ; v12_mealy:inst2|q[0]   ; c        ;
-; N/A           ; None        ; -3.515 ns ; x2   ; s11_moore:inst1|inst10 ; c        ;
-+---------------+-------------+-----------+------+------------------------+----------+
++-------------------------------------------------------------------+
+; th                                                                ;
++---------------+-------------+-----------+------+-------+----------+
+; Minimum Slack ; Required th ; Actual th ; From ; To    ; To Clock ;
++---------------+-------------+-----------+------+-------+----------+
+; N/A           ; None        ; -2.293 ns ; x1   ; inst  ; c        ;
+; N/A           ; None        ; -2.839 ns ; x1   ; inst4 ; c        ;
+; N/A           ; None        ; -2.936 ns ; x2   ; inst  ; c        ;
+; N/A           ; None        ; -2.940 ns ; x2   ; inst4 ; c        ;
++---------------+-------------+-----------+------+-------+----------+
 
 
 +--------------------------+
@@ -233,84 +155,78 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Dec 10 20:39:56 2022
+    Info: Processing started: Sun Dec 11 18:53:34 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off lab9 -c lab9 --timing_analysis_only
 Warning: Found pins functioning as undefined clocks and/or memory enables
     Info: Assuming node "c" is an undefined clock
-Info: Clock "c" Internal fmax is restricted to 500.0 MHz between source register "v12_moore:inst3|q[1]" and destination register "v12_moore:inst3|q[2]"
+Info: Clock "c" Internal fmax is restricted to 500.0 MHz between source register "inst10" and destination register "inst"
     Info: fmax restricted to clock pin edge rate 2.0 ns. Expand message to see actual delay path.
-        Info: + Longest register to register delay is 0.735 ns
-            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X9_Y5_N15; Fanout = 6; REG Node = 'v12_moore:inst3|q[1]'
-            Info: 2: + IC(0.352 ns) + CELL(0.228 ns) = 0.580 ns; Loc. = LCCOMB_X9_Y5_N16; Fanout = 1; COMB Node = 'v12_moore:inst3|Mux0~30'
-            Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 0.735 ns; Loc. = LCFF_X9_Y5_N17; Fanout = 7; REG Node = 'v12_moore:inst3|q[2]'
-            Info: Total cell delay = 0.383 ns ( 52.11 % )
-            Info: Total interconnect delay = 0.352 ns ( 47.89 % )
+        Info: + Longest register to register delay is 1.054 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X3_Y16_N17; Fanout = 7; REG Node = 'inst10'
+            Info: 2: + IC(0.533 ns) + CELL(0.366 ns) = 0.899 ns; Loc. = LCCOMB_X3_Y16_N22; Fanout = 1; COMB Node = 'inst~63'
+            Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 1.054 ns; Loc. = LCFF_X3_Y16_N23; Fanout = 7; REG Node = 'inst'
+            Info: Total cell delay = 0.521 ns ( 49.43 % )
+            Info: Total interconnect delay = 0.533 ns ( 50.57 % )
         Info: - Smallest clock skew is 0.000 ns
-            Info: + Shortest clock path from clock "c" to destination register is 2.486 ns
+            Info: + Shortest clock path from clock "c" to destination register is 2.469 ns
                 Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'c'
-                Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 10; COMB Node = 'c~clkctrl'
-                Info: 3: + IC(0.671 ns) + CELL(0.618 ns) = 2.486 ns; Loc. = LCFF_X9_Y5_N17; Fanout = 7; REG Node = 'v12_moore:inst3|q[2]'
-                Info: Total cell delay = 1.472 ns ( 59.21 % )
-                Info: Total interconnect delay = 1.014 ns ( 40.79 % )
-            Info: - Longest clock path from clock "c" to source register is 2.486 ns
+                Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 3; COMB Node = 'c~clkctrl'
+                Info: 3: + IC(0.654 ns) + CELL(0.618 ns) = 2.469 ns; Loc. = LCFF_X3_Y16_N23; Fanout = 7; REG Node = 'inst'
+                Info: Total cell delay = 1.472 ns ( 59.62 % )
+                Info: Total interconnect delay = 0.997 ns ( 40.38 % )
+            Info: - Longest clock path from clock "c" to source register is 2.469 ns
                 Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'c'
-                Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 10; COMB Node = 'c~clkctrl'
-                Info: 3: + IC(0.671 ns) + CELL(0.618 ns) = 2.486 ns; Loc. = LCFF_X9_Y5_N15; Fanout = 6; REG Node = 'v12_moore:inst3|q[1]'
-                Info: Total cell delay = 1.472 ns ( 59.21 % )
-                Info: Total interconnect delay = 1.014 ns ( 40.79 % )
+                Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 3; COMB Node = 'c~clkctrl'
+                Info: 3: + IC(0.654 ns) + CELL(0.618 ns) = 2.469 ns; Loc. = LCFF_X3_Y16_N17; Fanout = 7; REG Node = 'inst10'
+                Info: Total cell delay = 1.472 ns ( 59.62 % )
+                Info: Total interconnect delay = 0.997 ns ( 40.38 % )
         Info: + Micro clock to output delay of source is 0.094 ns
         Info: + Micro setup delay of destination is 0.090 ns
-Info: tsu for register "s11_moore:inst1|inst10" (data pin = "x2", clock pin = "c") is 3.754 ns
-    Info: + Longest pin to register delay is 6.150 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.847 ns) = 0.847 ns; Loc. = PIN_B15; Fanout = 10; PIN Node = 'x2'
-        Info: 2: + IC(4.802 ns) + CELL(0.346 ns) = 5.995 ns; Loc. = LCCOMB_X9_Y5_N4; Fanout = 1; COMB Node = 's11_moore:inst1|inst3~18'
-        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 6.150 ns; Loc. = LCFF_X9_Y5_N5; Fanout = 6; REG Node = 's11_moore:inst1|inst10'
-        Info: Total cell delay = 1.348 ns ( 21.92 % )
-        Info: Total interconnect delay = 4.802 ns ( 78.08 % )
+Info: tsu for register "inst4" (data pin = "x2", clock pin = "c") is 3.179 ns
+    Info: + Longest pin to register delay is 5.558 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.807 ns) = 0.807 ns; Loc. = PIN_H12; Fanout = 2; PIN Node = 'x2'
+        Info: 2: + IC(4.368 ns) + CELL(0.228 ns) = 5.403 ns; Loc. = LCCOMB_X3_Y16_N10; Fanout = 1; COMB Node = 'inst4~155'
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 5.558 ns; Loc. = LCFF_X3_Y16_N11; Fanout = 6; REG Node = 'inst4'
+        Info: Total cell delay = 1.190 ns ( 21.41 % )
+        Info: Total interconnect delay = 4.368 ns ( 78.59 % )
     Info: + Micro setup delay of destination is 0.090 ns
-    Info: - Shortest clock path from clock "c" to destination register is 2.486 ns
+    Info: - Shortest clock path from clock "c" to destination register is 2.469 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'c'
-        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 10; COMB Node = 'c~clkctrl'
-        Info: 3: + IC(0.671 ns) + CELL(0.618 ns) = 2.486 ns; Loc. = LCFF_X9_Y5_N5; Fanout = 6; REG Node = 's11_moore:inst1|inst10'
-        Info: Total cell delay = 1.472 ns ( 59.21 % )
-        Info: Total interconnect delay = 1.014 ns ( 40.79 % )
-Info: tco from clock "c" to destination pin "moore_s_y1" through register "s11_moore:inst1|inst6" is 7.903 ns
-    Info: + Longest clock path from clock "c" to source register is 2.486 ns
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 3; COMB Node = 'c~clkctrl'
+        Info: 3: + IC(0.654 ns) + CELL(0.618 ns) = 2.469 ns; Loc. = LCFF_X3_Y16_N11; Fanout = 6; REG Node = 'inst4'
+        Info: Total cell delay = 1.472 ns ( 59.62 % )
+        Info: Total interconnect delay = 0.997 ns ( 40.38 % )
+Info: tco from clock "c" to destination pin "y1" through register "inst" is 6.641 ns
+    Info: + Longest clock path from clock "c" to source register is 2.469 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'c'
-        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 10; COMB Node = 'c~clkctrl'
-        Info: 3: + IC(0.671 ns) + CELL(0.618 ns) = 2.486 ns; Loc. = LCFF_X9_Y5_N1; Fanout = 7; REG Node = 's11_moore:inst1|inst6'
-        Info: Total cell delay = 1.472 ns ( 59.21 % )
-        Info: Total interconnect delay = 1.014 ns ( 40.79 % )
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 3; COMB Node = 'c~clkctrl'
+        Info: 3: + IC(0.654 ns) + CELL(0.618 ns) = 2.469 ns; Loc. = LCFF_X3_Y16_N23; Fanout = 7; REG Node = 'inst'
+        Info: Total cell delay = 1.472 ns ( 59.62 % )
+        Info: Total interconnect delay = 0.997 ns ( 40.38 % )
     Info: + Micro clock to output delay of source is 0.094 ns
-    Info: + Longest register to pin delay is 5.323 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X9_Y5_N1; Fanout = 7; REG Node = 's11_moore:inst1|inst6'
-        Info: 2: + IC(0.836 ns) + CELL(0.346 ns) = 1.182 ns; Loc. = LCCOMB_X13_Y2_N16; Fanout = 1; COMB Node = 's11_moore:inst1|inst17~13'
-        Info: 3: + IC(1.987 ns) + CELL(2.154 ns) = 5.323 ns; Loc. = PIN_V1; Fanout = 0; PIN Node = 'moore_s_y1'
-        Info: Total cell delay = 2.500 ns ( 46.97 % )
-        Info: Total interconnect delay = 2.823 ns ( 53.03 % )
-Info: Longest tpd from source pin "x2" to destination pin "mealy_s_y1" is 10.269 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.847 ns) = 0.847 ns; Loc. = PIN_B15; Fanout = 10; PIN Node = 'x2'
-    Info: 2: + IC(4.794 ns) + CELL(0.346 ns) = 5.987 ns; Loc. = LCCOMB_X9_Y5_N24; Fanout = 1; COMB Node = 's11_mealy:inst|inst1~37'
-    Info: 3: + IC(2.148 ns) + CELL(2.134 ns) = 10.269 ns; Loc. = PIN_U4; Fanout = 0; PIN Node = 'mealy_s_y1'
-    Info: Total cell delay = 3.327 ns ( 32.40 % )
-    Info: Total interconnect delay = 6.942 ns ( 67.60 % )
-Info: th for register "v12_mealy:inst2|q[0]" (data pin = "x1", clock pin = "c") is -2.643 ns
-    Info: + Longest clock path from clock "c" to destination register is 2.486 ns
+    Info: + Longest register to pin delay is 4.078 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X3_Y16_N23; Fanout = 7; REG Node = 'inst'
+        Info: 2: + IC(0.281 ns) + CELL(0.346 ns) = 0.627 ns; Loc. = LCCOMB_X3_Y16_N18; Fanout = 1; COMB Node = 'inst20~9'
+        Info: 3: + IC(1.509 ns) + CELL(1.942 ns) = 4.078 ns; Loc. = PIN_U16; Fanout = 0; PIN Node = 'y1'
+        Info: Total cell delay = 2.288 ns ( 56.11 % )
+        Info: Total interconnect delay = 1.790 ns ( 43.89 % )
+Info: th for register "inst" (data pin = "x1", clock pin = "c") is -2.293 ns
+    Info: + Longest clock path from clock "c" to destination register is 2.469 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'c'
-        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 10; COMB Node = 'c~clkctrl'
-        Info: 3: + IC(0.671 ns) + CELL(0.618 ns) = 2.486 ns; Loc. = LCFF_X9_Y5_N11; Fanout = 6; REG Node = 'v12_mealy:inst2|q[0]'
-        Info: Total cell delay = 1.472 ns ( 59.21 % )
-        Info: Total interconnect delay = 1.014 ns ( 40.79 % )
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 3; COMB Node = 'c~clkctrl'
+        Info: 3: + IC(0.654 ns) + CELL(0.618 ns) = 2.469 ns; Loc. = LCFF_X3_Y16_N23; Fanout = 7; REG Node = 'inst'
+        Info: Total cell delay = 1.472 ns ( 59.62 % )
+        Info: Total interconnect delay = 0.997 ns ( 40.38 % )
     Info: + Micro hold delay of destination is 0.149 ns
-    Info: - Shortest pin to register delay is 5.278 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.810 ns) = 0.810 ns; Loc. = PIN_T20; Fanout = 10; PIN Node = 'x1'
-        Info: 2: + IC(3.947 ns) + CELL(0.366 ns) = 5.123 ns; Loc. = LCCOMB_X9_Y5_N10; Fanout = 1; COMB Node = 'v12_mealy:inst2|q[0]~24'
-        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 5.278 ns; Loc. = LCFF_X9_Y5_N11; Fanout = 6; REG Node = 'v12_mealy:inst2|q[0]'
-        Info: Total cell delay = 1.331 ns ( 25.22 % )
-        Info: Total interconnect delay = 3.947 ns ( 74.78 % )
+    Info: - Shortest pin to register delay is 4.911 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.810 ns) = 0.810 ns; Loc. = PIN_K19; Fanout = 2; PIN Node = 'x1'
+        Info: 2: + IC(3.893 ns) + CELL(0.053 ns) = 4.756 ns; Loc. = LCCOMB_X3_Y16_N22; Fanout = 1; COMB Node = 'inst~63'
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 4.911 ns; Loc. = LCFF_X3_Y16_N23; Fanout = 7; REG Node = 'inst'
+        Info: Total cell delay = 1.018 ns ( 20.73 % )
+        Info: Total interconnect delay = 3.893 ns ( 79.27 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 184 megabytes
-    Info: Processing ended: Sat Dec 10 20:39:56 2022
+    Info: Processing ended: Sun Dec 11 18:53:34 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
