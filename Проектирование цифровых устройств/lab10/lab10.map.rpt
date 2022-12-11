@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab10
-Sat Dec 10 22:48:18 2022
+Sun Dec 11 19:58:59 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Sat Dec 10 22:48:17 2022   ;
+; Analysis & Synthesis Status   ; Successful - Sun Dec 11 19:58:59 2022   ;
 ; Quartus II Version            ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                 ; lab10                                   ;
 ; Top-level Entity Name         ; wsv22                                   ;
@@ -230,11 +230,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Dec 10 22:48:17 2022
+    Info: Processing started: Sun Dec 11 19:58:59 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab10 -c lab10
 Warning: Ignored assignments for entity "lab10" -- entity does not exist in design
     Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity lab10 -section_id "Root Region" is ignored
     Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab10 -section_id "Root Region" is ignored
+Warning: Ignored assignments for entity "wsv22" -- entity does not exist in design
+    Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region" is ignored
+    Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region" is ignored
+    Warning: Assignment of entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS REPLACE_CONFLICTING -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -section_id Top is ignored
+    Warning: Assignment of entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -section_id Top is ignored
 Info: Found 1 design units, including 1 entities, in source file s11.bdf
     Info: Found entity 1: s11
 Info: Found 1 design units, including 1 entities, in source file v21.v
@@ -257,10 +269,10 @@ Info: Implemented 13 device resources after synthesis - the final resource count
     Info: Implemented 2 input pins
     Info: Implemented 6 output pins
     Info: Implemented 5 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 224 megabytes
-    Info: Processing ended: Sat Dec 10 22:48:18 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Processing ended: Sun Dec 11 19:58:59 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
