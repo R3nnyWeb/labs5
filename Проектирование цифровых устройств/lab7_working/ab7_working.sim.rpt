@@ -1,5 +1,5 @@
 Simulator report for ab7_working
-Thu Dec 08 13:17:43 2022
+Sun Dec 11 14:30:48 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -44,43 +44,43 @@ applicable agreement for further details.
 ; Type                        ; Value        ;
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
-; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 23 nodes     ;
-; Simulation Coverage         ;      82.61 % ;
-; Total Number of Transitions ; 297          ;
+; Simulation End Time         ; 10.0 us      ;
+; Simulation Netlist Size     ; 45 nodes     ;
+; Simulation Coverage         ;      77.78 % ;
+; Total Number of Transitions ; 2435         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 ; Device                      ; EP2S15F484C3 ;
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                       ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
-; Option                                                                                     ; Setting     ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
-; Simulation mode                                                                            ; Timing      ; Timing        ;
-; Start time                                                                                 ; 0 ns        ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF        ;               ;
-; Vector input source                                                                        ; w74_rev.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
-; Check outputs                                                                              ; Off         ; Off           ;
-; Report simulation coverage                                                                 ; On          ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
-; Display missing 1-value coverage report                                                    ; On          ; On            ;
-; Display missing 0-value coverage report                                                    ; On          ; On            ;
-; Detect setup and hold time violations                                                      ; Off         ; Off           ;
-; Detect glitches                                                                            ; Off         ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
-; Generate Signal Activity File                                                              ; Off         ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
-; Group bus channels in simulation results                                                   ; Off         ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Timing       ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; w73_div2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
 
 
 +----------------------+
@@ -95,65 +95,90 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      82.61 % ;
-; Total nodes checked                                 ; 23           ;
-; Total output ports checked                          ; 23           ;
-; Total output ports with complete 1/0-value coverage ; 19           ;
-; Total output ports with no 1/0-value coverage       ; 1            ;
-; Total output ports with no 1-value coverage         ; 3            ;
-; Total output ports with no 0-value coverage         ; 2            ;
+; Total coverage as a percentage                      ;      77.78 % ;
+; Total nodes checked                                 ; 45           ;
+; Total output ports checked                          ; 45           ;
+; Total output ports with complete 1/0-value coverage ; 35           ;
+; Total output ports with no 1/0-value coverage       ; 4            ;
+; Total output ports with no 1-value coverage         ; 4            ;
+; Total output ports with no 0-value coverage         ; 10           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                        ;
-+----------------------------------------+----------------------------------------+------------------+
-; Node Name                              ; Output Port Name                       ; Output Port Type ;
-+----------------------------------------+----------------------------------------+------------------+
-; |s74_pwm_rev|4count:inst|43            ; |s74_pwm_rev|4count:inst|43            ; regout           ;
-; |s74_pwm_rev|4count:inst|44            ; |s74_pwm_rev|4count:inst|44            ; regout           ;
-; |s74_pwm_rev|4count:inst|45            ; |s74_pwm_rev|4count:inst|45            ; regout           ;
-; |s74_pwm_rev|4count:inst|46            ; |s74_pwm_rev|4count:inst|46            ; regout           ;
-; |s74_pwm_rev|inst16~436                ; |s74_pwm_rev|inst16~436                ; combout          ;
-; |s74_pwm_rev|inst16~437                ; |s74_pwm_rev|inst16~437                ; combout          ;
-; |s74_pwm_rev|4count:inst|43~25         ; |s74_pwm_rev|4count:inst|43~25         ; combout          ;
-; |s74_pwm_rev|4count:inst|44~23         ; |s74_pwm_rev|4count:inst|44~23         ; combout          ;
-; |s74_pwm_rev|4count:inst|45~7          ; |s74_pwm_rev|4count:inst|45~7          ; combout          ;
-; |s74_pwm_rev|4count:inst|46~4          ; |s74_pwm_rev|4count:inst|46~4          ; combout          ;
-; |s74_pwm_rev|pwm                       ; |s74_pwm_rev|pwm                       ; padio            ;
-; |s74_pwm_rev|q[3]                      ; |s74_pwm_rev|q[3]                      ; padio            ;
-; |s74_pwm_rev|q[2]                      ; |s74_pwm_rev|q[2]                      ; padio            ;
-; |s74_pwm_rev|q[1]                      ; |s74_pwm_rev|q[1]                      ; padio            ;
-; |s74_pwm_rev|q[0]                      ; |s74_pwm_rev|q[0]                      ; padio            ;
-; |s74_pwm_rev|c                         ; |s74_pwm_rev|c~corein                  ; combout          ;
-; |s74_pwm_rev|c~clkctrl                 ; |s74_pwm_rev|c~clkctrl                 ; outclk           ;
-; |s74_pwm_rev|4count:inst|45~7DUPLICATE ; |s74_pwm_rev|4count:inst|45~7DUPLICATE ; combout          ;
-; |s74_pwm_rev|4count:inst|45~DUPLICATE  ; |s74_pwm_rev|4count:inst|45~DUPLICATE  ; regout           ;
-+----------------------------------------+----------------------------------------+------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                    ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; |sv73_div2|v73_div2:inst|q[2]                        ; |sv73_div2|v73_div2:inst|q[2]                        ; regout           ;
+; |sv73_div2|v73_div2:inst|q[0]                        ; |sv73_div2|v73_div2:inst|q[0]                        ; regout           ;
+; |sv73_div2|v73_div2:inst|q[1]                        ; |sv73_div2|v73_div2:inst|q[1]                        ; regout           ;
+; |sv73_div2|v73_div2:inst|cout                        ; |sv73_div2|v73_div2:inst|cout                        ; combout          ;
+; |sv73_div2|s73_div2:inst1|4count:inst|44             ; |sv73_div2|s73_div2:inst1|4count:inst|44             ; regout           ;
+; |sv73_div2|s73_div2:inst1|4count:inst|45             ; |sv73_div2|s73_div2:inst1|4count:inst|45             ; regout           ;
+; |sv73_div2|s73_div2:inst1|4count:inst|46             ; |sv73_div2|s73_div2:inst1|4count:inst|46             ; regout           ;
+; |sv73_div2|v73_div2:inst|q~241                       ; |sv73_div2|v73_div2:inst|q~241                       ; combout          ;
+; |sv73_div2|v73_div2:inst|q~242                       ; |sv73_div2|v73_div2:inst|q~242                       ; combout          ;
+; |sv73_div2|v73_div2:inst|q~243                       ; |sv73_div2|v73_div2:inst|q~243                       ; combout          ;
+; |sv73_div2|v73_div2:inst|q~244                       ; |sv73_div2|v73_div2:inst|q~244                       ; combout          ;
+; |sv73_div2|s73_div2:inst1|4count:inst|39             ; |sv73_div2|s73_div2:inst1|4count:inst|39             ; combout          ;
+; |sv73_div2|s73_div2:inst1|4count:inst|40             ; |sv73_div2|s73_div2:inst1|4count:inst|40             ; combout          ;
+; |sv73_div2|s73_div2:inst1|4count:inst|41~49          ; |sv73_div2|s73_div2:inst1|4count:inst|41~49          ; combout          ;
+; |sv73_div2|s73_div2:inst1|4count:inst|42~19          ; |sv73_div2|s73_div2:inst1|4count:inst|42~19          ; combout          ;
+; |sv73_div2|vcout                                     ; |sv73_div2|vcout                                     ; padio            ;
+; |sv73_div2|sq[2]                                     ; |sv73_div2|sq[2]                                     ; padio            ;
+; |sv73_div2|sq[1]                                     ; |sv73_div2|sq[1]                                     ; padio            ;
+; |sv73_div2|sq[0]                                     ; |sv73_div2|sq[0]                                     ; padio            ;
+; |sv73_div2|vq[2]                                     ; |sv73_div2|vq[2]                                     ; padio            ;
+; |sv73_div2|vq[1]                                     ; |sv73_div2|vq[1]                                     ; padio            ;
+; |sv73_div2|vq[0]                                     ; |sv73_div2|vq[0]                                     ; padio            ;
+; |sv73_div2|c                                         ; |sv73_div2|c~corein                                  ; combout          ;
+; |sv73_div2|n[0]                                      ; |sv73_div2|n[0]~corein                               ; combout          ;
+; |sv73_div2|c~clkctrl                                 ; |sv73_div2|c~clkctrl                                 ; outclk           ;
+; |sv73_div2|v73_div2:inst|q~241DUPLICATE              ; |sv73_div2|v73_div2:inst|q~241DUPLICATE              ; combout          ;
+; |sv73_div2|v73_div2:inst|q~243DUPLICATE              ; |sv73_div2|v73_div2:inst|q~243DUPLICATE              ; combout          ;
+; |sv73_div2|v73_div2:inst|q[0]~DUPLICATE              ; |sv73_div2|v73_div2:inst|q[0]~DUPLICATE              ; regout           ;
+; |sv73_div2|v73_div2:inst|q~244DUPLICATE              ; |sv73_div2|v73_div2:inst|q~244DUPLICATE              ; combout          ;
+; |sv73_div2|v73_div2:inst|q[1]~DUPLICATE              ; |sv73_div2|v73_div2:inst|q[1]~DUPLICATE              ; regout           ;
+; |sv73_div2|s73_div2:inst1|4count:inst|39~DUPLICATE   ; |sv73_div2|s73_div2:inst1|4count:inst|39~DUPLICATE   ; combout          ;
+; |sv73_div2|s73_div2:inst1|4count:inst|41~49DUPLICATE ; |sv73_div2|s73_div2:inst1|4count:inst|41~49DUPLICATE ; combout          ;
+; |sv73_div2|s73_div2:inst1|4count:inst|45~DUPLICATE   ; |sv73_div2|s73_div2:inst1|4count:inst|45~DUPLICATE   ; regout           ;
+; |sv73_div2|s73_div2:inst1|4count:inst|42~19DUPLICATE ; |sv73_div2|s73_div2:inst1|4count:inst|42~19DUPLICATE ; combout          ;
+; |sv73_div2|s73_div2:inst1|4count:inst|46~DUPLICATE   ; |sv73_div2|s73_div2:inst1|4count:inst|46~DUPLICATE   ; regout           ;
++------------------------------------------------------+------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-----------------------------------------------------------------+
-; Missing 1-Value Coverage                                        ;
-+-------------------+--------------------------+------------------+
-; Node Name         ; Output Port Name         ; Output Port Type ;
-+-------------------+--------------------------+------------------+
-; |s74_pwm_rev|n[3] ; |s74_pwm_rev|n[3]~corein ; combout          ;
-; |s74_pwm_rev|n[2] ; |s74_pwm_rev|n[2]~corein ; combout          ;
-; |s74_pwm_rev|n[0] ; |s74_pwm_rev|n[0]~corein ; combout          ;
-+-------------------+--------------------------+------------------+
++--------------------------------------------------------------+
+; Missing 1-Value Coverage                                     ;
++------------------+------------------------+------------------+
+; Node Name        ; Output Port Name       ; Output Port Type ;
++------------------+------------------------+------------------+
+; |sv73_div2|scout ; |sv73_div2|scout       ; padio            ;
+; |sv73_div2|n[3]  ; |sv73_div2|n[3]~corein ; combout          ;
+; |sv73_div2|n[2]  ; |sv73_div2|n[2]~corein ; combout          ;
+; |sv73_div2|n[1]  ; |sv73_div2|n[1]~corein ; combout          ;
++------------------+------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+-----------------------------------------------------------------+
-; Missing 0-Value Coverage                                        ;
-+-------------------+--------------------------+------------------+
-; Node Name         ; Output Port Name         ; Output Port Type ;
-+-------------------+--------------------------+------------------+
-; |s74_pwm_rev|n[1] ; |s74_pwm_rev|n[1]~corein ; combout          ;
-; |s74_pwm_rev|n[0] ; |s74_pwm_rev|n[0]~corein ; combout          ;
-+-------------------+--------------------------+------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                   ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; Node Name                                          ; Output Port Name                                   ; Output Port Type ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; |sv73_div2|v73_div2:inst|q[3]                      ; |sv73_div2|v73_div2:inst|q[3]                      ; regout           ;
+; |sv73_div2|s73_div2:inst1|4count:inst|43           ; |sv73_div2|s73_div2:inst1|4count:inst|43           ; regout           ;
+; |sv73_div2|scout                                   ; |sv73_div2|scout                                   ; padio            ;
+; |sv73_div2|sq[3]                                   ; |sv73_div2|sq[3]                                   ; padio            ;
+; |sv73_div2|vq[3]                                   ; |sv73_div2|vq[3]                                   ; padio            ;
+; |sv73_div2|n[3]                                    ; |sv73_div2|n[3]~corein                             ; combout          ;
+; |sv73_div2|n[2]                                    ; |sv73_div2|n[2]~corein                             ; combout          ;
+; |sv73_div2|n[1]                                    ; |sv73_div2|n[1]~corein                             ; combout          ;
+; |sv73_div2|v73_div2:inst|q[3]~DUPLICATE            ; |sv73_div2|v73_div2:inst|q[3]~DUPLICATE            ; regout           ;
+; |sv73_div2|s73_div2:inst1|4count:inst|43~DUPLICATE ; |sv73_div2|s73_div2:inst1|4count:inst|43~DUPLICATE ; regout           ;
++----------------------------------------------------+----------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -169,17 +194,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Thu Dec 08 13:17:43 2022
+    Info: Processing started: Sun Dec 11 14:30:48 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ab7_working -c ab7_working
-Info: Using vector source file "D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab7_working/w74_rev.vwf"
+Info: Using vector source file "D:/MyDoc/Projects/labs5/Проектирование цифровых устройств/lab7_working/w73_div2.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      82.61 %
-Info: Number of transitions in simulation is 297
+Info: Simulation coverage is      77.78 %
+Info: Number of transitions in simulation is 2435
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 157 megabytes
-    Info: Processing ended: Thu Dec 08 13:17:43 2022
+    Info: Peak virtual memory: 158 megabytes
+    Info: Processing ended: Sun Dec 11 14:30:48 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

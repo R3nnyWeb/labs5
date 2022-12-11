@@ -1,20 +1,56 @@
-|s74_pwm_rev
-pwm <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-n[0] => inst15.IN3
-n[1] => inst14.IN2
-n[1] => inst11.IN0
-n[2] => inst10.IN0
-n[2] => inst13.IN1
-n[3] => inst12.IN0
-n[3] => inst9.IN0
-c => 4count:inst.CLK
+|sv73_div2
+vcout <= v73_div2:inst.cout
+c => v73_div2:inst.c
+c => s73_div2:inst1.c
+n[0] => v73_div2:inst.n[0]
+n[0] => s73_div2:inst1.n[0]
+n[1] => v73_div2:inst.n[1]
+n[1] => s73_div2:inst1.n[1]
+n[2] => v73_div2:inst.n[2]
+n[2] => s73_div2:inst1.n[2]
+n[3] => v73_div2:inst.n[3]
+n[3] => s73_div2:inst1.n[3]
+scout <= s73_div2:inst1.cout
+sq[0] <= s73_div2:inst1.q[0]
+sq[1] <= s73_div2:inst1.q[1]
+sq[2] <= s73_div2:inst1.q[2]
+sq[3] <= s73_div2:inst1.q[3]
+vq[0] <= v73_div2:inst.q[0]
+vq[1] <= v73_div2:inst.q[1]
+vq[2] <= v73_div2:inst.q[2]
+vq[3] <= v73_div2:inst.q[3]
+
+
+|sv73_div2|v73_div2:inst
+c => q[3]~reg0.CLK
+c => q[2]~reg0.CLK
+c => q[1]~reg0.CLK
+c => q[0]~reg0.CLK
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+n[0] => q~3.DATAB
+n[1] => q~2.DATAB
+n[2] => q~1.DATAB
+n[3] => q~0.DATAB
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sv73_div2|s73_div2:inst1
+cout <= <GND>
 q[0] <= q0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q1.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q2.DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= q3.DB_MAX_OUTPUT_PORT_TYPE
+n[0] => 4count:inst.A
+n[1] => 4count:inst.B
+n[2] => 4count:inst.C
+n[3] => 4count:inst.D
+c => 4count:inst.CLK
 
 
-|s74_pwm_rev|4count:inst
+|sv73_div2|s73_div2:inst1|4count:inst
 QA <= 46.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 97.IN0
 CLRN => 101.IN0

@@ -2,32 +2,42 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.332 ns
+From           : n[2]
+To             : s73_div2:inst1|4count:inst|44
+From Clock     : --
+To Clock       : c
+Failed Paths   : 0
+
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 6.849 ns
-From           : 4count:inst|45~DUPLICATE
-To             : q[1]
+Actual Time    : 6.626 ns
+From           : v73_div2:inst|q[3]
+To             : vcout
 From Clock     : c
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case tpd
+Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.591 ns
+Actual Time    : -2.852 ns
 From           : n[1]
-To             : pwm
+To             : s73_div2:inst1|4count:inst|45~DUPLICATE
 From Clock     : --
-To Clock       : --
+To Clock       : c
 Failed Paths   : 0
 
 Type           : Clock Setup: 'c'
 Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
-From           : 4count:inst|46
-To             : 4count:inst|43
+From           : v73_div2:inst|q[3]
+To             : v73_div2:inst|q[2]
 From Clock     : c
 To Clock       : c
 Failed Paths   : 0

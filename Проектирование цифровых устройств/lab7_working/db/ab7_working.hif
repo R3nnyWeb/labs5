@@ -170,7 +170,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-4count:inst
+s73_div2:inst1|4count:inst
 }
 # macro_sequence
 
@@ -289,8 +289,81 @@ s74_pwm_rev.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+v73_div2
+# storage
+db|ab7_working.(13).cnf
+db|ab7_working.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v73_div2.v
+b8c0971d2deb7f45cbc030aab0c2cad1
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v73_div2:inst
+}
+# macro_sequence
+
+# end
+# entity
+sv73_div2
+# storage
+db|ab7_working.(14).cnf
+db|ab7_working.(14).cnf
+# case_insensitive
+# source_file
+sv73_div2.bdf
+68c397acd1bd4fd486dd9920aaee1072
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+s73_div2
+# storage
+db|ab7_working.(12).cnf
+db|ab7_working.(12).cnf
+# case_insensitive
+# source_file
+s73_div2.bdf
+257e5ed6efbfe998884d2e6150bea81e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s73_div2:inst1
 }
 # macro_sequence
 
