@@ -20,11 +20,11 @@ includelib C:/masm32/lib/masm32.lib
 	CLSEDT db 'EDIT', 0
 	CAP db 'Сообщение', 0
 	TEXTA db 20 dup(0); текст в полях редактирования
-	TEXTB db 20 dup(0)
-	num dd 0
+	num dq 0.0
+	num2 dd 0
 	hBut DD ? ; дескриптор кнопки
 	hedt1 DD ? ; дескриптор поля 1
-	hedt2 DD ? ; дескриптор поля 2
+	
 	hdc DD ? ; дескриптор контекста окна
 	ps PAINTSTRUCT < ? >
 	mess1 db 'Посчитать функцию : ', 0; надпись в окне
@@ -133,17 +133,17 @@ WMCOMMAND:	; обработка нажатия кнопки
 	cmp lParam, eax
 	jne COM_END; команда не соответствует нажатию кнопки
 	INVOKE SendMessage, hedt1, WM_GETTEXT, 20, offset TEXTA
-	INVOKE SendMessage, hedt2, WM_GETTEXT, 20, offset TEXTB
-	INVOKE StrToFloat, offset TEXTA, offset num
-	mov eax, num
-	add num, eax
-	;FINIT
-	;fld num
-	;fcos
-	;fstp num
+	INVOKE StrToFloat, ADDR TEXTA, ADDR num
+	mov num2, 2
+	FINIT
+	fld num
+	fild num2
+	fmul ST, ST(1)
+	fcos
+	fstp num
 	mov eax, sum_len
 	INVOKE TextOutA, hdc, 80, 50, offset mess2, eax; стирание строки результата в окне
-	INVOKE FloatToStr, qword ptr (num), offset mess2 + 1
+	INVOKE FloatToStr, num, ADDR mess2
 	INVOKE LENSTR, offset mess2; определение длины результата
 	push eax
 	INVOKE TextOutA, hdc, 80, 50, offset mess2, eax; вывод результата
