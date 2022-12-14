@@ -1,0 +1,121 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+41
+2760
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+sv83_du
+# storage
+db|lb8_4.(0).cnf
+db|lb8_4.(0).cnf
+# case_insensitive
+# source_file
+sv83_du.bdf
+6530e1964791b8531133dc6632de4249
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+v83_du
+# storage
+db|lb8_4.(1).cnf
+db|lb8_4.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+v83_du.v
+f333d5519fca55d5462b77154fb3e2
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+v83_du:inst1
+}
+# macro_sequence
+
+# end
+# entity
+4count
+# storage
+db|lb8_4.(3).cnf
+db|lb8_4.(3).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|4count.bdf
+58df3cdc539defbbc413475c87351fb9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s83_du:inst|4count:inst
+}
+# macro_sequence
+
+# end
+# entity
+s83_du
+# storage
+db|lb8_4.(2).cnf
+db|lb8_4.(2).cnf
+# case_insensitive
+# source_file
+s83_du.bdf
+dc66ba7f658bc7a090f225ead22371ea
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+s83_du:inst
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -587,11 +587,6 @@ applicable agreement for further details.
 	(pt 416 208)
 )
 (connector
-	(text "n2" (rect 400 120 411 132)(font "Arial" ))
-	(pt 392 136)
-	(pt 416 136)
-)
-(connector
 	(text "q0" (rect 400 136 411 148)(font "Arial" ))
 	(pt 392 152)
 	(pt 416 152)
@@ -709,11 +704,6 @@ applicable agreement for further details.
 	(pt 712 160)
 )
 (connector
-	(text "q3, q2, q1, q0" (rect 480 352 548 364)(font "Arial" ))
-	(pt 472 368)
-	(pt 536 368)
-)
-(connector
 	(text "n3, n2, n1, n0" (rect 640 320 708 332)(font "Arial" ))
 	(pt 632 336)
 	(pt 704 336)
@@ -782,5 +772,21 @@ applicable agreement for further details.
 	(text "q1" (rect 236 176 247 188)(font "Arial" ))
 	(pt 232 192)
 	(pt 272 192)
+)
+(connector
+	(pt 472 368)
+	(pt 472 376)
+	(bus)
+)
+(connector
+	(text "q3,q2,q1,q0" (rect 480 352 537 364)(font "Arial" ))
+	(pt 536 368)
+	(pt 472 368)
+	(bus)
+)
+(connector
+	(text "n3" (rect 400 120 411 132)(font "Arial" ))
+	(pt 392 136)
+	(pt 416 136)
 )
 (junction (pt 296 344))
