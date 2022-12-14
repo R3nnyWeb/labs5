@@ -20,7 +20,7 @@ public class MouseExample {
 //Определяем реакцию на закрытие окна
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //Добавляем к фрейму слушателей. Обработчики реализованы в классе MObr
-        f.addMouseListener(new MObr());
+        f.addMouseListener(new MObr()  );
         f.addMouseMotionListener(new MObr());
         f.addMouseWheelListener(new MObr());
 //делаем фрейм видимым
