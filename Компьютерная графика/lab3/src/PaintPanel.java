@@ -19,7 +19,8 @@ public class PaintPanel extends JPanel implements ActionListener, MouseListener,
     protected int lastX, lastY, w, h;
     protected Color curColor = Color.BLACK;
     protected JFrame f;
-//Конструктор. Принимает в качестве параметров фрейм, на котором будет размещена
+
+    //Конструктор. Принимает в качестве параметров фрейм, на котором будет размещена
     //панель и размеры панели
     public PaintPanel(JFrame frame, int width, int height) {
         super();
@@ -27,6 +28,7 @@ public class PaintPanel extends JPanel implements ActionListener, MouseListener,
         w = width;
         h = height;
     }
+
     //Обработчик события перемещения мыши с нажатой кнопкой
     @Override
     public void mouseDragged(MouseEvent me) {
@@ -35,7 +37,7 @@ public class PaintPanel extends JPanel implements ActionListener, MouseListener,
                 MouseEvent.BUTTON1_MASK) {
 //С поммощью вызова метода this.getGraphics() получаем графический контекст нашей панели
 //и приводим его к Graphics2D
-            Graphics2D g2 = (Graphics2D)this.getGraphics();
+            Graphics2D g2 = (Graphics2D) this.getGraphics();
 //Устанавливаем текущую ширина штриха (Stroke) в 5 пикселей
             g2.setStroke(new BasicStroke(wl, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
 //Устанавливаем текущий цвет рисования
@@ -48,18 +50,27 @@ public class PaintPanel extends JPanel implements ActionListener, MouseListener,
             lastY = me.getY();
         }
     }
+
     //Это событие не обработано
     @Override
-    public void mouseMoved(MouseEvent e) {}
+    public void mouseMoved(MouseEvent e) {
+    }
+
     //Это событие не обработано
     @Override
-    public void mouseClicked(MouseEvent arg0) {}
+    public void mouseClicked(MouseEvent arg0) {
+    }
+
     //Это событие не обработано
     @Override
-    public void mouseEntered(MouseEvent arg0) {}
+    public void mouseEntered(MouseEvent arg0) {
+    }
+
     //Это событие не обработано
     @Override
-    public void mouseExited(MouseEvent arg0) {}
+    public void mouseExited(MouseEvent arg0) {
+    }
+
     //Обработчик события нажания мыши
     @Override
     public void mousePressed(MouseEvent me) {
@@ -71,9 +82,12 @@ public class PaintPanel extends JPanel implements ActionListener, MouseListener,
             lastY = me.getY();
         }
     }
-//Это событие не обработано
+
+    //Это событие не обработано
     @Override
-    public void mouseReleased(MouseEvent arg0) {}
+    public void mouseReleased(MouseEvent arg0) {
+    }
+
     //Обработчик события действия. Применяется здесь для
 //обработки нажатий на кнопки
     @Override
@@ -83,24 +97,24 @@ public class PaintPanel extends JPanel implements ActionListener, MouseListener,
         if (s.equals("Очистить")) this.repaint();
 //Если нажата кнопка "Красный", то установить текущий цвет рисования в красный
 //Остальные кнопки аналогично
-else if (s.equals("Красный")) curColor = Color.RED;
+        else if (s.equals("Красный")) curColor = Color.RED;
         else if (s.equals("Зеленый")) curColor = Color.GREEN;
         else if (s.equals("Синий")) curColor = Color.BLUE;
         else if (s.equals("Черный")) curColor = Color.BLACK;
         else if (s.equals("Белый")) curColor = Color.WHITE;
     }
+
     @Override
     public void mouseWheelMoved(MouseWheelEvent mwe) {
-        wl+=mwe.getWheelRotation();
-        if(wl<1)wl=1;
-        if(wl>50)wl=50;
-        ((SimplePaint)f).l2.setText(wl+"");
+        wl += mwe.getWheelRotation();
+        if (wl < 1) wl = 1;
+        if (wl > 50) wl = 50;
+        ((SimplePaint) f).l2.setText(wl + "");
     }
-
 
 
     @Override
     public void stateChanged(ChangeEvent e) {
-        curColor = ((SimplePaint)f).ColCh.getColor();
+        curColor = ((SimplePaint) f).ColCh.getColor();
     }
 }
